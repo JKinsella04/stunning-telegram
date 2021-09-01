@@ -1,0 +1,1258 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>February 2021 Progress Entries &#8212; 9447H - Engineering Notebook</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="March 2021 Progress Entries" href="12-12-progressEntries-March.html" />
+    <link rel="prev" title="January 2021 Progress Entries" href="12-10-progressEntries-January.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/v1logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">9447H - Engineering Notebook</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome Page
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Tipping Point Game Description
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1-gameDescription.html">
+   Tipping Point Game Description
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2-gameObjects_Elements.html">
+   Tipping Point Game Objects and Elements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3-fieldOverview.html">
+   Tipping Point Field Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4-scoringDetails.html">
+   Tipping Point Scoring Details
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5-terminology.html">
+   Tipping Point Terminology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6-gameRules.html">
+   Tipping Point Game Rules
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Pre-Season
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="7-initialGoals.html">
+   Initial Goals For Change Up
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8-teamStandards.html">
+   Our Team Standards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="9-designBrainstorming.html">
+   Change Up Design Brainstorming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-motorSpecs.html">
+   V5 Motor Specifications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-teamIntros.html">
+   Team Intros
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Progress Entries
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-1-progressEntries-April.html">
+   April 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-2-progressEntries-May.html">
+   May 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-3-progressEntries-June.html">
+   June 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-4-progressEntries-July.html">
+   July 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-5-progressEntries-August.html">
+   August 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-6-progressEntries-September.html">
+   September 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-7-progressEntries-October.html">
+   October 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-8-progressEntries-November.html">
+   November 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-9-progressEntries-December.html">
+   December 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-10-progressEntries-January.html">
+   January 2021 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   February 2021 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-12-progressEntries-March.html">
+   March 2021 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-2021-April.html">
+   April 2021 Progres Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-2021-May.html">
+   May 2021 Progres Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-2021-June.html">
+   June 2021 Progres Entries
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/12-11-progressEntries-February.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   2/2/21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#attendance-brody-derek-dylan-ian-jack">
+     Attendance: ☑ Brody, ☑ Derek, ☑ Dylan, ☐ Ian, ☑ Jack
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pre-tournament-entry-2-8-21">
+   Pre-Tournament Entry 2/8/21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#current-robot">
+     Current Robot
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#core-mechanical-concepts">
+     Core Mechanical Concepts
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#expanding-intakes">
+       Expanding intakes
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#core-programming-concepts">
+     Core Programming Concepts
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#controller-setup">
+       2 Controller Setup
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   2/9/21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#february-timeline">
+     February Timeline
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#completed-goals">
+       Completed Goals
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#remaining-goals-for-february">
+       Remaining goals for February
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#post-tournament-2-14-21">
+   Post-Tournament 2/14/21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tournament-stats">
+     Tournament Stats
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#our-matches">
+     Our matches
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tournament-evaluation">
+     Tournament Evaluation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   2/16/20
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#needed-changes-before-next-tournament">
+     Needed changes before next tournament
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reinforced-tracking-wheels">
+       Reinforced tracking wheels
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#new-hood">
+       New hood
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#post-tournament-2-21-20">
+   Post Tournament  2/21/20
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Tournament Stats
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Our Matches
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   2/23/20
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="february-2021-progress-entries">
+<h1>February 2021 Progress Entries<a class="headerlink" href="#february-2021-progress-entries" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>2/2/21<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="attendance-brody-derek-dylan-ian-jack">
+<h3>Attendance: ☑ Brody, ☑ Derek, ☑ Dylan, ☐ Ian, ☑ Jack<a class="headerlink" href="#attendance-brody-derek-dylan-ian-jack" title="Permalink to this headline">¶</a></h3>
+<p>Since the West Ashley tournament was cancelled we signed up for a Remote Skills Only No Judging tournament for this weekend. Today we spent the majority of the day practicing driver skills. To help with descoring balls from the middle goal, we added a deployable pusher on the back of the robot that allows us to more easily descore from the middle goal. When creating this pusher we wanted it to meet two criteria, be efficent at descoring the middle and also be non-invasive to the majority of the run. To satisfy the effeciency we developed a strategy that we employ with this pusher where we put the pusher into the goal and then turn left and right, this movemenet will without fail remove at least one ball from the goal. To make it non-invasive, we made it work like a lever. To do this we added tension where in its starting position it would stay up and out of the way, to activate the lever, we back up into a goal and when the bottom of the mechanism hits the goal it will reposition the tension making it want to become parallel with the ground.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r7A88vzF-zk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+<div class="section" id="pre-tournament-entry-2-8-21">
+<h2>Pre-Tournament Entry 2/8/21<a class="headerlink" href="#pre-tournament-entry-2-8-21" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="current-robot">
+<h3>Current Robot<a class="headerlink" href="#current-robot" title="Permalink to this headline">¶</a></h3>
+<img src="././_images/2-February/2-8-21/robot_angle.png" alt="robot_angle.png" style="height: 300px;"/>
+<img src="././_images/2-February/2-8-21/robot_side.png" alt="robot_side.png" style="height: 300px;"/>
+<img src="././_images/2-February/2-8-21/robot_other_angle.png" alt="robot_other_angle.png" style="height: 300px;"/>
+</div>
+<div class="section" id="core-mechanical-concepts">
+<h3>Core Mechanical Concepts<a class="headerlink" href="#core-mechanical-concepts" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="expanding-intakes">
+<h4>Expanding intakes<a class="headerlink" href="#expanding-intakes" title="Permalink to this headline">¶</a></h4>
+<p>To increase our reach into the goals, we added a new section to our intakes, which start folded into the robot and expand outward. Currently they have intake rollers since we do not have any extra of the smallest flex wheels. This new intake expansion now lets our robot enter halfway into the middle goal and</p>
+</div>
+</div>
+<div class="section" id="core-programming-concepts">
+<h3>Core Programming Concepts<a class="headerlink" href="#core-programming-concepts" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="controller-setup">
+<h4>2 Controller Setup<a class="headerlink" href="#controller-setup" title="Permalink to this headline">¶</a></h4>
+<p>For this competition we have increased our automatic controls to a more advanced configuration. Our old controller scheme had used 5 buttons on one controller but now we use 4 buttons on two controllers. Derek our main driver, uses our master contrller which controls the drive base and has one button (R1), which when pressed runs <code class="docutils literal notranslate"><span class="pre">goalSort()</span></code>. Jack is our second driver who uses the partner controller, which has 3 buttons (R1, R2, and L1). The partner controller is mainly just used to update our <code class="docutils literal notranslate"><span class="pre">ballsLeft</span></code> variable which controls how the intakes spin when we run <code class="docutils literal notranslate"><span class="pre">goalSort()</span></code>. When we run <code class="docutils literal notranslate"><span class="pre">goalSort()</span></code> it will subtract one from <code class="docutils literal notranslate"><span class="pre">ballsLeft</span></code> every time the enemy’s ball is sorted through our robot, and once <code class="docutils literal notranslate"><span class="pre">ballsLeft</span></code> reaches 0 it reverses the intakes so we do not intake our own balls. L1 on the partner controller adds one to this variable so we can manually tell the robot how many balls to expect before it reaches the goal. R1 sets the variable to 0 so we have the ability to reset the variable in the event anything unexpected happens and we need to reset the variable manually. R2 on the partner controller reverses the intakes. We have this so when we go to descore the middle goal we can spin the intakes in reverse without spinning any of the rollers.</p>
+</div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>2/9/21<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Today is our last practice before our next tournament. The only change we had to make to our robot is that we removed our front hood for this tournament since we can not get it to fit in size and we want to use our last practice practicing instead of trying to fit the hood. We are pretty confident that we will get around 84 points in our autonomous and should range anwhere from 190-200 points total for skills.</p>
+<div class="section" id="february-timeline">
+<h3>February Timeline<a class="headerlink" href="#february-timeline" title="Permalink to this headline">¶</a></h3>
+<img src="././_images/2-February/feb_calendar.PNG" alt="feb_calendar.png"/>
+<div class="section" id="completed-goals">
+<h4>Completed Goals<a class="headerlink" href="#completed-goals" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>85-94 Autonomous skills run</p></li>
+</ul>
+</div>
+<div class="section" id="remaining-goals-for-february">
+<h4>Remaining goals for February<a class="headerlink" href="#remaining-goals-for-february" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Reimplement front hood before JL Mann tournament</p></li>
+<li><p>106-119 point auton</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="post-tournament-2-14-21">
+<h2>Post-Tournament 2/14/21<a class="headerlink" href="#post-tournament-2-14-21" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="tournament-stats">
+<h3>Tournament Stats<a class="headerlink" href="#tournament-stats" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Rank</p></th>
+<th class="head"><p>Team</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>W-L-T</p></th>
+<th class="head"><p>WPs / APs / SPs</p></th>
+<th class="head"><p>OPR</p></th>
+<th class="head"><p>DPR</p></th>
+<th class="head"><p>CCWM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>9447H</p></td>
+<td><p>¯_(ツ)_/¯</p></td>
+<td><p>7-0-0</p></td>
+<td><p>18 / 39 / 32</p></td>
+<td><p>27.97</p></td>
+<td><p>-5.72</p></td>
+<td><p>33.69</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>79267A</p></td>
+<td><p>Swamp Bots</p></td>
+<td><p>6-1-0</p></td>
+<td><p>13 / 24 / 63</p></td>
+<td><p>11.51</p></td>
+<td><p>-0.13</p></td>
+<td><p>11.64</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>9623Z</p></td>
+<td><p>WARP Drive - Zulu</p></td>
+<td><p>4-2-1</p></td>
+<td><p>12 / 30 / 44</p></td>
+<td><p>3.87</p></td>
+<td><p>9.42</p></td>
+<td><p>-5.55</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>9447B</p></td>
+<td><p>Wild Cards</p></td>
+<td><p>5-2-0</p></td>
+<td><p>12 / 24 / 44</p></td>
+<td><p>24.75</p></td>
+<td><p>7.55</p></td>
+<td><p>17.2</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>61317A</p></td>
+<td><p>JP2 S.H.I.E.L.D.</p></td>
+<td><p>5-2-0</p></td>
+<td><p>11 / 30 / 41</p></td>
+<td><p>24.66</p></td>
+<td><p>5.07</p></td>
+<td><p>19.59</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>9623X</p></td>
+<td><p>WARP Drive - BotX</p></td>
+<td><p>4-2-1</p></td>
+<td><p>9 / 30 / 55</p></td>
+<td><p>17.82</p></td>
+<td><p>1.19</p></td>
+<td><p>16.62</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>9447Z</p></td>
+<td><p>GoofTroop</p></td>
+<td><p>4-2-1</p></td>
+<td><p>9 / 21 / 46</p></td>
+<td><p>6.49</p></td>
+<td><p>0.77</p></td>
+<td><p>5.72</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>61317B</p></td>
+<td><p>JP2 S.H.I.E.L.D. Robotics</p></td>
+<td><p>3-3-1</p></td>
+<td><p>8 / 30 / 50</p></td>
+<td><p>3.8</p></td>
+<td><p>17.2</p></td>
+<td><p>-13.4</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>3859W</p></td>
+<td><p>Astrobots</p></td>
+<td><p>4-3-0</p></td>
+<td><p>8 / 27 / 51</p></td>
+<td><p>16.07</p></td>
+<td><p>1.5</p></td>
+<td><p>14.57</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>29073A</p></td>
+<td><p>Robophobia</p></td>
+<td><p>3-3-1</p></td>
+<td><p>8 / 21 / 77</p></td>
+<td><p>6.08</p></td>
+<td><p>6.2</p></td>
+<td><p>-0.12</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>3859D</p></td>
+<td><p>Dystopia</p></td>
+<td><p>4-3-0</p></td>
+<td><p>8 / 18 / 60</p></td>
+<td><p>16.65</p></td>
+<td><p>20.18</p></td>
+<td><p>-3.53</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>3859B</p></td>
+<td><p>Vortex</p></td>
+<td><p>3-3-1</p></td>
+<td><p>8 / 15 / 77</p></td>
+<td><p>9.55</p></td>
+<td><p>13.68</p></td>
+<td><p>-4.13</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>1711A</p></td>
+<td><p>Mighty Lions HS</p></td>
+<td><p>3-3-0</p></td>
+<td><p>7 / 24 / 62</p></td>
+<td><p>16.67</p></td>
+<td><p>4.29</p></td>
+<td><p>12.38</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>61317D</p></td>
+<td><p>JP2 S.H.I.E.L.D.</p></td>
+<td><p>3-4-0</p></td>
+<td><p>6 / 15 / 39</p></td>
+<td><p>7.54</p></td>
+<td><p>9.27</p></td>
+<td><p>-1.73</p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>1711B</p></td>
+<td><p>MLRC B</p></td>
+<td><p>3-4-0</p></td>
+<td><p>6 / 6 / 63</p></td>
+<td><p>2.95</p></td>
+<td><p>7.34</p></td>
+<td><p>-4.39</p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>79267F</p></td>
+<td><p>Swamp Bots 2.0</p></td>
+<td><p>2-5-0</p></td>
+<td><p>5 / 15 / 43</p></td>
+<td><p>10.47</p></td>
+<td><p>17.05</p></td>
+<td><p>-6.59</p></td>
+</tr>
+<tr class="row-even"><td><p>17</p></td>
+<td><p>44252A</p></td>
+<td><p>LexTech</p></td>
+<td><p>2-5-0</p></td>
+<td><p>4 / 0 / 44</p></td>
+<td><p>2.98</p></td>
+<td><p>20.49</p></td>
+<td><p>-17.52</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p>29073B</p></td>
+<td><p>Rust in Pieces</p></td>
+<td><p>1-5-1</p></td>
+<td><p>3 / 18 / 61</p></td>
+<td><p>2.64</p></td>
+<td><p>20.32</p></td>
+<td><p>-17.67</p></td>
+</tr>
+<tr class="row-even"><td><p>19</p></td>
+<td><p>88458A</p></td>
+<td><p>Hawthorne Robotics</p></td>
+<td><p>1-6-0</p></td>
+<td><p>2 / 18 / 62</p></td>
+<td><p>0.87</p></td>
+<td><p>19.04</p></td>
+<td><p>-18.17</p></td>
+</tr>
+<tr class="row-odd"><td><p>20</p></td>
+<td><p>1711W</p></td>
+<td><p>The Third Wheel</p></td>
+<td><p>1-6-0</p></td>
+<td><p>2 / 12 / 49</p></td>
+<td><p>-1.04</p></td>
+<td><p>29.39</p></td>
+<td><p>-30.43</p></td>
+</tr>
+<tr class="row-even"><td><p>21</p></td>
+<td><p>3859X</p></td>
+<td><p>Flying Lawnmowers</p></td>
+<td><p>1-6-0</p></td>
+<td><p>2 / 9 / 37</p></td>
+<td><p>-0.13</p></td>
+<td><p>10.42</p></td>
+<td><p>-10.55</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="our-matches">
+<h3>Our matches<a class="headerlink" href="#our-matches" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Our Matches</p></th>
+<th class="head"><p>Red Alliance</p></th>
+<th class="head"><p>Blue Alliance</p></th>
+<th class="head"><p>Auton Winner</p></th>
+<th class="head"><p>Score</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Q-3</p></td>
+<td><p><strong>9447H</strong> &amp; 613171B</p></td>
+<td><p>61317D &amp; 1711B</p></td>
+<td><p>Tie</p></td>
+<td><p><strong>16</strong>-6</p></td>
+</tr>
+<tr class="row-odd"><td><p>Q-7</p></td>
+<td><p>61317D &amp; 29073B</p></td>
+<td><p><strong>9447H</strong> &amp; 9623Z</p></td>
+<td><p>Blue</p></td>
+<td><p>4-<strong>34</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Q-14</p></td>
+<td><p><strong>9447H</strong> &amp; 79267A</p></td>
+<td><p>3859X &amp; 84458A</p></td>
+<td><p>Red</p></td>
+<td><p><strong>28</strong>-5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Q-18</p></td>
+<td><p>88458A &amp; 9447B</p></td>
+<td><p><strong>9447H</strong> &amp; 61317A</p></td>
+<td><p>Blue</p></td>
+<td><p>5-<strong>50</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Q-26</p></td>
+<td><p>1711A &amp; 29073B</p></td>
+<td><p><strong>9447H</strong> &amp; 79267F</p></td>
+<td><p>Blue</p></td>
+<td><p>3-<strong>38</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Q-31</p></td>
+<td><p><strong>9447H</strong> &amp; 29073A</p></td>
+<td><p>9447Z &amp; 44252A</p></td>
+<td><p>Red</p></td>
+<td><p><strong>44</strong>-6</p></td>
+</tr>
+<tr class="row-even"><td><p>Q-34</p></td>
+<td><p><strong>9447H</strong> &amp; 61317B</p></td>
+<td><p>3859B &amp; 3859X</p></td>
+<td><p>Red</p></td>
+<td><p><strong>50</strong>-3</p></td>
+</tr>
+<tr class="row-odd"><td><p>QF 1.1</p></td>
+<td><p><strong>9447H</strong> &amp; 3859W</p></td>
+<td><p>61317D &amp; 1711B</p></td>
+<td><p>Blue</p></td>
+<td><p><strong>19</strong>-11</p></td>
+</tr>
+<tr class="row-even"><td><p>SF 1.1</p></td>
+<td><p><strong>9447H</strong> &amp; 3859W</p></td>
+<td><p>9447B &amp; 9623X</p></td>
+<td><p>Blue</p></td>
+<td><p>9-<strong>18</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="tournament-evaluation">
+<h3>Tournament Evaluation<a class="headerlink" href="#tournament-evaluation" title="Permalink to this headline">¶</a></h3>
+<p>Overall we are very happy with our performance this tournament. In this tournament we won Excellence and Robot Skills. Our autonomous worked quite well with an exception of our first match in which we tied the autonomous phase. We placed first place this tournament because we won all of our qualifier as well as getting the autonomous win point 4 times. Unfortunately one of our tracking wheels got damaged in our Quaterfinal match which caused our autonomous to run incorrectly causing us to drive too much backward. Our skills score this tournament was 193, 82 autonomous and 111 driver. This tournament helped us determine what parts of our robot work well and what does not. For this tournament we had to remove our front hood since with the new intakes we could not fit in size, but because we removed our hood the balls spent a lot of extra time spinning at the top of the goals and sometimes just entirely fell out of the goals while they spun around. This caused us to end us spending more time than we wanted when cycling as well as hurting our autonomous routines. To fix this we began working on a new hood that will fit in size with our new intakes. Our other biggest problem is that because of different light and the distance between our line sensor to the balls we hold we were having problems with the ball not indexing properly during both autonomous and driver. To fix this we swapped out our top line sensor with a v5 distance sensor. Replacing the line sensor with the distance sensor helps us since now we checking to find a change in distance instead of a difference in light.</p>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>2/16/20<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="needed-changes-before-next-tournament">
+<h3>Needed changes before next tournament<a class="headerlink" href="#needed-changes-before-next-tournament" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Reinforce tracking wheels</p></li>
+<li><p>Redesign + add front hood</p></li>
+</ul>
+<div class="section" id="reinforced-tracking-wheels">
+<h4>Reinforced tracking wheels<a class="headerlink" href="#reinforced-tracking-wheels" title="Permalink to this headline">¶</a></h4>
+<p>To help reinforce our tracking wheels, we supported them on both sides instead of just one screw joing on the side. Doing this allows us to have be tensioned while not pulling the wheels to the side so we will more accurately track the robot’s movement as well as making them more resistant to defensive play from other robots.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1Ov_rHwna9A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="section" id="new-hood">
+<h4>New hood<a class="headerlink" href="#new-hood" title="Permalink to this headline">¶</a></h4>
+<p>To have the hood be able to fit with the new intakes we had to shorten the overall length of the hood which means the hood goes farther forward from the robot than it does upward. This is not a problem for us since the goal of the hood for us is not to guide the ball down towards the goal but to make the ball go down into the goal faster.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RJeTpzs-vcM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<div class="section" id="post-tournament-2-21-20">
+<h2>Post Tournament  2/21/20<a class="headerlink" href="#post-tournament-2-21-20" title="Permalink to this headline">¶</a></h2>
+<p>We are pretty happy with our performance yesterday at the JL Mann tournament. We went 5-1-0 with 11 11 Win Points, 27 Auton Points and 46 Strength Points. We paired with 94999E Yokai-Independent who is from Georgia. We unfortunately lost in quarterfinals</p>
+<div class="section" id="id4">
+<h3>Tournament Stats<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Rank</p></th>
+<th class="head"><p>Team</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>W-L-T</p></th>
+<th class="head"><p>WPs / APs / SPs</p></th>
+<th class="head"><p>OPR</p></th>
+<th class="head"><p>DPR</p></th>
+<th class="head"><p>CCWM</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>61317A</p></td>
+<td><p>JP2 S.H.I.E.L.D.</p></td>
+<td><p>5-0-1</p></td>
+<td><p>11 / 30 / 57</p></td>
+<td><p>32.22</p></td>
+<td><p>0.75</p></td>
+<td><p>31.47</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>9447H</p></td>
+<td><p>¯_(ツ)_/¯</p></td>
+<td><p>5-1-0</p></td>
+<td><p>11 / 27 / 46</p></td>
+<td><p>25.05</p></td>
+<td><p>-1.58</p></td>
+<td><p>26.63</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>3796B</p></td>
+<td><p>Some Assembly Required</p></td>
+<td><p>5-1-0</p></td>
+<td><p>10 / 15 / 56</p></td>
+<td><p>17.41</p></td>
+<td><p>-1.38</p></td>
+<td><p>18.78</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>3796F</p></td>
+<td><p>Pay Respects</p></td>
+<td><p>4-2-0</p></td>
+<td><p>9 / 24 / 60</p></td>
+<td><p>16.66</p></td>
+<td><p>0.59</p></td>
+<td><p>16.07</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>1102X</p></td>
+<td><p>M’Aiken Magic</p></td>
+<td><p>4-1-1</p></td>
+<td><p>9 / 21 / 71</p></td>
+<td><p>15.2</p></td>
+<td><p>8.65</p></td>
+<td><p>6.55</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>89878E</p></td>
+<td><p>The Thingies</p></td>
+<td><p>4-2-0</p></td>
+<td><p>9 / 18 / 65</p></td>
+<td><p>9.9</p></td>
+<td><p>11.42</p></td>
+<td><p>-1.52</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>61317D</p></td>
+<td><p>JP2 S.H.I.E.L.D.</p></td>
+<td><p>4-1-1</p></td>
+<td><p>9 / 12 / 73</p></td>
+<td><p>18.14</p></td>
+<td><p>7.33</p></td>
+<td><p>10.81</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>9880C</p></td>
+<td><p>3 Guys</p></td>
+<td><p>4-2-0</p></td>
+<td><p>8 / 27 / 47</p></td>
+<td><p>14.86</p></td>
+<td><p>9.28</p></td>
+<td><p>5.58</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>94999E</p></td>
+<td><p>Yokai - Independent</p></td>
+<td><p>4-2-0</p></td>
+<td><p>8 / 21 / 55</p></td>
+<td><p>11.34</p></td>
+<td><p>14.92</p></td>
+<td><p>-3.58</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>97735X</p></td>
+<td><p>Techno Crankers</p></td>
+<td><p>4-2-0</p></td>
+<td><p>8 / 18 / 70</p></td>
+<td><p>15.53</p></td>
+<td><p>3.58</p></td>
+<td><p>11.95</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>9880D</p></td>
+<td><p>Valkyries</p></td>
+<td><p>4-2-0</p></td>
+<td><p>8 / 12 / 57</p></td>
+<td><p>-0.05</p></td>
+<td><p>4.06</p></td>
+<td><p>-4.12</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>3796E</p></td>
+<td><p>Caution! Student Drivers!</p></td>
+<td><p>4-2-0</p></td>
+<td><p>8 / 12 / 50</p></td>
+<td><p>19.04</p></td>
+<td><p>11.82</p></td>
+<td><p>7.21</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>40994F</p></td>
+<td><p>Obsidian Outlaws</p></td>
+<td><p>3-2-1</p></td>
+<td><p>7 / 27 / 62</p></td>
+<td><p>12.52</p></td>
+<td><p>2.43</p></td>
+<td><p>10.08</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>42748C</p></td>
+<td><p>Cougars Renegades</p></td>
+<td><p>3-2-1</p></td>
+<td><p>7 / 24 / 76</p></td>
+<td><p>11.87</p></td>
+<td><p>4.61</p></td>
+<td><p>7.26</p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>29073A</p></td>
+<td><p>Robophobia</p></td>
+<td><p>3-3-0</p></td>
+<td><p>7 / 24 / 52</p></td>
+<td><p>12.94</p></td>
+<td><p>15.83</p></td>
+<td><p>-2.88</p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>86400A</p></td>
+<td><p>ADHD</p></td>
+<td><p>3-3-0</p></td>
+<td><p>7 / 24 / 46</p></td>
+<td><p>15.1</p></td>
+<td><p>11.0</p></td>
+<td><p>4.09</p></td>
+</tr>
+<tr class="row-even"><td><p>17</p></td>
+<td><p>9880A</p></td>
+<td><p>Rebel Circuits</p></td>
+<td><p>2-3-1</p></td>
+<td><p>6 / 24 / 51</p></td>
+<td><p>10.45</p></td>
+<td><p>14.87</p></td>
+<td><p>-4.42</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p>8686Z</p></td>
+<td><p>Akanda and Friends</p></td>
+<td><p>3-3-0</p></td>
+<td><p>6 / 18 / 49</p></td>
+<td><p>5.79</p></td>
+<td><p>14.5</p></td>
+<td><p>-8.7</p></td>
+</tr>
+<tr class="row-even"><td><p>19</p></td>
+<td><p>3796A</p></td>
+<td><p>Mann Made</p></td>
+<td><p>3-3-0</p></td>
+<td><p>6 / 12 / 51</p></td>
+<td><p>15.8</p></td>
+<td><p>13.33</p></td>
+<td><p>-2.47</p></td>
+</tr>
+<tr class="row-odd"><td><p>20</p></td>
+<td><p>61317B</p></td>
+<td><p>JP2 S.H.I.E.L.D. Robotics</p></td>
+<td><p>3-3-0</p></td>
+<td><p>6 / 9 / 47</p></td>
+<td><p>17.29</p></td>
+<td><p>-0.18</p></td>
+<td><p>17.46</p></td>
+</tr>
+<tr class="row-even"><td><p>21</p></td>
+<td><p>42748A</p></td>
+<td><p>Cougar Crushers</p></td>
+<td><p>3-3-0</p></td>
+<td><p>6 / 6 / 70</p></td>
+<td><p>5.26</p></td>
+<td><p>17.17</p></td>
+<td><p>-11.91</p></td>
+</tr>
+<tr class="row-odd"><td><p>22</p></td>
+<td><p>8686Y</p></td>
+<td><p>League of Villians</p></td>
+<td><p>2-3-1</p></td>
+<td><p>5 / 18 / 61</p></td>
+<td><p>13.34</p></td>
+<td><p>6.91</p></td>
+<td><p>6.43</p></td>
+</tr>
+<tr class="row-even"><td><p>23</p></td>
+<td><p>86400C</p></td>
+<td><p>Sprocketeers</p></td>
+<td><p>2-3-1</p></td>
+<td><p>5 / 15 / 73</p></td>
+<td><p>1.72</p></td>
+<td><p>10.33</p></td>
+<td><p>-8.61</p></td>
+</tr>
+<tr class="row-odd"><td><p>24</p></td>
+<td><p>86400D</p></td>
+<td><p>The Spartans</p></td>
+<td><p>2-4-0</p></td>
+<td><p>4 / 18 / 46</p></td>
+<td><p>1.21</p></td>
+<td><p>6.53</p></td>
+<td><p>-5.32</p></td>
+</tr>
+<tr class="row-even"><td><p>25</p></td>
+<td><p>97671C</p></td>
+<td><p>Costco Hotdogs</p></td>
+<td><p>2-4-0</p></td>
+<td><p>4 / 15 / 59</p></td>
+<td><p>9.41</p></td>
+<td><p>26.49</p></td>
+<td><p>-17.08</p></td>
+</tr>
+<tr class="row-odd"><td><p>26</p></td>
+<td><p>8686S</p></td>
+<td><p>Giant Salamander</p></td>
+<td><p>1-5-0</p></td>
+<td><p>2 / 21 / 74</p></td>
+<td><p>-0.37</p></td>
+<td><p>17.85</p></td>
+<td><p>-18.22</p></td>
+</tr>
+<tr class="row-even"><td><p>27</p></td>
+<td><p>29073B</p></td>
+<td><p>Rust in Pieces</p></td>
+<td><p>1-5-0</p></td>
+<td><p>2 / 12 / 55</p></td>
+<td><p>6.1</p></td>
+<td><p>18.97</p></td>
+<td><p>-12.86</p></td>
+</tr>
+<tr class="row-odd"><td><p>28</p></td>
+<td><p>3796D</p></td>
+<td><p>Oops, We Did It Again!</p></td>
+<td><p>1-5-0</p></td>
+<td><p>2 / 9 / 69</p></td>
+<td><p>7.83</p></td>
+<td><p>21.09</p></td>
+<td><p>-13.26</p></td>
+</tr>
+<tr class="row-even"><td><p>29</p></td>
+<td><p>86400B</p></td>
+<td><p>The Orbiters</p></td>
+<td><p>1-5-0</p></td>
+<td><p>2 / 9 / 47</p></td>
+<td><p>1.57</p></td>
+<td><p>8.45</p></td>
+<td><p>-6.88</p></td>
+</tr>
+<tr class="row-odd"><td><p>30</p></td>
+<td><p>3796C</p></td>
+<td><p>Don’t Forget To Breathe</p></td>
+<td><p>1-5-0</p></td>
+<td><p>2 / 6 / 56</p></td>
+<td><p>-0.37</p></td>
+<td><p>28.45</p></td>
+<td><p>-28.83</p></td>
+</tr>
+<tr class="row-even"><td><p>31</p></td>
+<td><p>40994A</p></td>
+<td><p>Peak Performers</p></td>
+<td><p>0-6-0</p></td>
+<td><p>0 / 0 / 41</p></td>
+<td><p>-4.12</p></td>
+<td><p>31.48</p></td>
+<td><p>-35.6</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id5">
+<h3>Our Matches<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Our Matches</p></th>
+<th class="head"><p>Red Alliance</p></th>
+<th class="head"><p>Blue Alliance</p></th>
+<th class="head"><p>Auton Winner</p></th>
+<th class="head"><p>Score</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Q-4</p></td>
+<td><p>3796D &amp; 86400B</p></td>
+<td><p><strong>9447H</strong> &amp; 94999E</p></td>
+<td><p>Blue</p></td>
+<td><p>2-<strong>66</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Q-10</p></td>
+<td><p><strong>9447H</strong> &amp; 8686S</p></td>
+<td><p>86400C &amp; 1102X</p></td>
+<td><p>Tie</p></td>
+<td><p><strong>12</strong>-11</p></td>
+</tr>
+<tr class="row-even"><td><p>Q-22</p></td>
+<td><p><strong>9447H</strong> &amp; 97735X</p></td>
+<td><p>3796C &amp; 9880C</p></td>
+<td><p>Red</p></td>
+<td><p><strong>44</strong>-5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Q-26</p></td>
+<td><p>3796E &amp; 9880D</p></td>
+<td><p><strong>9447H</strong> &amp; 86400D</p></td>
+<td><p>Blue</p></td>
+<td><p><strong>15</strong>-12</p></td>
+</tr>
+<tr class="row-even"><td><p>Q-37</p></td>
+<td><p>40994F &amp; 29073B</p></td>
+<td><p><strong>9447H</strong> &amp; 42748C</p></td>
+<td><p>Red</p></td>
+<td><p>12-<strong>24</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Q-42</p></td>
+<td><p><strong>9447H</strong> &amp; 86400A</p></td>
+<td><p>61317D &amp; 40994A</p></td>
+<td><p>Red</p></td>
+<td><p><strong>47</strong>-4</p></td>
+</tr>
+<tr class="row-even"><td><p>QF-3-1</p></td>
+<td><p><strong>9447H</strong> &amp; 94999E</p></td>
+<td><p>97735X &amp; 40994F</p></td>
+<td><p>Blue</p></td>
+<td><p>7-<strong>35</strong></p></td>
+</tr>
+</tbody>
+</table>
+<p>This tournament our weakest point was our skills score. Since we did not practice enough between the tournament our driver score was not as high as we normally score. Our skills total was 122, 66 Driver and 56 autonomous. We ranked 4th place total in the skills portion. We also the design award.</p>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>2/23/20<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Since State Championship is in three weeks, we do not want to make any more changes to the robot and instead we will only focus on practicing to improve our driving and programming routines. We are very happy with our robot and our code and now all we need to do is practice driving and tune all of our movements in the various autonomous routines.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="12-10-progressEntries-January.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">January 2021 Progress Entries</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="12-12-progressEntries-March.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">March 2021 Progress Entries</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By 9447H - Brody Muzzy, Derek Mullins, Jack Kinsella<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

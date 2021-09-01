@@ -1,0 +1,566 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>June 2020 Progress Entries &#8212; 9447H - Engineering Notebook</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="July 2020 Progress Entries" href="12-4-progressEntries-July.html" />
+    <link rel="prev" title="May 2020 Progress Entries" href="12-2-progressEntries-May.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/v1logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">9447H - Engineering Notebook</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome Page
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Tipping Point Game Description
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1-gameDescription.html">
+   Tipping Point Game Description
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2-gameObjects_Elements.html">
+   Tipping Point Game Objects and Elements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3-fieldOverview.html">
+   Tipping Point Field Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4-scoringDetails.html">
+   Tipping Point Scoring Details
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5-terminology.html">
+   Tipping Point Terminology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6-gameRules.html">
+   Tipping Point Game Rules
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Pre-Season
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="7-initialGoals.html">
+   Initial Goals For Change Up
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8-teamStandards.html">
+   Our Team Standards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="9-designBrainstorming.html">
+   Change Up Design Brainstorming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-motorSpecs.html">
+   V5 Motor Specifications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-teamIntros.html">
+   Team Intros
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Progress Entries
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-1-progressEntries-April.html">
+   April 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-2-progressEntries-May.html">
+   May 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   June 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-4-progressEntries-July.html">
+   July 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-5-progressEntries-August.html">
+   August 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-6-progressEntries-September.html">
+   September 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-7-progressEntries-October.html">
+   October 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-8-progressEntries-November.html">
+   November 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-9-progressEntries-December.html">
+   December 2020 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-10-progressEntries-January.html">
+   January 2021 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-11-progressEntries-February.html">
+   February 2021 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-12-progressEntries-March.html">
+   March 2021 Progress Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-2021-April.html">
+   April 2021 Progres Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-2021-May.html">
+   May 2021 Progres Entries
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-2021-June.html">
+   June 2021 Progres Entries
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="_sources/12-3-progressEntries-June.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/12-3-progressEntries-June.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/12-3-progressEntries-June.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   6/21/20
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#attendance-brody-derek-dylan-ian-jack">
+     Attendance: ☐ Brody, ☑ Derek, ☐ Dylan, ☐ Ian, ☐ Jack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#goals-for-new-robot">
+     Goals for new robot
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cad-of-new-robot-design">
+     CAD of New Robot Design
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   6/25/20
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Attendance: ☐ Brody, ☑ Derek, ☐ Dylan, ☐ Ian, ☐ Jack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#completed-cad">
+     Completed CAD
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   6/26/20
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Attendance: ☐ Brody, ☑ Derek, ☐ Dylan, ☐ Ian, ☐ Jack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#intake-changes">
+     Intake Changes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   6/28/20
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Attendance: ☐ Brody, ☐ Derek, ☐ Dylan, ☐ Ian, ☑ Jack
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="june-2020-progress-entries">
+<h1>June 2020 Progress Entries<a class="headerlink" href="#june-2020-progress-entries" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>6/21/20<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="attendance-brody-derek-dylan-ian-jack">
+<h3>Attendance: ☐ Brody, ☑ Derek, ☐ Dylan, ☐ Ian, ☐ Jack<a class="headerlink" href="#attendance-brody-derek-dylan-ian-jack" title="Permalink to this headline">¶</a></h3>
+<p>Starting to work on a new robot design with CAD, the biggest advantage of this design over our previous robots is that it can score and de-score at the same time.
+We quickly ran into a problem with our current drive base as it is not designed to move the balls out of the goals and into the intakes. The main problem is the motors and a piece of c-channel that are blocking the balls from traveling in the robot.
+We fixed the problem with the motors blocking the balls by moving the front motor to above the back wheel, this fixes some of the problems but we will have to redesign the drive base if we want to continue using this robot design because of the structural support c-channel in the back that is blocking the balls.</p>
+</div>
+<div class="section" id="goals-for-new-robot">
+<h3>Goals for new robot<a class="headerlink" href="#goals-for-new-robot" title="Permalink to this headline">¶</a></h3>
+<p>less than a second to score 3 balls in an empty goal
+less than 2 seconds to completely swap out a full goal
+less than a second to take a ball from the bottom to the top.</p>
+</div>
+<div class="section" id="cad-of-new-robot-design">
+<h3>CAD of New Robot Design<a class="headerlink" href="#cad-of-new-robot-design" title="Permalink to this headline">¶</a></h3>
+<img src="././_images/6-June/6-21-20/fullRobot.png" alt="fullRobot.png" style="width: 200px;"/>
+<img src="././_images/6-June/6-21-20/newDrive.png" alt="newDrive.png" style="width: 200px; height: 135px;"/>
+<img src="././_images/6-June/6-21-20/newIntakePosition.png" alt="newIntakePosition.png" style="width: 200px;"/>
+<img src="././_images/6-June/6-21-20/newRobotFront.png" alt="newRobotFront.png" style="width: 200px; height: 150px;"/>
+<img src="././_images/6-June/6-21-20/sideOfNewDrive.png" alt="sideOfNewDrive.png" style="width: 200px; height: 150px;"/>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>6/25/20<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>Attendance: ☐ Brody, ☑ Derek, ☐ Dylan, ☐ Ian, ☐ Jack<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Today the old CAD was redone and finished, with all the problems we were previously having we started over completely with a new drive base and intake system.
+The new drive base uses 3.25in omni wheels as they are closer to the ground so our intakes have more room above the wheels and will not interfere with each other. The wheels are geared 60:36 at 200rpm for an output rpm of 333rpm. This output rpm is slightly faster than our old drive base but the smaller wheels will give us more control at this speed.
+The new intakes swing out at the start of a match to ~5.15in outside of the 18in restriction or ~6.9in from the front of the robot (measured from the start of the drive base) This will give us enough space to start lifting the balls up in our robot quicker than before allowing us to put the drive motors in a normal place unlike our previous designs.
+Along with that the new intakes consist of 2 parts that are chained together, the first part can go fully into a goal to start descoring while the other moves the balls in to the rest of the robot, the chain that connects the two parts of the intake is laid in a way that it can go around the goal posts and will not get caught
+The new indexer/ball tower system has been redesigned to fit in with the new front intakes, It starts sooner on the robot so the motors do not have to move to a different location and is also protected from the goal by pieces of c-channel. The main difference between the old and new systems is that on the back of the robot, we now have two extra rollers that allow us to get rid of balls that we do not want by spinning the intake in reverse. We have also added a vision sensor to the front of the robot with future plans to automate this function.
+Programing of the new robot
+We have kept the inertial sensors and tracking wheels from the old drive base in the new robot so we can continue to develop those systems
+We have added a vision sensor to hopefully automate the sorting of balls. Whenever we start scoring on a goal the vision sensor can detect the goal and switch to manual sorting mode.</p>
+</div>
+<div class="section" id="completed-cad">
+<h3>Completed CAD<a class="headerlink" href="#completed-cad" title="Permalink to this headline">¶</a></h3>
+<img src="././_images/6-June/6-25-20/frontOfSnail.png" alt="frontOfSnail.png" style="width: 200px;"/>
+<img src="././_images/6-June/6-25-20/newSnailSide.png" alt="newSnailSide.png" style="width: 200px;"/>
+<img src="././_images/6-June/6-25-20/perspectiveSnail.png" alt="perspectiveSnail.png" style="width: 200px;"/>
+<img src="././_images/6-June/6-25-20/snailOrtho.png" alt="snailOrtho.png" style="width: 200px;"/>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>6/26/20<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h3>Attendance: ☐ Brody, ☑ Derek, ☐ Dylan, ☐ Ian, ☐ Jack<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Changed the intakes on the new robot to better fit inside the size requirements. The old intakes could not fold up properly without majorly hitting the back wheels and they would stick out, this was fixed by changing the spacing on the intakes to lift them higher up so they stay above the wheels. We do not know how this change will impact picking up balls as we do not have a physical robot to test this on
+Fixed random things in cad
+There was chain missing on the first two front rollers
+There was no intake flaps on the front intakes
+Fixed standoffs not lining up properly with c-channel holes
+Fixed alignment of back U-channel
+Fixed cortex blocking the right intake motor from folding properly</p>
+</div>
+<div class="section" id="intake-changes">
+<h3>Intake Changes<a class="headerlink" href="#intake-changes" title="Permalink to this headline">¶</a></h3>
+<img src="././_images/6-June/6-26-20/intakeAngle.png" alt="intakeAngle.png" style="width: 200px;"/>
+<img src="././_images/6-June/6-26-20/intakeSide.png" alt="intakeSide.png" style="width: 200px;"/>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>6/28/20<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h3>Attendance: ☐ Brody, ☐ Derek, ☐ Dylan, ☐ Ian, ☑ Jack<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>We fixed the Auton Builder. It now stores the inputs from the GUI in independent global variables. The way the Auton Builder works is we press the goal that we want to go to, then the 2nd and 3rd goal we want to go to. After that when it switches to the Autonomous phase the robot knows it starting position and then runs the specific string of code needed to get from the starting position to the wanted goal, then it loops back in the code and based of the new position which is the 1st goal it figures it way to the 2nd goal. It then repeats this to get from the 2nd to the 3rd.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span>	<span class="k">while</span><span class="p">(</span><span class="n">startPos</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span> <span class="n">setStart</span><span class="p">();</span> <span class="n">arcChecker</span><span class="p">();</span> <span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">20</span><span class="p">);}</span>
+   	<span class="k">while</span><span class="p">(</span><span class="n">firstPos</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">startPos</span> <span class="o">!=</span><span class="mi">0</span><span class="p">){</span> <span class="n">setFirst</span><span class="p">();</span> <span class="n">arcChecker</span><span class="p">();</span> <span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">20</span><span class="p">);}</span>
+   	<span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+   	<span class="k">while</span><span class="p">(</span><span class="n">secondPos</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">firstPos</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">){</span> <span class="n">setSecond</span><span class="p">();</span><span class="n">arcChecker</span><span class="p">();</span> <span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">20</span><span class="p">);}</span>
+   	<span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+   	<span class="k">while</span><span class="p">(</span><span class="n">thirdPos</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">secondPos</span> <span class="o">!=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">firstPos</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">){</span> <span class="n">setThird</span><span class="p">();</span> <span class="n">arcChecker</span><span class="p">();</span> <span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">20</span><span class="p">);}</span>
+ 	<span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="12-2-progressEntries-May.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">May 2020 Progress Entries</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="12-4-progressEntries-July.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">July 2020 Progress Entries</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By 9447H - Brody Muzzy, Derek Mullins, Jack Kinsella<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

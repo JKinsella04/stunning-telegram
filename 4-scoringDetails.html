@@ -1,0 +1,500 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipping Point Scoring Details &#8212; 9447H - Engineering Notebook</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tipping Point Terminology" href="5-terminology.html" />
+    <link rel="prev" title="Tipping Point Field Overview" href="3-fieldOverview.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/v1logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">9447H - Engineering Notebook</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome Page
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Tipping Point Game Description
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1-gameDescription.html">
+   Tipping Point Game Description
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2-gameObjects_Elements.html">
+   Tipping Point Game Objects and Elements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3-fieldOverview.html">
+   Tipping Point Field Overview
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tipping Point Scoring Details
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5-terminology.html">
+   Tipping Point Terminology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6-gameRules.html">
+   Tipping Point Game Rules
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Pre-Season
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="7-initialGoals.html">
+   Initial Goals For Tipping Point
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8-teamStandards.html">
+   Our Team Standards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="9-designBrainstorming.html">
+   Tipping Point Design Brainstorming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-motorSpecs.html">
+   V5 Motor Specifications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-teamIntros.html">
+   Team Intros
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Progress Entries
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-1-September.html">
+   August 31
+   <sup>
+    st
+   </sup>
+   &amp; September 2021
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/4-scoringDetails.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#scoring-table">
+   Scoring Table
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#autonomous-period">
+     Autonomous Period
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#win-points-wp">
+     Win Points (WP)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#possible-scoring-scenarios">
+   Possible Scoring Scenarios
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#autonomous-bonus">
+   Autonomous Bonus
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#autonomous-win-point">
+   Autonomous Win Point
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="tipping-point-scoring-details">
+<h1>Tipping Point Scoring Details<a class="headerlink" href="#tipping-point-scoring-details" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="scoring-table">
+<h2>Scoring Table<a class="headerlink" href="#scoring-table" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Ring On / in a Scored Mobile Goal</p></th>
+<th class="head"><p>Mobile Goal High Branch</p></th>
+<th class="head"><p>10 Points</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p>Any Other Mobile Goal Branch</p></td>
+<td><p>3 Points</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>Mobile Goal Base</p></td>
+<td><p>1 Point</p></td>
+</tr>
+<tr class="row-even"><td><p>Neutral Mobile Goal</p></td>
+<td><p>Either Alliance’s Home Zone</p></td>
+<td><p>20 Points</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>Elevated on a Balanced Platform</p></td>
+<td><p>40 Points</p></td>
+</tr>
+<tr class="row-even"><td><p>Alliance Mobile Goal</p></td>
+<td><p>Correct Alliance’s Home Zone</p></td>
+<td><p>20 Points</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p>Elevated on correct Alliance’s Balanced Platform</p></td>
+<td><p>40 Points</p></td>
+</tr>
+<tr class="row-even"><td><p>Robot</p></td>
+<td><p>Elevated on correct Alliance’s Balanced Platform</p></td>
+<td><p>30 Points</p></td>
+</tr>
+<tr class="row-odd"><td><p>Alliance</p></td>
+<td><p>Wins Autonomous Bonus</p></td>
+<td><p>20 Points</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="autonomous-period">
+<h3>Autonomous Period<a class="headerlink" href="#autonomous-period" title="Permalink to this headline">¶</a></h3>
+<p>A fifteen second (0:15) time period during which Robots operate and react
+only to sensor inputs and to commands pre-programmed by the Students into the Robot control
+system.</p>
+</div>
+<div class="section" id="win-points-wp">
+<h3>Win Points (WP)<a class="headerlink" href="#win-points-wp" title="Permalink to this headline">¶</a></h3>
+<p>The first basis of ranking Teams. Teams will receive zero (0), one (1), two (2) or three (3)
+Win Points for each Qualification Match.</p>
+<ul class="simple">
+<li><p>One (1) WP is awarded at the end of the Autonomous Period for any Team in an Alliance earning the Autonomous Win Point.</p></li>
+<li><p>Two (2) WP are awarded for winning a Qualification Match.</p></li>
+<li><p>One (1) WP is awarded for tying a Qualification Match.</p></li>
+<li><p>Zero (0) WP are awarded for losing a Qualification Match.</p></li>
+</ul>
+<blockquote>
+<div><p>An Autonomous Win Point is awarded to any Alliance that has Cleared their AWP Line, and Scored at least one Ring on each Alliance Mobile Goal, at the end of the Autonomous Period.</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="possible-scoring-scenarios">
+<h2>Possible Scoring Scenarios<a class="headerlink" href="#possible-scoring-scenarios" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="scoredbase-png">
+<a class="reference internal image-reference" href="../../images/beginning/scoredBase.png"><img alt="../../images/beginning/scoredBase.png" src="../../images/beginning/scoredBase.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">Legal positions for rings to be classified as scored in the Mobile Goal base.</span><a class="headerlink" href="#scoredbase-png" title="Permalink to this image">¶</a></p>
+</div>
+<blockquote>
+<div><p>A Ring is considered Scored in a Mobile Goal Base if it is not contacting a Robot and is at least partially within the 3-dimensional vertical projection formed by the “bowl” of the Mobile Goal Base.</p>
+</div></blockquote>
+<div class="figure align-default" id="scoredbranch-png">
+<a class="reference internal image-reference" href="../../images/beginning/scoredBranch.png"><img alt="../../images/beginning/scoredBranch.png" src="../../images/beginning/scoredBranch.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 12 </span><span class="caption-text">Legal positions for rings to be classified as scored on a branch.</span><a class="headerlink" href="#scoredbranch-png" title="Permalink to this image">¶</a></p>
+</div>
+<blockquote>
+<div><p>A Ring is considered Scored on a Mobile Goal Branch if it is not contacting a Robot, and any part of the Branch is within the volume defined by the outer edges of the Ring (i.e. part of the Ring is encircling or surrounding the Branch). A Ring supported by the Mobile Goal Branch, but not encircling it would still be considered Scored in the Mobile Goal Base, as it is within the 3D vertical projection.</p>
+</div></blockquote>
+<div class="figure align-default" id="scoredgoal-png">
+<a class="reference internal image-reference" href="../../images/beginning/scoredGoal.png"><img alt="../../images/beginning/scoredGoal.png" src="../../images/beginning/scoredGoal.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 13 </span><span class="caption-text">Requirements for a goal to be considered Scored.</span><a class="headerlink" href="#scoredgoal-png" title="Permalink to this image">¶</a></p>
+</div>
+<blockquote>
+<div><p>A Mobile Goal is considered Scored in an Alliance Home Zone if, at the end of the Match, any part of the Mobile Goal Base is at least partially within the Alliance Home Zone (i.e. “breaking the plane” of the Zone).</p>
+</div></blockquote>
+<div class="figure align-default" id="examplegoal-png">
+<a class="reference internal image-reference" href="../../images/beginning/exampleGoal.png"><img alt="../../images/beginning/exampleGoal.png" src="../../images/beginning/exampleGoal.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">Example of Rings scored on an elevated Neutral Mobile Goal.</span><a class="headerlink" href="#examplegoal-png" title="Permalink to this image">¶</a></p>
+</div>
+<blockquote>
+<div><p>Rings which are Scored on or in an Elevated Mobile Goal count for points for the Alliance who is Elevating the Mobile Goal. An Elevated Mobile Goal does not also receive points for being Scored in an Alliance Home Zone.</p>
+</div></blockquote>
+<blockquote>
+<div><p>The example shown here would be worth 51 points for the Red Alliance.<br />
+• Forty (40) points for the Elevated Mobile Goal
+• Two (2) points for the two (2) Scored Rings in the Mobile Goal Base
+• Nine (9) points for the three (3) Scored Rings on the Mobile Goal Branches</p>
+</div></blockquote>
+<div class="figure align-default" id="enemygoal-png">
+<a class="reference internal image-reference" href="../../images/beginning/enemyGoal.png"><img alt="../../images/beginning/enemyGoal.png" src="../../images/beginning/enemyGoal.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 15 </span><span class="caption-text">Example of Alliance Mobile Goal Scoring.</span><a class="headerlink" href="#enemygoal-png" title="Permalink to this image">¶</a></p>
+</div>
+<blockquote>
+<div><p>Alliance Mobile Goals only count for points when Scored in the same color Alliance Home Zone.  Alliance Mobile Goals which end the Match anywhere other than their corresponding Alliance Home Zone or Platform are not worth any points for either Alliance. Rings which are Scored on / in an Alliance Mobile Goal are worth points for that color Alliance, regardless of where the Alliance Mobile Goal ends the Match.</p>
+</div></blockquote>
+<div class="figure align-default" id="goalscoring-png">
+<a class="reference internal image-reference" href="../../images/beginning/goalScoring.png"><img alt="../../images/beginning/goalScoring.png" src="../../images/beginning/goalScoring.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 16 </span><span class="caption-text">Example of Goal Scoring.</span><a class="headerlink" href="#goalscoring-png" title="Permalink to this image">¶</a></p>
+</div>
+<blockquote>
+<div><p>Contact with foam tiles, Platforms, and / or Robots does not affect whether a Mobile Goal is considered Scored.  Contact is only relevant when determining whether a Mobile Goal is Elevated (see the definition of Elevated for more information). In this particular example, the Mobile Goal would not be considered Elevated, but would still be considered as Scored.</p>
+</div></blockquote>
+</div>
+<div class="section" id="autonomous-bonus">
+<h2>Autonomous Bonus<a class="headerlink" href="#autonomous-bonus" title="Permalink to this headline">¶</a></h2>
+<p>A point bonus of twenty (20) points awarded to the Alliance that has earned the most
+points at the end of the Autonomous Period.</p>
+</div>
+<div class="section" id="autonomous-win-point">
+<h2>Autonomous Win Point<a class="headerlink" href="#autonomous-win-point" title="Permalink to this headline">¶</a></h2>
+<p>An Autonomous Win Point is awarded to any Alliance that has Cleared their AWP Line, and
+Scored at least one Ring on each Alliance Mobile Goal, at the end of the Autonomous Period</p>
+<blockquote>
+<div><p>The Autonomous Win Point and the Autonomous Bonus are Scored independently of each other. For example, it is possible
+for both Alliances to receive the Autonomous Win Point, and it is possible for an Alliance to receive the Autonomous Win Point but not receive the Autonomous Bonus.</p>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Last Edited on 9/1/21.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="3-fieldOverview.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Tipping Point Field Overview</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="5-terminology.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Tipping Point Terminology</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By 9447H - Brody Muzzy, Derek Mullins, Jack Kinsella<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,492 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipping Point Game Rules &#8212; 9447H - Engineering Notebook</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Initial Goals For Tipping Point" href="7-initialGoals.html" />
+    <link rel="prev" title="Tipping Point Terminology" href="5-terminology.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/v1logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">9447H - Engineering Notebook</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome Page
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Tipping Point Game Description
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1-gameDescription.html">
+   Tipping Point Game Description
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2-gameObjects_Elements.html">
+   Tipping Point Game Objects and Elements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3-fieldOverview.html">
+   Tipping Point Field Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4-scoringDetails.html">
+   Tipping Point Scoring Details
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5-terminology.html">
+   Tipping Point Terminology
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tipping Point Game Rules
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Pre-Season
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="7-initialGoals.html">
+   Initial Goals For Tipping Point
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8-teamStandards.html">
+   Our Team Standards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="9-designBrainstorming.html">
+   Tipping Point Design Brainstorming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-motorSpecs.html">
+   V5 Motor Specifications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-teamIntros.html">
+   Team Intros
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Progress Entries
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-1-September.html">
+   September 2021
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/6-gameRules.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg1">
+   SG1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg2">
+   SG2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg3">
+   SG3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg4">
+   SG4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg5">
+   SG5
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg6">
+   SG6
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg7">
+   SG7
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg8">
+   SG8
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg9">
+   SG9
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sg10">
+   SG10
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="tipping-point-game-rules">
+<h1>Tipping Point Game Rules<a class="headerlink" href="#tipping-point-game-rules" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="sg1">
+<h2>SG1<a class="headerlink" href="#sg1" title="Permalink to this headline">¶</a></h2>
+<p>Starting a Match. Prior to the start of each Match, the Robot must be placed such that it is:</p>
+<ol class="simple">
+<li><p>Contacting at least one (1) of the gray foam field tiles directly in front of their Alliance Station, i.e. the row of gray foam field tiles that contains their Alliance’s Platform.</p></li>
+<li><p>Not contacting any other gray foam field tiles, i.e. those in contact with the white tape lines that define the Alliance Home Zone.</p></li>
+<li><p>Not contacting any Scoring Objects other than the Preloads.</p></li>
+<li><p>Not contacting another Robot.e. Not contacting the Platform.</p></li>
+<li><p>Contacting no more than three (3) Preloads.</p></li>
+<li><p>No Preloads may be contacting more than one (1) Robot.</p>
+<ol class="simple">
+<li><p>All Preloads must be fully within the field perimeter.</p></li>
+<li><p>All Preloads must not be in any positions that would be considered Scored if the Robot were not
+present. If a Team  does not wish to use their three (3) Preloads at the start of the Match, they may be used as Match Load Rings at any point during the Match, in accordance with SG8.</p></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="sg2">
+<h2>SG2<a class="headerlink" href="#sg2" title="Permalink to this headline">¶</a></h2>
+<p>Robot expansion is limited once the Match begins. At the beginning of a Match, each Robot must be smaller than a volume of 18” (457.2 mm) long by 18” (457.2 mm) wide by 18” (457.2 mm) tall. Once the Match begins, Robots may expand, but no horizontal dimension can exceed 36” (914.4 mm) at any point during the Match.</p>
+</div>
+<div class="section" id="sg3">
+<h2>SG3<a class="headerlink" href="#sg3" title="Permalink to this headline">¶</a></h2>
+<p>Platforms are “safe” during the endgame. During the last thirty (30) seconds, Robots may not contact the opposing Alliance’s Platform.</p>
+<ol class="simple">
+<li><p>For the purposes of this rule, contact is considered “transitive” through other Robots and Scoring Objects.  For example, contacting an opposing Robot who is contacting their own Platform would be considered a violation of this rule.</p></li>
+<li><p>For the purposes of this rule, G13 supersedes rule G14.  Any Robot which is contacting its own Platform during the last thirty (30) seconds, provided that no other rules are being violated,
+will automatically receive the “benefit of the doubt”.  Therefore, any contact with this Robot will be considered a violation, regardless of intent.</p></li>
+<li><p>Per SG10, using a Scoring Object to contact the opposing Alliance’s Platform during the last thirty (30) seconds would be considered a violation of this rule. Violations of this rule which do not interfere with gameplay, such as bumping into the Platform and then driving away, will result in the opposing Alliance receiving credit for one additional Elevated Robot at the end of the Match. (Alliances may still only receive points for a maximum of two Elevated Robots).Violations of this rule which do interfere with gameplay, such as preventing a Platform from becoming Balanced, will result in a Disqualification, regardless of whether the interference was Match Affecting or not.</p></li>
+</ol>
+</div>
+<div class="section" id="sg4">
+<h2>SG4<a class="headerlink" href="#sg4" title="Permalink to this headline">¶</a></h2>
+<p>Stay out of the opponent’s Home Zone during Autonomous. During the Autonomous Period,
+Robots may not contact the foam tiles, Scoring Objects, Robots, or Platforms which are fully contained in the opposing Alliance Home Zone. Violations of this rule will result in the Autonomous Bonus being awarded to the opposing Alliance. The opposing Alliance will also receive an Autonomous Win Point, regardless of whether they completed the Autonomous Win Point tasks. Intentional, strategic, or egregious violations, such as intentional contact with an opposing Robot completely within their Alliance Home Zone, will result in a Disqualification.</p>
+</div>
+<div class="section" id="sg5">
+<h2>SG5<a class="headerlink" href="#sg5" title="Permalink to this headline">¶</a></h2>
+<p>Enter the Neutral Zone during Autonomous at your own risk. Any Robot who engages with the
+Neutral Zone during the Autonomous Period should be aware that opponent Robots may also choose to do the same.  Per G11  and G12, Teams  are responsible for the actions of their Robots at all times.</p>
+<ol class="simple">
+<li><p>For the purposes of this rule, “engages with” means any combination of:</p>
+<ol class="simple">
+<li><p>Contacting foam tiles within the Neutral Zone</p></li>
+<li><p>Contacting Neutral Mobile Goals</p></li>
+<li><p>Contacting Rings that begin the Match on the double white tape line in the center of the Neutral Zone</p></li>
+</ol>
+</li>
+<li><p>If opposing Robots contact one another while both engaging with the Neutral Zone, and a possible G12 violation results (i.e. damage, Entanglement, or tipping over), then a judgment call will be made by the Head Referee within the context of G12 just as it would if the interaction had occurred during the Driver Controlled Period.</p></li>
+<li><p>If opposing Robots contact one another while both engaging with the Neutral Zone, and an inciden-tal violation of SG4 occurs, no penalty will be assessed on either Alliance.</p></li>
+<li><p>G15 does not apply during the Autonomous Period.</p></li>
+<li><p>Intentional, strategic, repeated, or egregious offenses of points “b” or “c” may still be deemed a violation of SG4, G12, G13, G14, G1, and / or S1 at the Head Referee’s discretion.</p></li>
+</ol>
+</div>
+<div class="section" id="sg6">
+<h2>SG6<a class="headerlink" href="#sg6" title="Permalink to this headline">¶</a></h2>
+<p>Rings on the Alliance Mobile Goal are “safe”. Strategies intended to remove Rings which are
+Scored on or in an opposing Alliance Mobile Goal are prohibited.  Examples of “intentional strategies”
+could include, but are not limited to:</p>
+<ul class="simple">
+<li><p>Robot mechanisms or actions solely intended to “lift off” Rings from Mobile Goal Branches.</p></li>
+<li><p>Robot mechanisms or actions solely intended to “scoop out” Rings from Mobile Goal Bases.</p></li>
+<li><p>“Knocking over” or otherwise forcefully manipulating an Alliance Mobile Goal such that Rings become removed. Minor violations of this rule that do not affect the Match will result in a warning. Match Affecting offenses will result in a Disqualification. Teams  that receive multiple warnings may also receive a Disqualification at the Head Referee’s discretion.</p></li>
+</ul>
+</div>
+<div class="section" id="sg7">
+<h2>SG7<a class="headerlink" href="#sg7" title="Permalink to this headline">¶</a></h2>
+<p>Hoarding of Mobile Goals is limited. Robots may not Hoard more than one (1) Mobile Goal at once. Minor violations of this rule that do not affect the Match will result in a warning. Match Affecting offenses will result in a Disqualification. Teams that receive multiple warnings may also receive a Disqualification at the Head Referee’s discretion.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Note: Hoarding is not a time-based activity (i.e. a 5 second count, like Trapping ). As soon as a Robot places multiple Mobile Goals in the corner of an Alliance Home Zone, they are at risk of causing a
+Hoarding violation.</p>
+</div>
+</div>
+<div class="section" id="sg8">
+<h2>SG8<a class="headerlink" href="#sg8" title="Permalink to this headline">¶</a></h2>
+<p>Each Alliance may introduce their Match Load Rings at any point during the Match. This action must abide by the following criteria:</p>
+<ol class="simple">
+<li><p>Match Load Rings must be gently placed onto one of the gray foam tiles directly in front of the Alliance Station, i.e. the tiles coincident with the field perimeter wall. See Figure 24.</p></li>
+<li><p>Match Load Rings may not be placed into a Scored position on a Mobile Goal.</p></li>
+<li><p>Match Load Rings may not be placed such that they are contacting a Robot (from either Alliance) while still in contact with a Drive Team Member.</p></li>
+<li><p>Match Load Rings must be gently placed directly onto the foam tile. “Throwing”, “rolling”, or other-wise imparting energy upon the Rings such that they leave the intended tile, or violate one of the other points in this rule, is not permitted.</p></li>
+<li><p>Match Load Rings may only be introduced during the Autonomous Period or the Driver Controlled Period, i.e. they may not be introduced during the pause between the two periods, or prior to the Match.</p></li>
+<li><p>It is expected that Drive Team Members may momentarily break the plane of the field perimeter while legally introducing Match Load Rings. This action should be kept as brief as possible, and Teams from both Alliances should be very mindful of S1 when Match Load Rings are being entered into the field.</p>
+<ol class="simple">
+<li><p>Any human contact with Robots from either Alliance during this interaction may be considered a violation of G9 and / or S1 at the Head Referee’s discretion.</p></li>
+</ol>
+</li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Note: There is no requirement for Alliances to introduce their Match Load Rings, if they do not wish to do so.</p>
+<p>Minor violations of this rule that do not affect the Match will result in a warning. Match Affecting offenses, or violations of S1, will result in a Disqualification as applicable. Teams  that receive multiple warnings may also receive a Disqualification at the Head Referee’s discretion.</p>
+</div>
+</div>
+<div class="section" id="sg9">
+<h2>SG9<a class="headerlink" href="#sg9" title="Permalink to this headline">¶</a></h2>
+<p>Keep Scoring Objects in the field. Teams  may not intentionally remove Scoring Objects from the field. While Scoring Objects may accidentally leave the field, doing so intentionally or repeatedly would be a violation of this rule. Scoring Objects that leave the field during Match play, intentionally or unintentionally, will be returned to the field at the location nearest the point at which they exited. Referees will return the Scoring Object to the field when it is deemed safe to do so, at the leisure of the referee.Minor violations of this rule that do not affect the Match will result in a warning. Match Affecting offenses will result in a Disqualification. Teams  that receive multiple warnings may also receive a Disqualification at the Head Referee’s discretion.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Note: During the last 30 seconds of the Match, any Scoring Object that leaves the field will not be returned.</p>
+</div>
+</div>
+<div class="section" id="sg10">
+<h2>SG10<a class="headerlink" href="#sg10" title="Permalink to this headline">¶</a></h2>
+<p>Use Scoring Objects to play the game. Scoring Objects may not be used to accomplish actions that would be otherwise illegal if were attempted by Robot mechanisms (e.g., Interfering with an opponent’s Autonomous routine per <SG4>.)The intent of this rule is to prohibit teams from using game objects as “gloves” to loophole any rule that states “a Robot may not [do some action]”. This rule is not intended to be taken in its most extreme literal interpretation, where any interaction between a Scoring Object and a Robot needs to be scrutinized with the same intensity as if it were a Robot.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Last Edited on 9/1/21.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="5-terminology.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Tipping Point Terminology</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="7-initialGoals.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Initial Goals For Tipping Point</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By 9447H - Brody Muzzy, Derek Mullins, Jack Kinsella<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

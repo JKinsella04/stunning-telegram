@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipping Point Game Objects and Elements &#8212; 9447H - Engineering Notebook</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tipping Point Field Overview" href="3-fieldOverview.html" />
+    <link rel="prev" title="Tipping Point Game Description" href="1-gameDescription.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/v1logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">9447H - Engineering Notebook</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome Page
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Tipping Point Game Description
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1-gameDescription.html">
+   Tipping Point Game Description
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tipping Point Game Objects and Elements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3-fieldOverview.html">
+   Tipping Point Field Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4-scoringDetails.html">
+   Tipping Point Scoring Details
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5-terminology.html">
+   Tipping Point Terminology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6-gameRules.html">
+   Tipping Point Game Rules
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Pre-Season
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="7-initialGoals.html">
+   Initial Goals For Tipping Point
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8-teamStandards.html">
+   Our Team Standards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="9-designBrainstorming.html">
+   Tipping Point Design Brainstorming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-motorSpecs.html">
+   V5 Motor Specifications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-teamIntros.html">
+   Team Intros
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Progress Entries
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-1-September.html">
+   August 31
+   <sup>
+    st
+   </sup>
+   &amp; September 2021
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/2-gameObjects_Elements.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#diagram-of-a-ring">
+   Diagram of a Ring
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ring-specifications">
+     Ring Specifications
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#diagram-of-a-mobile-goal">
+   Diagram of a Mobile Goal
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mobile-goal-specifications">
+     Mobile Goal Specifications
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#alliance-mobile-goals">
+       Alliance Mobile Goals
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#neutral-mobile-goals">
+       Neutral Mobile Goals
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#diagram-of-the-platforms">
+   Diagram of the Platforms
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#platform-specifications">
+     Platform Specifications
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="tipping-point-game-objects-and-elements">
+<h1>Tipping Point Game Objects and Elements<a class="headerlink" href="#tipping-point-game-objects-and-elements" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="diagram-of-a-ring">
+<h2>Diagram of a Ring<a class="headerlink" href="#diagram-of-a-ring" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="ring-png">
+<a class="reference internal image-reference" href="../../images/beginning/ring.png"><img alt="../../images/beginning/ring.png" src="../../images/beginning/ring.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">A ring</span><a class="headerlink" href="#ring-png" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="ring-specifications">
+<h3>Ring Specifications<a class="headerlink" href="#ring-specifications" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The field consists of seventy-two (72) rings.</p>
+<ul>
+<li><p>Twelve (12) that begin as <em>Preloads</em>, six (6) per <em>Alliance</em>.</p></li>
+<li><p>Eighteen (18) that are used as Match Loads, nine (9) per <em>Alliance</em>.</p></li>
+<li><p>Fourty-two (42) that begin on the field.</p></li>
+</ul>
+</li>
+<li><p>Rings have a maximal outer diameter of 4.125” (104.8mm) and a minimal inner diameter of 2” (50.8mm).</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="diagram-of-a-mobile-goal">
+<h2>Diagram of a Mobile Goal<a class="headerlink" href="#diagram-of-a-mobile-goal" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="mobilegoals-png">
+<a class="reference internal image-reference" href="../../images/beginning/mobileGoals.png"><img alt="../../images/beginning/mobileGoals.png" src="../../images/beginning/mobileGoals.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">The Mobile Goals</span><a class="headerlink" href="#mobilegoals-png" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="mobile-goal-specifications">
+<h3>Mobile Goal Specifications<a class="headerlink" href="#mobile-goal-specifications" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The field consists of 7 <em>Mobile Goals</em>, 3 Neutral and 4 alliance <em>Mobile Goals</em> divided two (2) per <em>Alliance</em>.</p></li>
+<li><p>All Mobile Goals have a maximal base diameter of 13” (330.2mm).</p></li>
+<li><p>The 7-sided plastic bottom of a Mobile Goal with a maximal diameter of 13” (330.2mm).  Rings may be Scored in the “bowl” of a Mobile Goal Base for points. Both the yellow, blue, or red “upper” portion, and the black “lower” portion, are considered parts of the Mobile Goal Base. See Figure 4.</p></li>
+<li><p>The gray PVC pipes, 0.84” (21.3mm) in diameter, that extend vertically out of a Mobile Goal Base.  Rings may be Scored on Mobile Goal Branches for points. See Figure 4.</p></li>
+</ul>
+<div class="section" id="alliance-mobile-goals">
+<h4>Alliance Mobile Goals<a class="headerlink" href="#alliance-mobile-goals" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>The two (2) red and two (2) blue Mobile Goals which begin each Match in their respective Alliance Home Zones, and have only one Mobile Goal Branch. Alliance Mobile Goals weigh approximately 1,520 grams.</p></li>
+</ul>
+</div>
+<div class="section" id="neutral-mobile-goals">
+<h4>Neutral Mobile Goals<a class="headerlink" href="#neutral-mobile-goals" title="Permalink to this headline">¶</a></h4>
+<p>The three (3) yellow Mobile Goals which begin each Match in the Neutral Zone, and have two (2) or four (4) Mobile Goal Branches. The 2-branch Mobile Goal weighs approximately 1,560 grams, and the 4-branch Mobile Goal weighs approximately 1,810 grams.</p>
+<div class="figure align-default" id="mobilegoalterms-png">
+<a class="reference internal image-reference" href="../../images/beginning/mobileGoalTerms.png"><img alt="../../images/beginning/mobileGoalTerms.png" src="../../images/beginning/mobileGoalTerms.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Breakdown of Mobile Goal parts</span><a class="headerlink" href="#mobilegoalterms-png" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="diagram-of-the-platforms">
+<h2>Diagram of the Platforms<a class="headerlink" href="#diagram-of-the-platforms" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="platform-png">
+<a class="reference internal image-reference" href="../../images/beginning/platform.png"><img alt="../../images/beginning/platform.png" src="../../images/beginning/platform.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">A platform</span><a class="headerlink" href="#platform-png" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="platform-specifications">
+<h3>Platform Specifications<a class="headerlink" href="#platform-specifications" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The 53.0” x 20.1” (1,346.2mm x 511mm) structure, one per Alliance Home Zone, that sits 9.5” (241.5mm) high off of the ground when Balanced.  The Platform is mounted on a double hinge that allows it to tip towards the field in either direction.</p></li>
+<li><p>Robots may only interact with their respective platform during the last 30 seconds. No interaction with the opposing alliance’s platform is allowed.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Last Edited on 9/1/21.</p>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="1-gameDescription.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Tipping Point Game Description</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="3-fieldOverview.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Tipping Point Field Overview</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By 9447H - Brody Muzzy, Derek Mullins, Jack Kinsella<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

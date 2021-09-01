@@ -1,0 +1,640 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipping Point Design Brainstorming &#8212; 9447H - Engineering Notebook</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="V5 Motor Specifications" href="10-motorSpecs.html" />
+    <link rel="prev" title="Our Team Standards" href="8-teamStandards.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/v1logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">9447H - Engineering Notebook</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome Page
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Tipping Point Game Description
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1-gameDescription.html">
+   Tipping Point Game Description
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2-gameObjects_Elements.html">
+   Tipping Point Game Objects and Elements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3-fieldOverview.html">
+   Tipping Point Field Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4-scoringDetails.html">
+   Tipping Point Scoring Details
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5-terminology.html">
+   Tipping Point Terminology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6-gameRules.html">
+   Tipping Point Game Rules
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Pre-Season
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="7-initialGoals.html">
+   Initial Goals For Tipping Point
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8-teamStandards.html">
+   Our Team Standards
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tipping Point Design Brainstorming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-motorSpecs.html">
+   V5 Motor Specifications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-teamIntros.html">
+   Team Intros
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Progress Entries
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="12-1-September.html">
+   August 31
+   <sup>
+    st
+   </sup>
+   &amp; September 2021
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/9-designBrainstorming.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#problem-statememt">
+   Problem Statememt
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#design-statement">
+   Design Statement
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#constraints">
+   Constraints
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#robot-criteria">
+   Robot Criteria
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#robot-componets">
+   Robot Componets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#drive-base-designs">
+   Drive Base Designs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lift-designs">
+   Lift Designs
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#intake-designs">
+     Intake Designs
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#flaps">
+       Flaps
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#flex-wheel">
+       Flex Wheel
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lift-tray-design-matrix">
+   Lift/Tray Design Matrix
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#robot-archetypes-matrix">
+   Robot Archetypes Matrix
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#intake-design-matrix">
+   Intake Design Matrix
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#drive-base-matrix">
+   Drive Base Matrix
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="tipping-point-design-brainstorming">
+<h1>Tipping Point Design Brainstorming<a class="headerlink" href="#tipping-point-design-brainstorming" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="problem-statememt">
+<h2>Problem Statememt<a class="headerlink" href="#problem-statememt" title="Permalink to this headline">¶</a></h2>
+<p>The challeneg of Tipping Point is to score Rings on Mobile Goals and move them to our platform to score more points than the opposing Alliance at the end of the match.</p>
+</div>
+<div class="section" id="design-statement">
+<h2>Design Statement<a class="headerlink" href="#design-statement" title="Permalink to this headline">¶</a></h2>
+<p>Design, build, test, and compete with a Robot capable of efficiently <em>scoring Rings</em> and <em>manipulating Mobile Goals</em> in Tipping Point.</p>
+</div>
+<div class="section" id="constraints">
+<h2>Constraints<a class="headerlink" href="#constraints" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The Robot must not exceed 18” by 18” by 18” before the match starts</p></li>
+<li><p>The Robot must be completed by October.</p></li>
+<li><p>There is a limit of eight (8) V5 motors per Robot.</p></li>
+<li><p>We will need multiple Autonomous Programs since the Autonomous of our Alliance partner will be difficult to predict.</p></li>
+</ul>
+</div>
+<div class="section" id="robot-criteria">
+<h2>Robot Criteria<a class="headerlink" href="#robot-criteria" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Must be capable of <em>Scoring Rings</em> and <em>manipulating Mobile Goals</em>.</p></li>
+<li><p>Must be capable of holding multiple <em>Mobile Goals</em> at once.</p></li>
+</ul>
+</div>
+<div class="section" id="robot-componets">
+<h2>Robot Componets<a class="headerlink" href="#robot-componets" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Drive Base; must be fast and resistant to pushing</p></li>
+<li><p>Ring or Ringless Design; must be fast, and efficient at its goal.</p></li>
+<li><p>Goal is either to score rings on goals <strong>OR</strong> to just manipulate Mobile Goals.</p></li>
+<li><p>Intakes; must be able to grab <em>Rings</em> in any position i.e. versatile.</p></li>
+<li><p>Mobile Goal Lift; must be able to efficiently grab, hold, and drop Mobile Goals.</p></li>
+</ul>
+</div>
+<div class="section" id="drive-base-designs">
+<h2>Drive Base Designs<a class="headerlink" href="#drive-base-designs" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="x-drive-png">
+<a class="reference internal image-reference" href="../../images/9/x-drive.png"><img alt="../../images/9/x-drive.png" src="../../images/9/x-drive.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 17 </span><span class="caption-text">X-Drive</span><a class="headerlink" href="#x-drive-png" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="mecanumdrivebase-png">
+<a class="reference internal image-reference" href="../../images/9/mecanumDriveBase.png"><img alt="../../images/9/mecanumDriveBase.png" src="../../images/9/mecanumDriveBase.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 18 </span><span class="caption-text">Mecanum Drive</span><a class="headerlink" href="#mecanumdrivebase-png" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="omnidrivebase-png">
+<a class="reference internal image-reference" href="../../images/9/omniDriveBase.png"><img alt="../../images/9/omniDriveBase.png" src="../../images/9/omniDriveBase.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 19 </span><span class="caption-text">Omni Drive</span><a class="headerlink" href="#omnidrivebase-png" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="lift-designs">
+<h2>Lift Designs<a class="headerlink" href="#lift-designs" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="bar-png">
+<a class="reference internal image-reference" href="../../images/9/4bar.png"><img alt="../../images/9/4bar.png" src="../../images/9/4bar.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">Four Bar (4bar)</span><a class="headerlink" href="#bar-png" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="dr4b-png">
+<a class="reference internal image-reference" href="../../images/9/DR4B.png"><img alt="../../images/9/DR4B.png" src="../../images/9/DR4B.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">Double Reverse Four Bar (DR4B)</span><a class="headerlink" href="#dr4b-png" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="bar-lift-png">
+<a class="reference internal image-reference" href="../../images/9/6_bar_lift.png"><img alt="../../images/9/6_bar_lift.png" src="../../images/9/6_bar_lift.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">Six bar (6bar)</span><a class="headerlink" href="#bar-lift-png" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="intake-designs">
+<h3>Intake Designs<a class="headerlink" href="#intake-designs" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="flaps">
+<h4>Flaps<a class="headerlink" href="#flaps" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="flex-wheel">
+<h4>Flex Wheel<a class="headerlink" href="#flex-wheel" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+</div>
+<div class="section" id="lift-tray-design-matrix">
+<h2>Lift/Tray Design Matrix<a class="headerlink" href="#lift-tray-design-matrix" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Stability</p></th>
+<th class="head"><p>Extension</p></th>
+<th class="head"><p>Speed</p></th>
+<th class="head"><p>Complexity</p></th>
+<th class="head"><p>Total</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>6 Bar</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-odd"><td><p>4 Bar</p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>4</p></td>
+<td><p>11</p></td>
+</tr>
+<tr class="row-even"><td><p>DR4B</p></td>
+<td><p>4</p></td>
+<td><p>4</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>12</p></td>
+</tr>
+</tbody>
+</table>
+<p>Based on our design matrix for Lifts/Trays, the DR4B scored the highest however, we are going with the close second 4 Bar because we do not need as much height as the DR4B gives.</p>
+</div>
+<div class="section" id="robot-archetypes-matrix">
+<h2>Robot Archetypes Matrix<a class="headerlink" href="#robot-archetypes-matrix" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Mobile Goal Capacity</p></th>
+<th class="head"><p>Complexity</p></th>
+<th class="head"><p>Versatility</p></th>
+<th class="head"><p>Total</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Ring</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>4</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lift</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+<td><p>5</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><td><p>Ring + Lift</p></td>
+<td><p>3</p></td>
+<td><p>5</p></td>
+<td><p>1</p></td>
+<td><p>9</p></td>
+</tr>
+</tbody>
+</table>
+<p>Based on our design matrix for Robot Archetypes, the Lift archetype scored highest. Our first robot will be a Lift because of its score as well as the October deadline.</p>
+</div>
+<div class="section" id="intake-design-matrix">
+<h2>Intake Design Matrix<a class="headerlink" href="#intake-design-matrix" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Complexity</p></th>
+<th class="head"><p>Traction</p></th>
+<th class="head"><p>Total</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Flaps</p></td>
+<td><p>1</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p>Flex Wheels</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+</tbody>
+</table>
+<p>Based on our design matrix, the Flex Wheels intake scored highest. While we design our Ring + Lift robot we will initally design with Flex wheels since they offer better traction then their flap counterpart.</p>
+</div>
+<div class="section" id="drive-base-matrix">
+<h2>Drive Base Matrix<a class="headerlink" href="#drive-base-matrix" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Traction</p></th>
+<th class="head"><p>Strafing</p></th>
+<th class="head"><p>Stability</p></th>
+<th class="head"><p>Complexity</p></th>
+<th class="head"><p>Speed</p></th>
+<th class="head"><p>Resistance to Pushing</p></th>
+<th class="head"><p>Total</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mecanum</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-odd"><td><p>Omni</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>2</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><td><p>Omni + Traction</p></td>
+<td><p>3</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-odd"><td><p>X-drive</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>6</p></td>
+</tr>
+</tbody>
+</table>
+<p>Based on our design matrix, omni wheels are the best overall, so we will be designing a 4 wheel Omni drive base.</p>
+<blockquote>
+<div><p>For the design marticies, higher values are better. Simple designs score higher on the complexity category for this reason.</p>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Last Edited on 9/1/21.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="8-teamStandards.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Our Team Standards</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="10-motorSpecs.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">V5 Motor Specifications</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By 9447H - Brody Muzzy, Derek Mullins, Jack Kinsella<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
