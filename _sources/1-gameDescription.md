@@ -6,7 +6,7 @@ VEX Robotics Competition Tipping Point is played on a 12’x12’ square field c
 
 > An Autonomous Bonus is awarded to the Alliance that has the most points at the end of the Autono-mous Period.
 
-```{figure} ../../images/beginning/tippingPointField.png
+```{figure} ././_images/beginning/tippingPointField.png
 ---
 width: 1000px
 name: tippingPointField.png

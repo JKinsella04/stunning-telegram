@@ -2,7 +2,7 @@
 
 ## Field Overview
 
-```{figure} ../../images/beginning/tippingPointField.png
+```{figure} ././_images/beginning/tippingPointField.png
 ---
 width: 1000px
 name: tippingPointField.png
@@ -10,7 +10,7 @@ name: tippingPointField.png
 A view of the field
 ```
 
-```{figure} ../../images/beginning/platformsAndGoals.png
+```{figure} ././_images/beginning/platformsAndGoals.png
 ---
 width: 1000px
 name: platformsAndGoals.png
@@ -18,7 +18,7 @@ name: platformsAndGoals.png
 Top view with the Mobile Goals and Platforms highlighted
 ```
 
-```{figure} ../../images/beginning/homeZones.png
+```{figure} ././_images/beginning/homeZones.png
 ---
 width: 1000px
 name: homeZones.png
@@ -26,7 +26,7 @@ name: homeZones.png
 Top view with the Aliiance Stations and Alliance home Zones highlighted
 ```
 
-```{figure} ../../images/beginning/neutralZone.png
+```{figure} ././_images/beginning/neutralZone.png
 ---
 width: 1000px
 name: neutralZone.png
@@ -34,7 +34,7 @@ name: neutralZone.png
 Top view with the Neutral Zone highlighted.
 ```
 
-```{figure} ../../images/beginning/loadRings.png
+```{figure} ././_images/beginning/loadRings.png
 ---
 width: 1000px
 name: loadRings.png

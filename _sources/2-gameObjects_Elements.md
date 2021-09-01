@@ -1,7 +1,7 @@
 # Tipping Point Game Objects and Elements
 
 ## Diagram of a Ring
-```{figure} ../../images/beginning/ring.png
+```{figure} ././_images/beginning/ring.png
 ---
 width: 600px
 name: ring.png
@@ -17,7 +17,7 @@ A ring
 - Rings have a maximal outer diameter of 4.125” (104.8mm) and a minimal inner diameter of 2” (50.8mm).
 
 ## Diagram of a Mobile Goal
-```{figure} ../../images/beginning/mobileGoals.png
+```{figure} ././_images/beginning/mobileGoals.png
 ---
 width: 600px
 name: mobileGoals.png
@@ -37,7 +37,7 @@ The Mobile Goals
 #### Neutral Mobile Goals
 The three (3) yellow Mobile Goals which begin each Match in the Neutral Zone, and have two (2) or four (4) Mobile Goal Branches. The 2-branch Mobile Goal weighs approximately 1,560 grams, and the 4-branch Mobile Goal weighs approximately 1,810 grams. 
 
-```{figure} ../../images/beginning/mobileGoalTerms.png
+```{figure} ././_images/beginning/mobileGoalTerms.png
 ---
 width: 600px
 name: mobileGoalTerms.png
@@ -47,7 +47,7 @@ Breakdown of Mobile Goal parts
 
 ## Diagram of the Platforms
 
-```{figure} ../../images/beginning/platform.png
+```{figure} ././_images/beginning/platform.png
 ---
 width: 600px
 name: platform.png

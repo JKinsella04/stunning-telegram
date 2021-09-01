@@ -24,7 +24,7 @@ Design, build, test, and compete with a Robot capable of efficiently *scoring Ri
 - Mobile Goal Lift; must be able to efficiently grab, hold, and drop Mobile Goals.
 
 ## Drive Base Designs
-```{figure} ../../images/9/x-drive.png
+```{figure} ././_images/9/x-drive.png
 ---
 width: 300px
 name: x-drive.png
@@ -32,7 +32,7 @@ name: x-drive.png
 X-Drive
 ```
 
-```{figure} ../../images/9/mecanumDriveBase.png
+```{figure} ././_images/9/mecanumDriveBase.png
 ---
 width: 300px
 name: mecanumDriveBase.png
@@ -40,7 +40,7 @@ name: mecanumDriveBase.png
 Mecanum Drive
 ```
 
-```{figure} ../../images/9/omniDriveBase.png
+```{figure} ././_images/9/omniDriveBase.png
 ---
 width: 300px
 name: omniDriveBase.png
@@ -49,7 +49,7 @@ Omni Drive
 ```
 ## Lift Designs
 
-```{figure} ../../images/9/4bar.png
+```{figure} ././_images/9/4bar.png
 ---
 width: 300px
 name: 4bar.png
@@ -57,7 +57,7 @@ name: 4bar.png
 Four Bar (4bar)
 ```
 
-```{figure} ../../images/9/DR4B.png
+```{figure} ././_images/9/DR4B.png
 ---
 width: 300px
 name: DR4B.png
@@ -65,7 +65,7 @@ name: DR4B.png
 Double Reverse Four Bar (DR4B) 
 ```
 
-```{figure} ../../images/9/6_bar_lift.png
+```{figure} ././_images/9/6_bar_lift.png
 ---
 width: 300px
 name: 6_bar_lift.png

@@ -10,7 +10,13 @@ kernelspec: {display_name: Python 3, language: python, name: python3}
 
 We have standards that we follow when doing anything and everything for robotics. For Building we follow the Engineering Design Process.
 
-<img src="././_images/beginning/designProcess.png" alt="designProcess.png" style="width: 500px;"/>
+```{figure} ././_images/beginning/designProcess.png
+---
+width: 500px
+name: designProcess.png
+---
+One example of the Engineering Design Process.
+```
 
 This photo accurately represents the general Engingeering Process, but we can explain it more specifically. 
 During the *Research Ideas/Explore Possibilities* phase we will look at vexforum.com and reveal videos publicly posted on youtube to see if/what kinds of solutions have been published regarding the problem. During the *Make a Model or Prototype* phase we will first make a CAD of the idea to figure out the idea completley before spending resources on it. After this we will make the physical prototype. 

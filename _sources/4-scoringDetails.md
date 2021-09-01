@@ -27,7 +27,7 @@ Win Points for each Qualification Match.
 
 ## Possible Scoring Scenarios
 
-```{figure} ../../images/beginning/scoredBase.png
+```{figure} ././_images/beginning/scoredBase.png
 ---
 width: 600px
 name: scoredBase.png
@@ -36,7 +36,7 @@ Legal positions for rings to be classified as scored in the Mobile Goal base.
 ```
 > A Ring is considered Scored in a Mobile Goal Base if it is not contacting a Robot and is at least partially within the 3-dimensional vertical projection formed by the “bowl” of the Mobile Goal Base.
 
-```{figure} ../../images/beginning/scoredBranch.png
+```{figure} ././_images/beginning/scoredBranch.png
 ---
 width: 600px
 name: scoredBranch.png
@@ -45,7 +45,7 @@ Legal positions for rings to be classified as scored on a branch.
 ```
 > A Ring is considered Scored on a Mobile Goal Branch if it is not contacting a Robot, and any part of the Branch is within the volume defined by the outer edges of the Ring (i.e. part of the Ring is encircling or surrounding the Branch). A Ring supported by the Mobile Goal Branch, but not encircling it would still be considered Scored in the Mobile Goal Base, as it is within the 3D vertical projection.
 
-```{figure} ../../images/beginning/scoredGoal.png
+```{figure} ././_images/beginning/scoredGoal.png
 ---
 width: 600px
 name: scoredGoal.png
@@ -54,7 +54,7 @@ Requirements for a goal to be considered Scored.
 ```
 > A Mobile Goal is considered Scored in an Alliance Home Zone if, at the end of the Match, any part of the Mobile Goal Base is at least partially within the Alliance Home Zone (i.e. “breaking the plane” of the Zone).
 
-```{figure} ../../images/beginning/exampleGoal.png
+```{figure} ././_images/beginning/exampleGoal.png
 ---
 width: 600px
 name: exampleGoal.png
@@ -68,7 +68,7 @@ Example of Rings scored on an elevated Neutral Mobile Goal.
     • Two (2) points for the two (2) Scored Rings in the Mobile Goal Base
     • Nine (9) points for the three (3) Scored Rings on the Mobile Goal Branches
     
-```{figure} ../../images/beginning/enemyGoal.png
+```{figure} ././_images/beginning/enemyGoal.png
 ---
 width: 600px
 name: enemyGoal.png
@@ -77,7 +77,7 @@ Example of Alliance Mobile Goal Scoring.
 ```
 > Alliance Mobile Goals only count for points when Scored in the same color Alliance Home Zone.  Alliance Mobile Goals which end the Match anywhere other than their corresponding Alliance Home Zone or Platform are not worth any points for either Alliance. Rings which are Scored on / in an Alliance Mobile Goal are worth points for that color Alliance, regardless of where the Alliance Mobile Goal ends the Match.
 
-```{figure} ../../images/beginning/goalScoring.png
+```{figure} ././_images/beginning/goalScoring.png
 ---
 width: 600px
 name: goalScoring.png
