@@ -22,5 +22,5 @@
 - Have a high scoring auton that gets the AWP and beats the majority of teams inside of South Carolina.
 
 ```{important}
-Last Edited on 9/1/21.
+Last Edited on 8/31/21.
 ```

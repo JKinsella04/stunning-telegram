@@ -116,5 +116,5 @@ Based on our design matrix, omni wheels are the best overall, so we will be desi
 > For the design marticies, higher values are better. Simple designs score higher on the complexity category for this reason.
 
 ```{important}
-Last Edited on 9/1/21.
+Last Edited on 8/31/21.
 ```

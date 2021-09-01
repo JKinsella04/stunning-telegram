@@ -60,5 +60,5 @@ A platform
 - Robots may only interact with their respective platform during the last 30 seconds. No interaction with the opposing alliance's platform is allowed.
 
 ```{important}
-Last Edited on 9/1/21.
+Last Edited on 8/31/21.
 ```

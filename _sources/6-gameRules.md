@@ -84,5 +84,5 @@ Note: During the last 30 seconds of the Match, any Scoring Object that leaves th
 Use Scoring Objects to play the game. Scoring Objects may not be used to accomplish actions that would be otherwise illegal if were attempted by Robot mechanisms (e.g., Interfering with an opponent’s Autonomous routine per <SG4>.)The intent of this rule is to prohibit teams from using game objects as “gloves” to loophole any rule that states “a Robot may not [do some action]”. This rule is not intended to be taken in its most extreme literal interpretation, where any interaction between a Scoring Object and a Robot needs to be scrutinized with the same intensity as if it were a Robot.
     
 ```{important}
-Last Edited on 9/1/21.
+Last Edited on 8/31/21.
 ```

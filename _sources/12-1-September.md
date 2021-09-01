@@ -44,6 +44,23 @@ Last Edited on 8/31/21.
 ```
 
 
+## 9/1/21
+### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
+
+### Goals:
+
+### Accomplished:
+
+#### How:
+
+#### Why:
+
+### Plans for next Practice:
+
+```{important}
+Last Edited on 9/1/21.
+```
+
 ## 9/2/21
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
 
@@ -59,21 +76,4 @@ Last Edited on 8/31/21.
 
 ```{important}
 Last Edited on 9/2/21.
-```
-
-## 9/3/21
-### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
-
-### Goals:
-
-### Accomplished:
-
-#### How:
-
-#### Why:
-
-### Plans for next Practice:
-
-```{important}
-Last Edited on 9/3/21.
 ```

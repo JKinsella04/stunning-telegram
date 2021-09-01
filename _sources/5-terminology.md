@@ -76,5 +76,5 @@ A Ring, Mobile Goal, Robot, and / or Platform State.  See the “Scoring” sect
 A Robot status. A Robot is Trapping  if it has restricted an opposing Robot into a small, confined area of the field, approximately the size of one foam field tile or less, and has not provided an avenue for escape. Trapping  can be direct (e.g. pinning an opponent to a field perimeter wall) or indirect (e.g. preventing a Robot from escaping from a corner of the field).
 
 ```{important}
-Last Edited on 9/1/21.
+Last Edited on 8/31/21.
 ```

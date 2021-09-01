@@ -97,5 +97,5 @@ Scored at least one Ring on each Alliance Mobile Goal, at the end of the Autonom
 for both Alliances to receive the Autonomous Win Point, and it is possible for an Alliance to receive the Autonomous Win Point but not receive the Autonomous Bonus.
 
 ```{important}
-Last Edited on 9/1/21.
+Last Edited on 8/31/21.
 ```
