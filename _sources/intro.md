@@ -1,5 +1,5 @@
 # Welcome Page
-```{figure} ../../images/beginning/v1logo.png
+```{figure} ././_images/beginning/v1logo.png
 ---
 width: 1000px
 name: v1logo.png
