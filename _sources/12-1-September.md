@@ -48,14 +48,19 @@ Last Edited on 8/31/21.
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
 
 ### Goals:
+- Continue building the drive base.
 
 ### Accomplished:
+- &#9745; Build half of the drive base.
 
 #### How:
+- Derek continued building the drive base based off the CAD designed yesterday.
 
 #### Why:
+- While converting the CAD into a physical robot Derek is taking extra time to make sure it is all correct. Since we have alloted this entire week for building the drive base we are making sure to maximize our time to ensure the utmost quality in the drive base since it is arguably the most important mechanism.
 
 ### Plans for next Practice:
+- Complete drive base.
 
 ```{important}
 Last Edited on 9/1/21.
