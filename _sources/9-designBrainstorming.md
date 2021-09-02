@@ -73,7 +73,7 @@ name: 6_bar_lift.png
 Six bar (6bar)
 ```
 
-## Lift/Tray Design Matrix
+## Lift Design Matrix
 | Design       | Stability | Extension | Speed | Complexity | Total |
 |--------------|-----------|-----------|-------|------------|-------|
 | 6 Bar        | 2         | 2         | 2     | 3          | 9     |
