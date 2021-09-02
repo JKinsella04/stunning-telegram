@@ -72,10 +72,6 @@ name: 6_bar_lift.png
 ---
 Six bar (6bar)
 ```
-### Intake Designs
-#### Flaps
-#### Flex Wheel
-
 
 ## Lift/Tray Design Matrix
 | Design       | Stability | Extension | Speed | Complexity | Total |
