@@ -43,7 +43,6 @@ With the Lift design, there are many parts thats we have to order, so we will be
 Last Edited on 8/31/21.
 ```
 
-
 ## 9/1/21
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
 
@@ -55,6 +54,7 @@ Last Edited on 8/31/21.
 
 #### How:
 - Derek continued building the drive base based off the CAD designed yesterday.
+- The two crosbars on the robot are for general stability. Having two as opposed to one is better because it removes the ability for the bars to twist which would degrade the quality of the robot causing it to overtime decrease in consistency. The bars are also very important for the other subsystems because they keep them straight and alligned which will help the lifts have less friction. 
 
 #### Why:
 - While converting the CAD into a physical robot Derek is taking extra time to make sure it is all correct. Since we have alloted this entire week for building the drive base we are making sure to maximize our time to ensure the utmost quality in the drive base since it is arguably the most important mechanism.
@@ -70,14 +70,26 @@ Last Edited on 9/1/21.
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
 
 ### Goals:
+- Complete drive base.
 
 ### Accomplished:
+- &#9745; Complete drive base.
 
 #### How:
+- With half of the drive base completed from yesterday, Derek finished building the second half.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3lW3y0igm34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Why:
+- While ensuring top quality, we are following our schedule as planned to make sure we will be ready to compete in October.
 
+- To reduce the friction in the drive base, Derek tests every piece we use. He checks to make sure each axle is straight, and that all the bearings allow the axles to spin with the least amount of friction. Derek also makes sure that the spacing is as perfect as possible by using CAD and also adjusting the spacing one washer at a time.
+
+```{admonition} Note:
+By taking extra time inspecting each piece thoroughly, Derek ensures the quality of the drive base which increases the consistency and longevity of the drive base.
+```
 ### Plans for next Practice:
+- Begin building the lifts.
 
 ```{important}
 Last Edited on 9/2/21.
