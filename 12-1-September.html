@@ -365,6 +365,84 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id16">
+   9/7/21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id17">
+     Attendance: ☑ Brody, ☑ Derek, ☑ Jack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id18">
+     Goals:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id19">
+     Accomplished:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id20">
+       How:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id21">
+       Why:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id22">
+     Plans for next Practice:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id23">
+   9/8/21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id24">
+     Attendance: ☑ Brody, ☑ Derek, ☑ Jack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id25">
+     Goals:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id26">
+     Accomplished:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id27">
+       How:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id28">
+       Why:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id29">
+     Plans for next Practice:
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -526,6 +604,113 @@
 <p class="admonition-title">Important</p>
 <p>Last Edited on 9/2/21.</p>
 </div>
+</div>
+</div>
+<div class="section" id="id16">
+<h2>9/7/21<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id17">
+<h3>Attendance: ☑ Brody, ☑ Derek, ☑ Jack<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id18">
+<h3>Goals:<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Begin building the lifts.</p></li>
+<li><p>Begin desigining the code structure.</p></li>
+</ul>
+</div>
+<div class="section" id="id19">
+<h3>Accomplished:<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>☑ Begin building the lifts.</p></li>
+<li><p>☑ Begin desiging the code structure.</p></li>
+</ul>
+<div class="section" id="id20">
+<h4>How:<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Derek and Brody added the supports to the drive base that will hold the lifts.</p></li>
+<li><p>Jack began working on the code by creating classes and namespaces for the required actions of the robot. This includes the Chassis, Lifts, GUI, Auton Selector, Odometry, Intakes, Mobile Goals, and even frequently used equations in the code such as PID, and Slew.</p></li>
+<li><p>Jack also implemented finite state machines. We are using state machines for mechanisms such as the the chassis and the lifts.</p></li>
+<li><p>Jack plans to create threads for each class so we can run each mechanism on its own while being able to still command the ther mechanisms.</p></li>
+</ul>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Chassis</span><span class="p">{};</span>
+<span class="k">enum</span> <span class="k">class</span> <span class="nc">ChassisState</span><span class="p">{</span>
+    <span class="n">DRIVE</span><span class="p">,</span> <span class="n">POINT</span><span class="p">,</span> <span class="n">TURN</span><span class="p">,</span> <span class="n">OPCONTROL</span><span class="p">,</span> <span class="n">BALANCE</span><span class="p">,</span> <span class="n">IDLE</span>
+<span class="p">};</span>
+<span class="k">class</span> <span class="nc">Lift</span><span class="p">{};</span>
+<span class="k">enum</span> <span class="k">class</span> <span class="nc">LiftState</span><span class="p">{</span>
+    <span class="n">ZERO</span><span class="p">,</span> <span class="n">UP</span><span class="p">,</span> <span class="n">IDLE</span>
+<span class="p">};</span>
+<span class="k">class</span> <span class="nc">Display</span><span class="p">{};</span>
+<span class="k">class</span> <span class="nc">Auton</span><span class="p">{};</span>
+<span class="k">class</span> <span class="nc">Odometry</span><span class="p">{};</span>
+<span class="k">namespace</span> <span class="nn">intake</span><span class="p">{};</span>
+<span class="k">namespace</span> <span class="nn">mobileGoal</span><span class="p">{};</span>
+<span class="k">namespace</span> <span class="nn">macro</span><span class="p">{</span>
+    <span class="k">class</span> <span class="nc">Slew</span><span class="p">{};</span>
+    <span class="k">class</span> <span class="nc">PID</span><span class="p">{};</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition-github-repository admonition">
+<p class="admonition-title">Github Repository!</p>
+<p>Here is a link to our <a class="reference external" href="https://github.com/PSASchool/9447H-TippingPoint">Github Repo</a>.</p>
+</div>
+</div>
+<div class="section" id="id21">
+<h4>Why:<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>By using a state machine we are able to ensure that the robot will always be in one of our defined states, and that by changing it’s state we are able to tell it to do specific actions. This helps our robot be more consistent as well as make our code easier to read.</p></li>
+<li><p>Using threads for each class is important because it allows us to run asynchronously so we can drive somewhere while also moving the lift if needed. This will also allow the GUI to continue running throughout the entire program unlike last year where after the init phase our GUI would become frozen.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id22">
+<h3>Plans for next Practice:<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Continue building the lifts.</p></li>
+<li><p>Design and integrate the GUI.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id23">
+<h2>9/8/21<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id24">
+<h3>Attendance: ☑ Brody, ☑ Derek, ☑ Jack<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id25">
+<h3>Goals:<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Continue building the lifts.</p></li>
+<li><p>Design and integrate the GUI.</p></li>
+</ul>
+</div>
+<div class="section" id="id26">
+<h3>Accomplished:<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>☑ Continue building the lifts.</p></li>
+<li><p>☑ Design and integrate the GUI.</p></li>
+</ul>
+<div class="section" id="id27">
+<h4>How:<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Derek and Brody continued building the lifts by making the clamp that will go on the end of the lift.</p></li>
+<li><p>The focus of our GUI this year is all about being simple, informative and looking nice. To make it simple we have chosen to go for an auton selector where we have buttons that each correlate to an specific auton routine.</p></li>
+<li><p>When an auton routine is selected a photo on the right of the screen is updated showing off the path and as well the name of the selected auton is printed on the top of the screen.</p></li>
+<li><p>The final aspect of our GUI is the look of it. This is just as important as everything else because we wanted something that would be nice to look at. To do this we used a photo from this <a class="reference external" href="https://destinyemblemwallpapers.com">website</a>. Jack also added a GIF to the GUI that Derek created of our team logo.</p></li>
+</ul>
+</div>
+<div class="section" id="id28">
+<h4>Why:<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Since we have not received the needed HS axles for the robot we are unable to continue making the base of the lifts and have shifted over to the other parts of the lifts in the meantine.</p></li>
+<li><p>We wanted to accomplish these three goals because these were the main aspects that our previous GUI lacked. Our old GUI was very complicated because you had to press buttons in an exact order or else it would not work unlike now where it does not matter what order the buttons are pressed.</p></li>
+<li><p>Our old GUI was also lacking in information since it was unable to show any data and also did not explicitly show what auton was chosen, but now the GUI prints the name and a photo of the path.</p></li>
+<li><p>The Change Up GUI was slow and ugly but now we have a fast, and elegant GUI that anyone could use.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id29">
+<h3>Plans for next Practice:<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 </div>
