@@ -9,6 +9,17 @@
 - &#9745; Code all class member functions.
 #### How:
 - Derek has to quarantine for two weeks, but has the robot and parts to continue building. Today Derek worked on the lift since the HS axles arrived. The HS axle connection spot and one of the two lift motors have been built. Derek also tweaked the clamp that will connect to the lift tuning its rotation point to make it stronger and smoother.
+
+<script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+<div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
+  data-link="https://photos.app.goo.gl/rqtToydVLAXtxUAf8"
+  data-title="9/14/21"
+  data-description="3 new photos added to shared album">
+  <object data="https://lh3.googleusercontent.com/RU9oEuv82qDGVwg2aGOPEPHHiGbEtIGZCl2wSFr4hbSmDkME6OO2juu9vyX50Zg_het-r81QJP3sqOTynFqSuPpOxPLBNh-cyT6pPQJjJWVDeS50vZiSzfmkIBFnl9uE5CzoTbUJng=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/x4O16U5d-dB0VpslUVOwztREwBrZi6KL_jY_0MQNTSW0ntpmYZOiuqG3eaT2xu04nQGtZd2XIka6-H9r3bGAI4rsa4UH1S7qyoB4JH_AbQebVt9uYnZqXNfxN5qEddllBCGqFOa5KA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/rT2cgtxMu0D1G_8fhAwlB-D4DseYTtaRhhWozuh86BLFDTlzLBd-3Z9nyokO-K5MlX9Qr15e7AnKJh-TudWOrzBQui-Cfbe39HmEn9Mh-PMU32mtrRV8bzxibBWSsmqbnfqbbBNXag=w1920-h1080"></object>
+</div>
+
 - Instead of showing all the classes here we will explain the layout and formatting of the code since all classes follow the same format. [Github Repo.](https://github.com/PSASchool/9447H-TippingPoint)
 - Classes that need special data inputted such as the chassis have overloaded constructors to store values such as x, y, angle, and wheel travel distance. To use PID throughout our code we create an object in our custom PID class where we give it all the values needed and then can run a calculate member function to return the PID output. We do the same for our Slew class as well. Currently we have 3 PID objects being, drive_PID, turn_PID, and lift_PID. We also have 4 Slew objects being leftSlew, rightSlew, turnSlew and, liftSlew.
 
@@ -77,6 +88,17 @@ Last Edited on 9/14/21.
 - &#9745; Continue building the lifts
 #### How:
 - Derek continued building the lifts today and connected the clamp to the 4 bar. The plan is to use 2 motors on the lift and have the pneumatic clamp hold the goal but the robot is already able to lift and hold the goal with only one motor and the clamp holds the goal even without air pressure. This is good because it shows that even if the pneumatics or a motor give out we will still be able to perform well.
+
+<script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+<div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
+  data-link="https://photos.app.goo.gl/HEbaLC9DSVskm9Fy7"
+  data-title="9/15/21"
+  data-description="2 new photos added to shared album">
+  <object data="https://lh3.googleusercontent.com/d99ufZLhoVul3G5dD7xr1YXjykLmXjRDEdn3vMIo9jHVAOlt5oX675TG8GPmWQ2NOTu_VlRP3kSmhkIsQ1VlQAfcpB6apx3Ib1udqo3buK0dCLlWmROa32wxiy_cj-lSkUVbealAiA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/aRFGdpOQC8Kgk43JwiBphuIRZb6rEEP6gYkAQnYCfhbmDosVXJJjaqZj2h0ATy_crezVSHb9_OJoIH7D6ebusbRhryo-PK3lQZ0j4FydvCrpXVb9zo6HvKWYoPBhVV-pNIDxYDC7iQ=w1920-h1080"></object>
+</div>
+
+
 #### Why:
 - Derek focused only on connecting the clamp to the lift today because it is very important that the spacing is correct because of how close the clamp will be to the drive base when lowered. Derek has taken today to ensure that the spacing is perfect and that the clamp is on the lift as securely as possible.
 ### Plans for next Practice:
