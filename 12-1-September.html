@@ -480,6 +480,84 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id37">
+   9/14/21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id38">
+     Attendance: ☑ Brody, ☑ Derek, ☑ Jack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id39">
+     Goals:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id40">
+     Accomplished:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id41">
+       How:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id42">
+       Why:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id43">
+     Plans for next Practice:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id44">
+   9/15/21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id45">
+     Attendance: ☐ Brody, ☑ Derek, ☐ Jack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id46">
+     Goals:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id47">
+     Accomplished:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id48">
+       How:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id49">
+       Why:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id50">
+     Plans for next Practice:
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -799,10 +877,144 @@
 <h3>Plans for next Practice:<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Continue building the lifts.</p></li>
+<li><p>Code all class member functions.</p></li>
 </ul>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Last Edited on 9/9/21.</p>
+</div>
+</div>
+</div>
+<div class="section" id="id37">
+<h2>9/14/21<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id38">
+<h3>Attendance: ☑ Brody, ☑ Derek, ☑ Jack<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id39">
+<h3>Goals:<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Continue building the lifts.</p></li>
+<li><p>Code all class member functions.</p></li>
+</ul>
+</div>
+<div class="section" id="id40">
+<h3>Accomplished:<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>☑ Continue building the lifts.</p></li>
+<li><p>☑ Code all class member functions.</p></li>
+</ul>
+<div class="section" id="id41">
+<h4>How:<a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Derek has to quarantine for two weeks, but has the robot and parts to continue building. Today Derek worked on the lift since the HS axles arrived. The HS axle connection spot and one of the two lift motors have been built. Derek also tweaked the clamp that will connect to the lift tuning its rotation point to make it stronger and smoother.</p></li>
+<li><p>Instead of showing all the classes here we will explain the layout and formatting of the code since all classes follow the same format. <a class="reference external" href="https://github.com/PSASchool/9447H-TippingPoint">Github Repo.</a></p></li>
+<li><p>Classes that need special data inputted such as the chassis have overloaded constructors to store values such as x, y, angle, and wheel travel distance. To use PID throughout our code we create an object in our custom PID class where we give it all the values needed and then can run a calculate member function to return the PID output. We do the same for our Slew class as well. Currently we have 3 PID objects being, drive_PID, turn_PID, and lift_PID. We also have 4 Slew objects being leftSlew, rightSlew, turnSlew and, liftSlew.</p></li>
+</ul>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">Slew</span><span class="p">(</span><span class="kt">double</span> <span class="n">accel_</span><span class="p">,</span> <span class="kt">double</span> <span class="n">decel_</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">reversible</span><span class="p">);</span>
+<span class="n">PID</span><span class="p">(</span><span class="kt">double</span> <span class="n">kP_</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">kI_</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="kt">double</span> <span class="n">kD_</span> <span class="o">=</span> <span class="mi">0</span><span class="p">);</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Below is how we set the values for turning and then how those are taken and used by PID and Slew objects to make the chassis turn. This is a part of the chassis state machine.</p></li>
+</ul>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">Chassis</span> <span class="o">&amp;</span><span class="nf">Chassis::withTurnGains</span><span class="p">(</span><span class="kt">double</span> <span class="n">kP_</span><span class="p">,</span> <span class="kt">double</span> <span class="n">kI_</span><span class="p">,</span> <span class="kt">double</span> <span class="n">kD_</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">turn_PID</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="n">kP_</span><span class="p">,</span> <span class="n">kI_</span><span class="p">,</span> <span class="n">kD_</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">Chassis</span> <span class="o">&amp;</span><span class="nf">Chassis::turn</span><span class="p">(</span><span class="kt">double</span> <span class="n">theta</span><span class="p">,</span> <span class="kt">double</span> <span class="n">rate</span><span class="p">,</span> <span class="kt">double</span> <span class="n">speed</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">target</span><span class="p">.</span><span class="n">theta</span> <span class="o">=</span> <span class="n">theta</span><span class="p">;</span>
+    <span class="n">target</span><span class="p">.</span><span class="n">rateTurn</span> <span class="o">=</span> <span class="n">rate</span><span class="p">;</span>
+    <span class="n">target</span><span class="p">.</span><span class="n">speedTurn</span> <span class="o">=</span> <span class="n">speed</span><span class="p">;</span>
+    <span class="n">reset</span><span class="p">();</span>
+    <span class="n">isSettled</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="n">mode</span> <span class="o">=</span> <span class="n">ChassisState</span><span class="o">::</span><span class="n">TURN</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">*</span><span class="k">this</span><span class="p">;</span>
+</pre></div>
+</div>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">case</span> <span class="n">ChassisState</span><span class="o">::</span><span class="nl">TURN</span><span class="p">:{</span>
+    <span class="c1">// Turn PID Calc</span>
+    <span class="n">turn_output</span> <span class="o">=</span> <span class="n">turn_PID</span><span class="p">.</span><span class="n">calculate</span><span class="p">(</span><span class="n">target</span><span class="p">.</span><span class="n">theta</span><span class="p">,</span> <span class="o">*</span><span class="n">theta</span><span class="p">);</span>
+     
+     <span class="c1">// Find quickest turn.</span>
+     <span class="n">calcDir</span><span class="p">();</span>
+     
+     <span class="c1">// Slew Calc</span>
+     <span class="n">TslewOutput</span> <span class="o">=</span> <span class="n">turnSlew</span><span class="p">.</span><span class="n">withGains</span><span class="p">(</span><span class="n">target</span><span class="p">.</span><span class="n">rateTurn</span><span class="p">,</span> <span class="n">target</span><span class="p">.</span><span class="n">rateTurn</span><span class="p">,</span> <span class="nb">true</span><span class="p">).</span><span class="n">withLimit</span><span class="p">(</span><span class="n">target</span><span class="p">.</span><span class="n">speedTurn</span><span class="p">).</span><span class="n">calculate</span><span class="p">(</span><span class="n">turn_output</span><span class="p">);</span>
+     
+     <span class="n">left</span><span class="p">(</span><span class="n">TslewOutput</span><span class="p">);</span>
+     <span class="n">right</span><span class="p">(</span><span class="n">TslewOutput</span><span class="p">);</span>
+     
+     <span class="k">if</span><span class="p">(</span><span class="n">fabs</span><span class="p">(</span><span class="n">turn_PID</span><span class="p">.</span><span class="n">getError</span><span class="p">())</span> <span class="o">&lt;</span> <span class="n">tol</span><span class="p">){</span>
+         <span class="n">left</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+         <span class="n">right</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+         <span class="n">withTurnGains</span><span class="p">(</span><span class="mi">0</span><span class="p">).</span><span class="n">withTol</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+         <span class="n">reset</span><span class="p">();</span>
+         <span class="n">isSettled</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+         <span class="n">mode</span> <span class="o">=</span> <span class="n">ChassisState</span><span class="o">::</span><span class="n">IDLE</span><span class="p">;</span>
+         <span class="k">goto</span> <span class="n">end</span><span class="p">;</span>
+     <span class="p">}</span>
+<span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id42">
+<h4>Why:<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Derek tuned the clamp because the most important aspect of the robot is its quality and consistency. With the improved clamp we are confident that we will not run into problems with the pneumatic piston getting stuck or moving in an unwanted way since it is now very secure and is not twisted or slanted in any direction.</p></li>
+<li><p>The GUI, Lift and, Chassis classes all follow the same format, there is a start function which is called when we create the threads that run the class. The start member function sets the boolean isRunning to true and calls the run member function which is then where the while loop that controls the chassis state, GUI buttons, or Lift state.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id43">
+<h3>Plans for next Practice:<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Continue building the lifts.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Last Edited on 9/14/21.</p>
+</div>
+</div>
+</div>
+<div class="section" id="id44">
+<h2>9/15/21<a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id45">
+<h3>Attendance: ☐ Brody, ☑ Derek, ☐ Jack<a class="headerlink" href="#id45" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id46">
+<h3>Goals:<a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Continue building the lifts</p></li>
+</ul>
+</div>
+<div class="section" id="id47">
+<h3>Accomplished:<a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>☑ Continue building the lifts</p></li>
+</ul>
+<div class="section" id="id48">
+<h4>How:<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Derek continued building the lifts today and connected the clamp to the 4 bar. The plan is to use 2 motors on the lift and have the pneumatic clamp hold the goal but the robot is already able to lift and hold the goal with only one motor and the clamp holds the goal even without air pressure. This is good because it shows that even if the pneumatics or a motor give out we will still be able to perform well.</p></li>
+</ul>
+</div>
+<div class="section" id="id49">
+<h4>Why:<a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Derek focused only on connecting the clamp to the lift today because it is very important that the spacing is correct because of how close the clamp will be to the drive base when lowered. Derek has taken today to ensure that the spacing is perfect and that the clamp is on the lift as securely as possible.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id50">
+<h3>Plans for next Practice:<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Finish the lifts.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Last Edited on 9/15/21.</p>
 </div>
 </div>
 </div>

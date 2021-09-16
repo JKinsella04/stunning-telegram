@@ -1,0 +1,619 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8/31/21 - 9/2/21 &#8212; 9447H - Engineering Notebook</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="9/7/21 - 9/9/21" href="12-Sept-week-2.html" />
+    <link rel="prev" title="September 2021 Schedule" href="12-September-Schedule.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/v1logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">9447H - Engineering Notebook</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome Page
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Tipping Point Game Description
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1-gameDescription.html">
+   Tipping Point Game Description
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2-gameObjects_Elements.html">
+   Tipping Point Game Objects and Elements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3-fieldOverview.html">
+   Tipping Point Field Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4-scoringDetails.html">
+   Tipping Point Scoring Details
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5-terminology.html">
+   Tipping Point Terminology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6-gameRules.html">
+   Tipping Point Game Rules
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Pre-Season
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="7-initialGoals.html">
+   Initial Goals For Tipping Point
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="8-teamStandards.html">
+   Our Team Standards
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="9-designBrainstorming.html">
+   Tipping Point Design Brainstorming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10-motorSpecs.html">
+   V5 Motor Specifications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="11-teamIntros.html">
+   Team Intros
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Progress Entries
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="12-September-Schedule.html">
+   September 2021
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     8/31/21 - 9/2/21
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="12-Sept-week-2.html">
+     9/7/21 - 9/9/21
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="12-Sept-week-3.html">
+     9/14/21 - 9/16/21
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/12-Sept-week-1.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   8/31/21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#attendance-brody-derek-jack">
+     Attendance: ☑ Brody, ☑ Derek, ☑ Jack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#goals">
+     Goals:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#accomplished">
+     Accomplished:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#how">
+       How:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#why">
+       Why:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plans-for-next-practice">
+     Plans for next Practice:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   9/1/21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Attendance: ☑ Brody, ☑ Derek, ☑ Jack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Goals:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Accomplished:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       How:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       Why:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Plans for next Practice:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id10">
+   9/2/21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Attendance: ☑ Brody, ☑ Derek, ☑ Jack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Goals:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+     Accomplished:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id14">
+       How:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id15">
+       Why:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id16">
+     Plans for next Practice:
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="id1">
+<h1>8/31/21 - 9/2/21<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>8/31/21<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="attendance-brody-derek-jack">
+<h3>Attendance: ☑ Brody, ☑ Derek, ☑ Jack<a class="headerlink" href="#attendance-brody-derek-jack" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="goals">
+<h3>Goals:<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Design Lift robot.</p></li>
+<li><p>Dissasemble and reorganize our parts.</p></li>
+</ul>
+</div>
+<div class="section" id="accomplished">
+<h3>Accomplished:<a class="headerlink" href="#accomplished" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>☑ Design Lift robot.</p></li>
+<li><p>☑ Dissasemble and reorganize.</p></li>
+</ul>
+<div class="section" id="how">
+<h4>How:<a class="headerlink" href="#how" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Derek cadded the Lift robot using the application Blender and began building the drive base. Below are pictures of the CAD.</p></li>
+</ul>
+<div class="admonition-parts-order admonition">
+<p class="admonition-title">Parts Order</p>
+<p>With the Lift design, there are many parts thats we have to order, so we will be slowed for a while but are on pace to have the drive base finished by this week.</p>
+</div>
+<ul class="simple">
+<li><p>A very important part of every new season is to reorganize our materials and tools from last season. While Derek was designing Brody and Jack disassembled our Change Up robot from last season.</p></li>
+</ul>
+<script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+<div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
+  data-link="https://photos.app.goo.gl/vX95JwLwrwBLc8578"
+  data-title="8/31/21"
+  data-description="8 new photos added to shared album">
+  <object data="https://lh3.googleusercontent.com/0GZVfwNrjxQqotsgVmCPdnX5POji-lON76zRz3QJuTfwMdwlui-PdhrsVqwvhofaYubzXCaUejPUjJyK1TnylFuIs3RWWW0BpIV-2OZDPd9tBJeN9d32EU2U0Kkk0iI449Mjedrwvg=w960-h540"></object>
+  <object data="https://lh3.googleusercontent.com/G27z_SJ6Ir4AiMV20jJTmk1T9INkK3h87-EoJnCvhJgF85x_R0UGi-TkCvZuv-H-PqhYhATEa_rhp7OaaZH-xwELhThev5YvIpP4Sicd7JxV67QCOyLNSIlWvMyRR_HAx5zXANCUBw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/PnQteKYMWthwhH8vHpnA54GYBVBXA8yStItN0EI8-D6470Zy4CnmVzNNRM1VR4vk69mBRiSfmmrMcHvSxjZJuT3NrMzSanqYDcHsHCePFbvgsv5fYko9hN_KTCLSqHoiFh68Ob_H8w=w960-h540"></object>
+  <object data="https://lh3.googleusercontent.com/P4dOdNsis7e7fLZk3kQkDCvslQ0f4hT8kLPoGy7ouCW8u4C0kSN22BdVLJFdG_8fv-AUAaaOuOoj9hqHjMNC6kMEYmobhJJKQA7ICzxtn5rZnla4OOgTQBB3Kx58ubi04jvGTTqmug=w960-h540"></object>
+  <object data="https://lh3.googleusercontent.com/9gy8EsBxyUduJVFKC5euPfTQbCGyl7dRirmGs19GZT4fQixDSbhm4LwFIQvJB0_QvBn5bEMZlZqDdvhweWAb5UW3r52veQy1PYbwftWaQxI97KDeFp0ncfeklRJcuHkKzlG-gAyVyQ=w960-h540"></object>
+  <object data="https://lh3.googleusercontent.com/XvmaZ7jhyzDAL1aM1ifE25ko9MMZ86N3Df2jPP2ifRSA86BJuPpVuN8r961HmTU8AArIUA7qdH2bxz_km7svWszJRfbIl1dKdZf5YfH0I2eUbEVyV235B15V9pcRZROTpJEf1t5Agw=w960-h540"></object>
+  <object data="https://lh3.googleusercontent.com/ZSPmUY9w3vv1InDNqQZJfG7gLr_yklomo3p4EeN50srRMyQ-9DooiVujwF-ajCT6sdeBKusw22hcSe8C_XIvrU_U5obE_7njX637wHrKcuaqcKZxvNtKVB4gB4j-31bDF2QNniV6uQ=w960-h540"></object>
+  <object data="https://lh3.googleusercontent.com/b5glw4kVcaedHy2azCXPfRDVcFdZSITIj81FckCRhk2QOOPS5kO7fhv4NIAnwkROwNXyywJxTvxdCnV0xSIP7i1tOYyLnJtLtM0xFzJb40HgsQJJsO3ZLlCn7IJE2UZEbnYGvff0JA=w960-h540"></object>
+</div>
+</div>
+<div class="section" id="why">
+<h4>Why:<a class="headerlink" href="#why" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Following our September schedule, we will need to finalize the robot by the end of September so we have enough time to practice driving and create autonomous routines.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="plans-for-next-practice">
+<h3>Plans for next Practice:<a class="headerlink" href="#plans-for-next-practice" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Continue building drive base.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Last Edited on 8/31/21.</p>
+</div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>9/1/21<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h3>Attendance: ☑ Brody, ☑ Derek, ☑ Jack<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id5">
+<h3>Goals:<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Continue building the drive base.</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>Accomplished:<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>☑ Build half of the drive base.</p></li>
+</ul>
+<div class="section" id="id7">
+<h4>How:<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Derek continued building the drive base based off the CAD designed yesterday.</p></li>
+<li><p>The two crosbars on the robot are for general stability. Having two as opposed to one is better because it removes the ability for the bars to twist which would degrade the quality of the robot causing it to overtime decrease in consistency. The bars are also very important for the other subsystems because they keep them straight and alligned which will help the lifts have less friction.</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h4>Why:<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>While converting the CAD into a physical robot Derek is taking extra time to make sure it is all correct. Since we have alloted this entire week for building the drive base we are making sure to maximize our time to ensure the utmost quality in the drive base since it is arguably the most important mechanism.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id9">
+<h3>Plans for next Practice:<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Complete drive base.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Last Edited on 9/1/21.</p>
+</div>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>9/2/21<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h3>Attendance: ☑ Brody, ☑ Derek, ☑ Jack<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id12">
+<h3>Goals:<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Complete drive base.</p></li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h3>Accomplished:<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>☑ Complete drive base.</p></li>
+</ul>
+<div class="section" id="id14">
+<h4>How:<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>With half of the drive base completed from yesterday, Derek finished building the second half.</p></li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3lW3y0igm34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="section" id="id15">
+<h4>Why:<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>While ensuring top quality, we are following our schedule as planned to make sure we will be ready to compete in October.</p></li>
+<li><p>To reduce the friction in the drive base, Derek tests every piece we use. He checks to make sure each axle is straight, and that all the bearings allow the axles to spin with the least amount of friction. Derek also makes sure that the spacing is as perfect as possible by using CAD and also adjusting the spacing one washer at a time.</p></li>
+</ul>
+<div class="admonition-note admonition">
+<p class="admonition-title">Note:</p>
+<p>By taking extra time inspecting each piece thoroughly, Derek ensures the quality of the drive base which increases the consistency and longevity of the drive base.</p>
+</div>
+</div>
+</div>
+<div class="section" id="id16">
+<h3>Plans for next Practice:<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Begin building the lifts.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Last Edited on 9/2/21.</p>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="12-September-Schedule.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">September 2021 Schedule</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="12-Sept-week-2.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">9/7/21 - 9/9/21</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By 9447H - Brody Muzzy, Derek Mullins, Jack Kinsella<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
