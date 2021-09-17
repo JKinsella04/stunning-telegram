@@ -339,6 +339,45 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id10">
+   9/16/21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Attendance:  ☑ Brody, ☑ Derek, ☑ Jack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Goals:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+     Accomplished:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id14">
+       How:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id15">
+       Why:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id16">
+     Plans for next Practice:
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -501,6 +540,75 @@
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Last Edited on 9/15/21.</p>
+</div>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>9/16/21<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h3>Attendance:  ☑ Brody, ☑ Derek, ☑ Jack<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id12">
+<h3>Goals:<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Finish the lifts.</p></li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h3>Accomplished:<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Finish the lifts.</p></li>
+</ul>
+<div class="section" id="id14">
+<h4>How:<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Derek finished building the lift today by adding the finishing touches to it. The completed lift is a 4 bar that uses 2 200rpm motors with a 1:7 gear ratio geared for torque. Since we use 2 200rpm motors our lift is very fast so to compensate for this we will be using PID to safely move the lift between its maximum height and its start position so we do not cause strain on the motors by going past the lift’s physical limits.</p></li>
+<li><p>We are using the new V5 potentiometer to get and accurate value of the lift’s movement.</p></li>
+<li><p>Derek also has fully planned out the pneumatic layout. We will be using two resevoirs each with 100psi that supply air to two single acting solenoids and one double acting solenoid.</p></li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nZzrLr_bpgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="section" id="id15">
+<h4>Why:<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>We decided to use three solenoids instead of just two because we want to be able to control each dragger indepent of the other in case we only need to use one during the autonomous routine.</p></li>
+<li><p>To make sure the robot does not break itself we are using PID in our most important mechanisms, such as the lift and the chassis. Below is the PID calculation that runs when we call <code class="docutils literal notranslate"><span class="pre">PID.calculate();</span></code></p></li>
+</ul>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">double</span> <span class="nf">calculate</span><span class="p">(</span><span class="kt">double</span> <span class="n">target</span><span class="p">,</span> <span class="kt">double</span> <span class="n">current</span><span class="p">){</span>
+<span class="c1">// Proportional Calculation</span>
+<span class="k">if</span> <span class="p">(</span> <span class="n">error</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">error</span> <span class="o">=</span> <span class="n">target</span> <span class="o">-</span> <span class="n">current</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Integral Calculation</span>
+<span class="n">integral</span> <span class="o">+=</span> <span class="n">error</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">error</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+    <span class="n">integral</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span><span class="k">if</span> <span class="p">(</span><span class="n">integral</span> <span class="o">&gt;</span> <span class="mi">12000</span><span class="p">){</span>
+    <span class="n">integral</span> <span class="o">=</span> <span class="mi">12000</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Derivative Calculation</span>
+<span class="n">derivative</span> <span class="o">=</span> <span class="n">error</span> <span class="o">-</span> <span class="n">prevError</span><span class="p">;</span>
+<span class="n">prevError</span> <span class="o">=</span> <span class="n">error</span><span class="p">;</span>
+
+<span class="c1">// Ouput Calculation</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">error</span> <span class="o">*</span> <span class="n">kP</span> <span class="o">+</span> <span class="n">integral</span> <span class="o">*</span> <span class="n">kI</span> <span class="o">+</span> <span class="n">derivative</span> <span class="o">*</span> <span class="n">kD</span><span class="p">;</span>
+<span class="n">error</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">return</span> <span class="n">output</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id16">
+<h3>Plans for next Practice:<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Begin building the second mobile Goal lift.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Last Edited on 9/16/21.</p>
 </div>
 </div>
 </div>

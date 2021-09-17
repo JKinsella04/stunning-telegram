@@ -107,3 +107,51 @@ Last Edited on 9/14/21.
 ```{important}
 Last Edited on 9/15/21.
 ```
+
+## 9/16/21
+### Attendance:  &#9745; Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Finish the lifts.
+### Accomplished:
+- Finish the lifts.
+#### How:
+- Derek finished building the lift today by adding the finishing touches to it. The completed lift is a 4 bar that uses 2 200rpm motors with a 1:7 gear ratio geared for torque. Since we use 2 200rpm motors our lift is very fast so to compensate for this we will be using PID to safely move the lift between its maximum height and its start position so we do not cause strain on the motors by going past the lift's physical limits. 
+- We are using the new V5 potentiometer to get and accurate value of the lift's movement.
+- Derek also has fully planned out the pneumatic layout. We will be using two resevoirs each with 100psi that supply air to two single acting solenoids and one double acting solenoid.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nZzrLr_bpgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### Why:
+- We decided to use three solenoids instead of just two because we want to be able to control each dragger indepent of the other in case we only need to use one during the autonomous routine.
+- To make sure the robot does not break itself we are using PID in our most important mechanisms, such as the lift and the chassis. Below is the PID calculation that runs when we call ```PID.calculate();```
+```c++
+double calculate(double target, double current){
+// Proportional Calculation
+if ( error == 0) {
+    error = target - current;
+}
+
+// Integral Calculation
+integral += error;
+if (error == 0){
+    integral = 0;
+}if (integral > 12000){
+    integral = 12000;
+}
+
+// Derivative Calculation
+derivative = error - prevError;
+prevError = error;
+
+// Ouput Calculation
+output = error * kP + integral * kI + derivative * kD;
+error = 0
+return output;
+}
+```
+### Plans for next Practice:
+- Begin building the second mobile Goal lift.
+
+```{important}
+Last Edited on 9/16/21.
+```
