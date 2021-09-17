@@ -113,7 +113,7 @@ Last Edited on 9/15/21.
 ### Goals:
 - Finish the lifts.
 ### Accomplished:
-- Finish the lifts.
+- &#9745; Finish the lifts.
 #### How:
 - Derek finished building the lift today by adding the finishing touches to it. The completed lift is a 4 bar that uses 2 200rpm motors with a 1:7 gear ratio geared for torque. Since we use 2 200rpm motors our lift is very fast so to compensate for this we will be using PID to safely move the lift between its maximum height and its start position so we do not cause strain on the motors by going past the lift's physical limits. 
 - We are using the new V5 potentiometer to get and accurate value of the lift's movement.
