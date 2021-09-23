@@ -64,8 +64,38 @@ void MobileGoal::move(double target){
 ```
 ### Plans for next Practice:
 - Test the robot.
-- Begin strategizing 15 second auton routine.
+- Begin strategizing the 15 second auton routine.
 
 ```{important}
 Last Edited on 9/21/21.
+```
+
+## 9/22/21
+### Attendance: &#9745; Brody, &#9744; Derek, &#9745; Jack
+### Goals:
+- Test the robot.
+- Begin strategizing the 15 second auton routine.
+### Accomplished:
+- &#9745; Test the robot.
+- &#9745; Begin strategizing the 15 second auton routine.
+#### How:
+- Today we tested the robot by driving around the field and scoring goals by carrying them into the home zones and placing them onto the platforms. In our tests we have learned of a couple needed changes in the code and extra parts to strengthen the robot.
+- Brody and Jack began planning how we will accomplish the autonomous win point since doing that will be very important to do well in competitions.
+#### Why:
+- We needed to redo the code for the small lift because the current code did not account for the starting position. The new code now does by having a setup function that moves the small lift into the potentiometer range so the robot can accurately move the small lift after setup. We decided to do this instead of abandoninig the potentiometer because we need to have exact value readings to make sure we do not move the lift into the drive base and if we only use the motor encoders their error build-up could be problematic. 
+- For our first competition we want to be able to do the entire auton win point challenge by ourselves. This will allow us to not worry about our qualification partner's autonomous routines and just run our own consistent autonomous. Ensuring the AWP will allow us to place high in the qualification rankings which is very important.
+```c++
+// Moves small lift into the potentiometer range. Run before opcontrol/auton.
+void mobileGoal::setup(){
+    leftMobileGoal.move_absolute(-800, 127);
+    rightMobileGoal.move_absolute(-800, 127);
+}
+```
+
+### Plans for next Practice:
+- Add support structure to 4 bar.
+- Begin strategizing about the skills routines. 
+
+```{important}
+Last Edited on 9/22/21.
 ```
