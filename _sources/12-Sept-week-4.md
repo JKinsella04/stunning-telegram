@@ -101,7 +101,7 @@ Last Edited on 9/22/21.
 ```
 
 ## 9/23/21
-### Attendance: &#9745; Brody, &#9744; Derek, &#9745; Jack
+### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
 ### Goals:
 - Add support structure to 4 bar.
 - Begin strategizing about the skills routines.
