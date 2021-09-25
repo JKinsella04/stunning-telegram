@@ -99,3 +99,90 @@ void mobileGoal::setup(){
 ```{important}
 Last Edited on 9/22/21.
 ```
+
+## 9/23/21
+### Attendance: &#9745; Brody, &#9744; Derek, &#9745; Jack
+### Goals:
+- Add support structure to 4 bar.
+- Begin strategizing about the skills routines.
+
+### Accomplished:
+- &#9745; Add support structure to 4 bar.
+- &#9745; Begin strategizing about the skills routines.
+
+#### How:
+- Today Derek added a cross bar onto the 4 bar to secure it so both sides of the 4 bar move in unison.
+- Brody and Jack began desiging skills strategies by determining what scoring objectives we need to focus to maxmimmize our score. Since our robot is built to manipulate the mobile goals, we want to elevate all seven goals onto the two platforms in both driver and autonomous. Scoring seven elevated goals would be a skills score of 280 and as of 9/23/21 the highest drive skills score is 260. 
+- Jack continued working on Pure pursuit by developing the point to point drive state.
+```c++
+case ChassisState::POINT: {
+      distToTarget = hypot(target.x - *posX, target.y - *posY);
+
+      absAngleToTarget = atan2(target.y - *posY, target.x - *posX);
+
+      double thetaRad = macro::toRad(*theta);
+
+      relAngleToTarget = macro::angleWrap(absAngleToTarget - (thetaRad - macro::toRad(90)));
+
+      double relAngleDeg = macro::toDeg(relAngleToTarget);
+
+      relXToPoint = sin(relAngleToTarget) * distToTarget;
+      relYToPoint = cos(relAngleToTarget) * distToTarget;
+
+      double xPower = relXToPoint / (fabs(relXToPoint) + fabs(relYToPoint));
+      double yPower = relYToPoint / (fabs(relXToPoint) + fabs(relYToPoint));
+
+      // Drive PID calc
+      drive_PID.setError(relXToPoint);
+      drive_output = drive_PID.calculate();
+  
+      // Turn PID calc.
+      turn_PID.setError(relYToPoint);
+      turn_output = turn_PID.calculate();
+
+      // Find quickest turn.
+      // calcDir();
+      
+      // Slew Calcs.
+      TslewOutput = turnSlew.withGains(target.rateTurn, target.rateTurn, true).withLimit(target.speedTurn).calculate(turn_output);
+      LslewOutput = leftSlew.withGains(target.rateDrive, target.rateDrive, true).withLimit(target.speedDrive).calculate(drive_output);
+      RslewOutput = rightSlew.withGains(target.rateDrive, target.rateDrive, true).withLimit(target.speedDrive).calculate(drive_output);
+
+      // std::cout << "Angle:" << drive_PID.getError() << std::endl; //<< "AngleDeg:" << turn_output << std::endl;
+      std::cout << "relX: " << relXToPoint << " relY: " << relYToPoint << std::endl;
+      // std::cout << "xPower: " << xPower << " yPower: " << yPower << std::endl; 
+      // std::cout << "Drive: " << drive_output << " Turn: " << turn_output << std::endl;
+
+      left(LslewOutput + TslewOutput );
+      right(RslewOutput - TslewOutput);
+
+      // double relTurnAngle = relAngleToTarget - macro::toRad(180) + target.theta;
+      // double turnPower = macro::clip(relTurnAngle/macro::toRad(30), -1, 1); 
+
+      // std::cout << "turn: " << turnPower << " rel:" << relTurnAngle << std::endl;
+
+      if(fabs(drive_PID.getError()) <= tol && fabs(turn_PID.getError()) <= 0.75){
+        left(0);
+        right(0);
+        withGains().withTurnGains().withTol();
+        reset();
+        isSettled = true;
+        mode = ChassisState::IDLE;
+        goto end;
+      }
+
+      break;
+    }
+```
+    
+#### Why:
+- We needed the extra support on the 4 bar because the left side of the 4 bar would lag behind the right side which caused the robot to not be able to reach it's maximum height.
+- We are not worrying about parking during the skills routines because we do not expect to have enough time to score seven goals and park at the same time so we are just planning on elevating the mobile goals. 
+- Jack is developing point to point motion control because it will be very useful for moving in the autonomous phase. We will be able to use either odom/dead reckoning or the GPS sensor values as input  for this movement since all three options will return (x,y) coordinates. 
+### Plans for next Practice:
+- Fix the draggers.
+- Build the ring preload mechanism.
+
+```{important}
+Last Edited on 9/23/21.
+```

@@ -344,6 +344,45 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id10">
+   9/23/21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Attendance: ☑ Brody, ☐ Derek, ☑ Jack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Goals:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+     Accomplished:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id14">
+       How:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id15">
+       Why:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id16">
+     Plans for next Practice:
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -497,6 +536,113 @@
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Last Edited on 9/22/21.</p>
+</div>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>9/23/21<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h3>Attendance: ☑ Brody, ☐ Derek, ☑ Jack<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id12">
+<h3>Goals:<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Add support structure to 4 bar.</p></li>
+<li><p>Begin strategizing about the skills routines.</p></li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h3>Accomplished:<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>☑ Add support structure to 4 bar.</p></li>
+<li><p>☑ Begin strategizing about the skills routines.</p></li>
+</ul>
+<div class="section" id="id14">
+<h4>How:<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Today Derek added a cross bar onto the 4 bar to secure it so both sides of the 4 bar move in unison.</p></li>
+<li><p>Brody and Jack began desiging skills strategies by determining what scoring objectives we need to focus to maxmimmize our score. Since our robot is built to manipulate the mobile goals, we want to elevate all seven goals onto the two platforms in both driver and autonomous. Scoring seven elevated goals would be a skills score of 280 and as of 9/23/21 the highest drive skills score is 260.</p></li>
+<li><p>Jack continued working on Pure pursuit by developing the point to point drive state.</p></li>
+</ul>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">case</span> <span class="n">ChassisState</span><span class="o">::</span><span class="nl">POINT</span><span class="p">:</span> <span class="p">{</span>
+      <span class="n">distToTarget</span> <span class="o">=</span> <span class="n">hypot</span><span class="p">(</span><span class="n">target</span><span class="p">.</span><span class="n">x</span> <span class="o">-</span> <span class="o">*</span><span class="n">posX</span><span class="p">,</span> <span class="n">target</span><span class="p">.</span><span class="n">y</span> <span class="o">-</span> <span class="o">*</span><span class="n">posY</span><span class="p">);</span>
+
+      <span class="n">absAngleToTarget</span> <span class="o">=</span> <span class="n">atan2</span><span class="p">(</span><span class="n">target</span><span class="p">.</span><span class="n">y</span> <span class="o">-</span> <span class="o">*</span><span class="n">posY</span><span class="p">,</span> <span class="n">target</span><span class="p">.</span><span class="n">x</span> <span class="o">-</span> <span class="o">*</span><span class="n">posX</span><span class="p">);</span>
+
+      <span class="kt">double</span> <span class="n">thetaRad</span> <span class="o">=</span> <span class="n">macro</span><span class="o">::</span><span class="n">toRad</span><span class="p">(</span><span class="o">*</span><span class="n">theta</span><span class="p">);</span>
+
+      <span class="n">relAngleToTarget</span> <span class="o">=</span> <span class="n">macro</span><span class="o">::</span><span class="n">angleWrap</span><span class="p">(</span><span class="n">absAngleToTarget</span> <span class="o">-</span> <span class="p">(</span><span class="n">thetaRad</span> <span class="o">-</span> <span class="n">macro</span><span class="o">::</span><span class="n">toRad</span><span class="p">(</span><span class="mi">90</span><span class="p">)));</span>
+
+      <span class="kt">double</span> <span class="n">relAngleDeg</span> <span class="o">=</span> <span class="n">macro</span><span class="o">::</span><span class="n">toDeg</span><span class="p">(</span><span class="n">relAngleToTarget</span><span class="p">);</span>
+
+      <span class="n">relXToPoint</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="n">relAngleToTarget</span><span class="p">)</span> <span class="o">*</span> <span class="n">distToTarget</span><span class="p">;</span>
+      <span class="n">relYToPoint</span> <span class="o">=</span> <span class="n">cos</span><span class="p">(</span><span class="n">relAngleToTarget</span><span class="p">)</span> <span class="o">*</span> <span class="n">distToTarget</span><span class="p">;</span>
+
+      <span class="kt">double</span> <span class="n">xPower</span> <span class="o">=</span> <span class="n">relXToPoint</span> <span class="o">/</span> <span class="p">(</span><span class="n">fabs</span><span class="p">(</span><span class="n">relXToPoint</span><span class="p">)</span> <span class="o">+</span> <span class="n">fabs</span><span class="p">(</span><span class="n">relYToPoint</span><span class="p">));</span>
+      <span class="kt">double</span> <span class="n">yPower</span> <span class="o">=</span> <span class="n">relYToPoint</span> <span class="o">/</span> <span class="p">(</span><span class="n">fabs</span><span class="p">(</span><span class="n">relXToPoint</span><span class="p">)</span> <span class="o">+</span> <span class="n">fabs</span><span class="p">(</span><span class="n">relYToPoint</span><span class="p">));</span>
+
+      <span class="c1">// Drive PID calc</span>
+      <span class="n">drive_PID</span><span class="p">.</span><span class="n">setError</span><span class="p">(</span><span class="n">relXToPoint</span><span class="p">);</span>
+      <span class="n">drive_output</span> <span class="o">=</span> <span class="n">drive_PID</span><span class="p">.</span><span class="n">calculate</span><span class="p">();</span>
+  
+      <span class="c1">// Turn PID calc.</span>
+      <span class="n">turn_PID</span><span class="p">.</span><span class="n">setError</span><span class="p">(</span><span class="n">relYToPoint</span><span class="p">);</span>
+      <span class="n">turn_output</span> <span class="o">=</span> <span class="n">turn_PID</span><span class="p">.</span><span class="n">calculate</span><span class="p">();</span>
+
+      <span class="c1">// Find quickest turn.</span>
+      <span class="c1">// calcDir();</span>
+      
+      <span class="c1">// Slew Calcs.</span>
+      <span class="n">TslewOutput</span> <span class="o">=</span> <span class="n">turnSlew</span><span class="p">.</span><span class="n">withGains</span><span class="p">(</span><span class="n">target</span><span class="p">.</span><span class="n">rateTurn</span><span class="p">,</span> <span class="n">target</span><span class="p">.</span><span class="n">rateTurn</span><span class="p">,</span> <span class="nb">true</span><span class="p">).</span><span class="n">withLimit</span><span class="p">(</span><span class="n">target</span><span class="p">.</span><span class="n">speedTurn</span><span class="p">).</span><span class="n">calculate</span><span class="p">(</span><span class="n">turn_output</span><span class="p">);</span>
+      <span class="n">LslewOutput</span> <span class="o">=</span> <span class="n">leftSlew</span><span class="p">.</span><span class="n">withGains</span><span class="p">(</span><span class="n">target</span><span class="p">.</span><span class="n">rateDrive</span><span class="p">,</span> <span class="n">target</span><span class="p">.</span><span class="n">rateDrive</span><span class="p">,</span> <span class="nb">true</span><span class="p">).</span><span class="n">withLimit</span><span class="p">(</span><span class="n">target</span><span class="p">.</span><span class="n">speedDrive</span><span class="p">).</span><span class="n">calculate</span><span class="p">(</span><span class="n">drive_output</span><span class="p">);</span>
+      <span class="n">RslewOutput</span> <span class="o">=</span> <span class="n">rightSlew</span><span class="p">.</span><span class="n">withGains</span><span class="p">(</span><span class="n">target</span><span class="p">.</span><span class="n">rateDrive</span><span class="p">,</span> <span class="n">target</span><span class="p">.</span><span class="n">rateDrive</span><span class="p">,</span> <span class="nb">true</span><span class="p">).</span><span class="n">withLimit</span><span class="p">(</span><span class="n">target</span><span class="p">.</span><span class="n">speedDrive</span><span class="p">).</span><span class="n">calculate</span><span class="p">(</span><span class="n">drive_output</span><span class="p">);</span>
+
+      <span class="c1">// std::cout &lt;&lt; &quot;Angle:&quot; &lt;&lt; drive_PID.getError() &lt;&lt; std::endl; //&lt;&lt; &quot;AngleDeg:&quot; &lt;&lt; turn_output &lt;&lt; std::endl;</span>
+      <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;relX: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">relXToPoint</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; relY: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">relYToPoint</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+      <span class="c1">// std::cout &lt;&lt; &quot;xPower: &quot; &lt;&lt; xPower &lt;&lt; &quot; yPower: &quot; &lt;&lt; yPower &lt;&lt; std::endl; </span>
+      <span class="c1">// std::cout &lt;&lt; &quot;Drive: &quot; &lt;&lt; drive_output &lt;&lt; &quot; Turn: &quot; &lt;&lt; turn_output &lt;&lt; std::endl;</span>
+
+      <span class="n">left</span><span class="p">(</span><span class="n">LslewOutput</span> <span class="o">+</span> <span class="n">TslewOutput</span> <span class="p">);</span>
+      <span class="n">right</span><span class="p">(</span><span class="n">RslewOutput</span> <span class="o">-</span> <span class="n">TslewOutput</span><span class="p">);</span>
+
+      <span class="c1">// double relTurnAngle = relAngleToTarget - macro::toRad(180) + target.theta;</span>
+      <span class="c1">// double turnPower = macro::clip(relTurnAngle/macro::toRad(30), -1, 1); </span>
+
+      <span class="c1">// std::cout &lt;&lt; &quot;turn: &quot; &lt;&lt; turnPower &lt;&lt; &quot; rel:&quot; &lt;&lt; relTurnAngle &lt;&lt; std::endl;</span>
+
+      <span class="k">if</span><span class="p">(</span><span class="n">fabs</span><span class="p">(</span><span class="n">drive_PID</span><span class="p">.</span><span class="n">getError</span><span class="p">())</span> <span class="o">&lt;=</span> <span class="n">tol</span> <span class="o">&amp;&amp;</span> <span class="n">fabs</span><span class="p">(</span><span class="n">turn_PID</span><span class="p">.</span><span class="n">getError</span><span class="p">())</span> <span class="o">&lt;=</span> <span class="mf">0.75</span><span class="p">){</span>
+        <span class="n">left</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+        <span class="n">right</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+        <span class="n">withGains</span><span class="p">().</span><span class="n">withTurnGains</span><span class="p">().</span><span class="n">withTol</span><span class="p">();</span>
+        <span class="n">reset</span><span class="p">();</span>
+        <span class="n">isSettled</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+        <span class="n">mode</span> <span class="o">=</span> <span class="n">ChassisState</span><span class="o">::</span><span class="n">IDLE</span><span class="p">;</span>
+        <span class="k">goto</span> <span class="n">end</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id15">
+<h4>Why:<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>We needed the extra support on the 4 bar because the left side of the 4 bar would lag behind the right side which caused the robot to not be able to reach it’s maximum height.</p></li>
+<li><p>We are not worrying about parking during the skills routines because we do not expect to have enough time to score seven goals and park at the same time so we are just planning on elevating the mobile goals.</p></li>
+<li><p>Jack is developing point to point motion control because it will be very useful for moving in the autonomous phase. We will be able to use either odom/dead reckoning or the GPS sensor values as input  for this movement since all three options will return (x,y) coordinates.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id16">
+<h3>Plans for next Practice:<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Fix the draggers.</p></li>
+<li><p>Build the ring preload mechanism.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Last Edited on 9/23/21.</p>
 </div>
 </div>
 </div>
