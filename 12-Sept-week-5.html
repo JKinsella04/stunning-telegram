@@ -357,8 +357,18 @@
 <li><p>Derek created created this simple mechanism because we decided that being able to achieve the AWP will be crucial to our success this season.</p></li>
 <li><p>We launch the third ring into the goal because adding more pieces to either lift would be redundant when placing the ring ontop of the clamp scorest the ring very well.</p></li>
 <li><p>Since swapping to a double-acting piston did not solve the problem completely, we will start tomorrow off by changing the base point the piston is secured onto the robot. This should help so it has a better movement profile since currently the piston lacks the proper positioning to be able to extend.</p></li>
-<li><p>Jack added this feature because to be able to complete the AWP by ourselves we will need to move quickly from one side of the field to the other.</p></li>
+<li><p>Jack added this feature because to be able to complete the AWP by ourselves we will need to move quickly from one side of the field to the other. Below is the addition to ChassisState::DRIVE.</p></li>
 </ul>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="n">turnComplete</span> <span class="o">&amp;&amp;</span> <span class="n">target</span><span class="p">.</span><span class="n">thetaTwo</span> <span class="o">!=</span> <span class="k">nullptr</span><span class="p">){</span>
+    <span class="n">turn_output</span> <span class="o">=</span> <span class="n">turn_PID</span><span class="p">.</span><span class="n">calculate</span><span class="p">(</span><span class="o">*</span><span class="n">target</span><span class="p">.</span><span class="n">thetaTwo</span><span class="p">,</span> <span class="o">*</span><span class="n">theta</span><span class="p">);</span>
+<span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+    <span class="n">turn_output</span> <span class="o">=</span> <span class="n">turn_PID</span><span class="p">.</span><span class="n">calculate</span><span class="p">(</span><span class="n">target</span><span class="p">.</span><span class="n">theta</span><span class="p">,</span> <span class="o">*</span><span class="n">theta</span><span class="p">);</span>
+<span class="p">}</span><span class="k">if</span><span class="p">(</span><span class="n">fabs</span><span class="p">(</span><span class="n">turn_PID</span><span class="p">.</span><span class="n">getError</span><span class="p">())</span> <span class="o">&lt;=</span> <span class="n">turn_tol</span><span class="p">){</span>
+    <span class="n">turnComplete</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="n">turnSlew</span><span class="p">.</span><span class="n">reset</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="plans-for-next-practice">

@@ -19,7 +19,17 @@
 - Derek created created this simple mechanism because we decided that being able to achieve the AWP will be crucial to our success this season.
 - We launch the third ring into the goal because adding more pieces to either lift would be redundant when placing the ring ontop of the clamp scorest the ring very well.
 - Since swapping to a double-acting piston did not solve the problem completely, we will start tomorrow off by changing the base point the piston is secured onto the robot. This should help so it has a better movement profile since currently the piston lacks the proper positioning to be able to extend.
-- Jack added this feature because to be able to complete the AWP by ourselves we will need to move quickly from one side of the field to the other.
+- Jack added this feature because to be able to complete the AWP by ourselves we will need to move quickly from one side of the field to the other. Below is the addition to ChassisState::DRIVE.
+```c++
+if(turnComplete && target.thetaTwo != nullptr){
+    turn_output = turn_PID.calculate(*target.thetaTwo, *theta);
+}else {
+    turn_output = turn_PID.calculate(target.theta, *theta);
+}if(fabs(turn_PID.getError()) <= turn_tol){
+    turnComplete = true;
+    turnSlew.reset();
+}
+```
 ### Plans for next Practice:
 - Fix the draggers.
 
