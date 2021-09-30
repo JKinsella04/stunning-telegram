@@ -15,6 +15,10 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/T3CEADUJybk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i2RTYuKQQCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eax42Kk5JLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### Why:
 - Derek created created this simple mechanism because we decided that being able to achieve the AWP will be crucial to our success this season.
 - We launch the third ring into the goal because adding more pieces to either lift would be redundant when placing the ring ontop of the clamp scorest the ring very well.
@@ -36,3 +40,34 @@ if(turnComplete && target.thetaTwo != nullptr){
 ```{important}
 Last Edited on 9/28/21.
 ```
+## 9/29/21
+### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Fix the draggers.
+### Accomplished:
+- &#9745; Increase drive base clearance.
+- &#9745; Add ring blockers.
+- &#9745; Fix the draggers.
+#### How:
+- With the added weight of the lifts on the robot, we were unable to drive up the platforms since our drive base contacts the screws on the platform. To solve this problem we cut the c-channels on the drive base that touch the platform so they no longer contact it.
+- To help with the autonmous and driving we added two polycarbonate pieces in front of the wheels so the rings get blocked and cannot get under the wheels. 
+- While testing different positions with the draggers Derek and Jack determined that currently the only way to make the draggers work is if we use double acting pistons instead of single acting, but we only have one more double acting piston so we would be limited to only having one dragger. From this we are putting them on the backlog and will not worry much about them since we do not need them to perform well.
+
+<script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+<div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
+  data-link="https://photos.app.goo.gl/rMWvvQfaq98HZe8HA"
+  data-title="9/29/21"
+  data-description="2 new photos added to shared album"
+  data-delay="2">
+  <object data="https://lh3.googleusercontent.com/j3uDFU0hlnigUAWUkmKHI9XPc7SR_8TkQSg-gEphNEU-HnwDvVtRCVh3VQPvnXVrnPaUWYJTxmhQCoRbTPfxu8VkZCQLzAco-L2YS2fnVkM84hx58y5jHR8u5g70PwoQH_LyTLXWEg=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/7KhCd3piQEge11DFcDXauEQy-tMo1Z3ZMvv8h9YWiejGeqv1NChu3yMfPUAxJ_mWsAabqB3fAbfV0L5TJHQrTSvZuXhyZnvakK-NUWcTWW8sV5UFdLbTQlQbGRrvtQx2TBlYUO0dsA=w1920-h1080"></object>
+</div>
+
+#### Why:
+- Since we do not have enough double acting pistons we are putting the draggers on hiatus because we do not want to waste a lot of time for a mechanism that will only be used during one 15 second autonous routine. Instead of grabbing two mobile goals and dragging them, we will grab one and score it in our zone and then go back to grab a second goal. 
+- Once we get another double acting piston, we will recontinue the draggers because they will be very useful in securing the autonomous bonus in  elimination matches.
+
+### Plans for next Practice:
+- Secure the 4 bar tower.
+- Ensure the robot is able to pass inspection.
+- Begin working on the AWP auton routine.
