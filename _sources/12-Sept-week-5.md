@@ -72,7 +72,7 @@ Last Edited on 9/28/21.
 - Begin working on the AWP auton routine.
 
 ```{important}
-Last Edited on 9/28/21.
+Last Edited on 9/29/21.
 ```
 
 
@@ -103,6 +103,7 @@ Last Edited on 9/28/21.
   <object data="https://lh3.googleusercontent.com/U_BniSA9RzzwjPY549Yrs9zDTp50mn6V1XMrvFJnNw1Wh244-arBxZ6lyDmeIE-fgBOWYrAABiZISJ6EHWilhkKPfBIeXph_g432GYseutY1IK3MeRUwA2BA96lYiNE_lEnYynvxTg=w1920-h1080"></object>
 </div>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JGVk-EAkd4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Why:
 - We secured the 4 bar because it is very important that the lift mechanism stays as strong and consistent as possible since it is our most valuable scoring mechanism.
@@ -110,3 +111,7 @@ Last Edited on 9/28/21.
 ### Plans for next Practice:
 - Continue working on the AWP auton.
 - Have Derek start driving.
+
+```{important}
+Last Edited on 9/30/21.
+```
