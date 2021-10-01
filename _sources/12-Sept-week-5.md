@@ -68,6 +68,45 @@ Last Edited on 9/28/21.
 - Once we get another double acting piston, we will recontinue the draggers because they will be very useful in securing the autonomous bonus in  elimination matches.
 
 ### Plans for next Practice:
-- Secure the 4 bar tower.
-- Ensure the robot is able to pass inspection.
+- Secure the 4 bar towers.
 - Begin working on the AWP auton routine.
+
+```{important}
+Last Edited on 9/28/21.
+```
+
+
+## 9/30/21
+### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Secure the 4 bar towers.
+- Begin working on the AWP auton routine.
+### Accomplished:
+- &#9745; Secure the 4 bar towers.
+- &#9745; Begin working on the AWP auton routine.
+#### How:
+- We secured the 4 bar towers by adding a cross bar that is attached at the top of both towers. This bar helps secure them so they do not flex while the lift is moving and, the bar serves as the support for our GPS sensor once we are able to use the GPS sensor.
+- For our AWP auton Jack has planned to complete the entire routine in 5 actions. We will start on the left side of the home zone.
+    1. Lower small mobile goal lift.
+    2. Drive back to score the preload rings on the small mobile goal lift.
+    3. Complete a U-Turn and drive in one full motion to the other alliance goal.
+    4. Clamp onto the second alliance goal and score the third preload ring.
+    5. Drive backwards to clear the final AWP requirement.
+
+<script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+<div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
+  data-link="https://photos.app.goo.gl/pNR5JvBpFZp5vpV89"
+  data-title="9/30/21"
+  data-description="2 new photos added to shared album"
+  data-delay="2">
+  <object data="https://lh3.googleusercontent.com/KXsMZdeu6qwPyhR3_DFwkT2XhB7BcahhV4BpbI0ECblffwtHXtz_5Tws2LNYKx57_SuXgolISbH4c2UhMUT0esa0_3FERWkXUxTnKArEDs_L8pH2bhs24-HTAuv5IUNaYdlJMfuicA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/U_BniSA9RzzwjPY549Yrs9zDTp50mn6V1XMrvFJnNw1Wh244-arBxZ6lyDmeIE-fgBOWYrAABiZISJ6EHWilhkKPfBIeXph_g432GYseutY1IK3MeRUwA2BA96lYiNE_lEnYynvxTg=w1920-h1080"></object>
+</div>
+
+
+#### Why:
+- We secured the 4 bar because it is very important that the lift mechanism stays as strong and consistent as possible since it is our most valuable scoring mechanism.
+- Jack designed our auton like this because this is the most efficient path. Since we combine our turns with our lateral movements we will be able to do a U-turn and drive all the way to the second alliance goal even though it is on the opposite side of the field. 
+### Plans for next Practice:
+- Continue working on the AWP auton.
+- Have Derek start driving.
