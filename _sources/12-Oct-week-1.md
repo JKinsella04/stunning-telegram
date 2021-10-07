@@ -20,3 +20,18 @@
 Last Edited on 10/5/21.
 ```
 
+## 10/6/21
+### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Begin working on the Elimination match autonomous.
+### Accomplished:
+- &#9745; Improve AWP autonomous.
+### How:
+- Instead of starting to work on the second autonomous routine, Jack improved the AWP autonomous by grabbing a neutral mobile goal after completing the AWP requirements. Since we now score a neutral mobile goal our autonomous scores 23 points instead of 3. This improved autonomous routine will allow us to be able to score both the AWP as well as the most likely win the autonomous phase in the match.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sd9PVKnXKfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Why:
+- Improving our AWP autonomous is worth delaying the second autonomous because it will strengthen our chances of placing high in the rankings because it will allow us to both gain the extra win point as well as win more autonomous phases giving us the highest chance of maxing out the two most important scoring criteria. 
+#### Plans for next Practice:
+- Start driver practice.
