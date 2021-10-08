@@ -35,3 +35,36 @@ Last Edited on 10/5/21.
 - Improving our AWP autonomous is worth delaying the second autonomous because it will strengthen our chances of placing high in the rankings because it will allow us to both gain the extra win point as well as win more autonomous phases giving us the highest chance of maxing out the two most important scoring criteria. 
 #### Plans for next Practice:
 - Start driver practice.
+
+```{important}
+Last Edited on 10/6/21.
+```
+
+## 10/7/21
+### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Start driver practice.
+### Accomplished:
+- &#9745; Start driver practice.
+- &#9745; Map out the Elim match auton.
+#### How:
+- Derek starting practicing by just driving around getting accustomed to grabbing and scoring all the mobile goals in the zones and on the platforms.
+- Derek's goal for the October tournament is to score 290 in driver. To do this Derek will have to elevate 6 goals(240pts), score one in a home zone(20pts) and park(30pts). 
+- While Derek drove, Jack mapped out the routine for the Elim match auton. The robot will start on the right side and grab the far right neutral mobile goal and score it, then turn and grab the middle neutral goal, for a total of 40 points.
+
+```{figure} ././_images/october/twoGoal.png
+---
+width: 600px
+name: twoGoal.png
+---
+A mapping of the Elim auton.
+```
+
+#### Why:
+- We have not begun practicing skills runs yet because Derek first needs to drive the robot casually since he has not had enough practice to be comfortable driving the robot. Once he is used to driving the robot, Derek will start practicing skills runs.
+- To better use our time, Jack mapped out the auton routine while Derek was driving since Jack will be able to start finetuning the routine next week.
+### Plans for next Practice:
+- Begin testing the Elim match auton.
+```{important}
+Last Edited on 10/7/21.
+```
