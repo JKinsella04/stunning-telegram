@@ -14,6 +14,15 @@
 
 #### Why:
 - We decided to expand on the original autonomous because of the extra time and because having a better autonomous will allow us to not worry about our teammate's autonomous during the elimination rounds.
+- Below is the Elim match auton routine code.
+
+```{figure} ././_images/october/code.PNG
+---
+width: 954px
+name: code.PNG
+---
+A screenshot of the Elim match auton.
+```
 ### Plans for next Practice:
 - Perfect the new Elim match auton.
 
