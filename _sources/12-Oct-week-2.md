@@ -29,3 +29,25 @@ A screenshot of the Elim match auton.
 ```{important}
 Last Edited on 10/12/21.
 ```
+
+
+## 10/13/21
+### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Perfect the new Elim match auton.
+### Accomplished:
+- 50% complete with perfecting the Elim match auton.
+#### How:
+- Jack worked on perfecting the Elim match auton but it is still not finished. Since this auton has more motions than the AWP it is taking longer to perfect. While we do not have the routine perfected yet Jack did isolate the move that causes the biggest impact to it's consistency. The move when bringing the first two goals back into the home zone is the least accurate move and needs to fixed before we can accurately score the third goal.
+#### Why:
+- The movement to score the first two goals effects the third goal because this auton uses relative movement as opposed to absolute so it has the chance of not ending in the same spot every time. To mitigate this problem we just need to tune the PID and Slew to make the move as accurate as possible.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lcj5ZhbX27A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Plans for next Practice:
+- Finish the Elim match auton.
+- Have Derek continue driver practice.
+
+```{important}
+Last Edited on 10/13/21.
+```
