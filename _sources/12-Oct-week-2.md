@@ -45,9 +45,30 @@ Last Edited on 10/12/21.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Lcj5ZhbX27A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Plans for next Practice:
-- Finish the Elim match auton.
 - Have Derek continue driver practice.
 
 ```{important}
 Last Edited on 10/13/21.
+```
+
+## 10/14/21
+### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Continue driver practice.
+### Accomplished:
+- &#9745; Continue driver practice.
+#### How:
+- Derek and Brody worked together today planning out the driver skills routeine. Derek is currently able to score 200 points so he is only 80 points away from his goal. He is able to score 5 of the 7 goals in the 60 seconds. 
+- With the next two weeks Derek is well on pace to achieve his goal of 280 points.
+#### Why:
+- Derek's goal changed from 290 to 280 because we realized that our robot is very efficient at parking so instead of parking with goals Derek is going to focus on just scoring all 7 goals first.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QjbHCYF-qcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Plans for next Practice:
+- Begin working on skills autonomous.
+- Continue driver practice.
+
+```{important}
+Last Edited on 10/14/21.
 ```
