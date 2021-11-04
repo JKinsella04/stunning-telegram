@@ -89,3 +89,44 @@ Last Edited on 10/19/21.
 ```{important}
 Last Edited on 10/20/21.
 ```
+## 10/21/21
+### Attendance: &#9744; Brody, &#9745; Derek, &#9744; Jack 
+### Goals:
+- Continue driver practice.
+### Accomplished:
+- &#9745; Continue driver practice.
+#### How:
+- Derek continued practicing driving today by running driver skills runs.
+- To best use our time during driver practice days, we are using a new analyzing in which Derek drives for one minute then we set a timer for one minute to analyze what was good and bad in the run. Then once the timer goes off, we reset the field and Derek does another practice run. 
+#### Why:
+- We started timing our analyzing period because we have a problem of spending too much time analyzing what was wrong instead of actually practicing. This new routine is helpful for us since it forces us to be more aware of the time we are using during driver practice, to maximize the amount of actual driver practice Derek gets.
+### Plans for next Practice:
+- Continue coding the skills autonomous.
+- Continue driver practice.
+
+## Robot Release 1.0
+- Today will be the last entry for our first tournament, so below here we will explain everything we are bringing to our first competition.
+
+### Robot Features
+1. 333 RPM drive base. 
+> We will be faster then most of the teams there.
+2. 4 bar lift + Pneumatic clamp.
+> A fast Lift with PID + Slew to make it move efficiently and accurately.
+3. Small mobile goal lift.
+> Can carry a mobile goal the entire match while fighting over other goals.
+4. Angled c-channels
+> With our two 45 degree c-channels we will be able to tip the enemy's platform if goals are elevated on it.
+
+#### Code Features
+1. Absolute Position Tracking from Odom AND the GPS sensor.
+2. PID and Slew control for all moving mechanisms.
+3. Threads and State machines to properly manage every mechanism independently.
+
+#### Auton Routines
+1. Full Auton Win Point routine that also grabs one yellow goal.
+2. Elim Auton that grabs all three yellow mobile goals.
+3. Skills auton that scores at least 120 points.
+
+```{important}
+Last Edited on 10/21/21.
+```
