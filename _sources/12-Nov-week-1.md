@@ -1,4 +1,4 @@
-# 11/2/21-11/5/21
+# 11/2/21-11/4/21
 ## 11/2/21
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9744; Jack
 ### Goals:
@@ -49,3 +49,34 @@ Last Edited on 11/2/21.
 - Continue reworking the auton skills routine.
 - Redesign the ring blockers.
 
+```{important}
+Last Edited on 11/3/21.
+```
+
+## 11/4/21
+### Attendance: &#9744; Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Continue reworking the auton skills routine.
+- Redesign the ring blockers.
+### Accomplished:
+- &#9745; Continue reworking the auton skills routine.
+- &#9745; Redesign the ring blockers.
+
+#### How:
+- Jack continued working on the auton skills routine and we now can score the first two goals consistently. Below is footage of the auton working.
+- To fix the ring blockers Derek removed the standoffs and replaced them with polycarbonate that goes just low enough to block the rings while not getting stuck in the ground when the robot climbs up the ramp. Currently we are able to park with one goal.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7OLXtzuDoDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### Why:
+- Jack has spent this week just working on the first two goals because it is important that we do not rush our skills auton like we did for our first tournament. We are now alloting this whole month to just manipulating this auton and leaving our match autons the way they were before. 
+- We had to swap out the ring blockers because the old versions prevented us from climbing up the platform so now with our new ones we are able to park which will be crucial to winning skills and also doing better in harder matches.
+
+### Plans for next Practice:
+- Expand auton to score the next two goals (4 total).
+- Perfect the ring blockers.
+- Begin 313 driver practice.
+
+```{important}
+Last Edited on 11/4/21.
+```
