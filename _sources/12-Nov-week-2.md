@@ -21,3 +21,36 @@
 ```{important}
 Last Edited on 11/9/21.
 ```
+## 11/10/21
+### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Continue Skills Auton.
+- Continue Driver Practice.
+### Accomplished:
+- &#9745; Continue Driver Practice
+- &#9745; Fixed Auton Turning.
+
+#### How:
+- Jack fixed the turning problem by correcting the calcDir function. Before it would add 360 when the target or current heading was 0 but this did not work properly. Now when the inital turn is greater than 180 degrees it will reverse it and find the opposite angle. 
+- Derek continued practicing driving and is very close to being able to get 313 in one minute. His current best run is 1 minute 3 seconds. 
+#### Why:
+- Jack fixed the calcDir function by inputting the turnError into the arctan function which will return the opposite angle if the turnError is greater than 180.
+- Derek's practice of the new route is going well and he is on pace to achieve 313 in under a minute. 
+
+```c++
+void Chassis::calcDir(){
+    turnComplete ? turnError = target.thetaTwo - *theta : turnError = target.theta - *theta;
+    
+    turnError = macro::toRad(turnError);
+    turnError = atan2( sin( turnError ), cos( turnError ) );
+    turnError = macro::toDeg(turnError);
+    
+    turn_output = turn_PID.calculate(turnError);
+}
+```
+### Plans for next Practice:
+- Continue Auton Skills.
+- Continue Driver Practice.
+
+
+

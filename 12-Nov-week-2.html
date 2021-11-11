@@ -364,6 +364,45 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   11/10/21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Attendance: ☑ Brody, ☑ Derek, ☑ Jack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Goals:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Accomplished:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       How:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       Why:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Plans for next Practice:
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -421,6 +460,58 @@
 <p class="admonition-title">Important</p>
 <p>Last Edited on 11/9/21.</p>
 </div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>11/10/21<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h3>Attendance: ☑ Brody, ☑ Derek, ☑ Jack<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id5">
+<h3>Goals:<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Continue Skills Auton.</p></li>
+<li><p>Continue Driver Practice.</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>Accomplished:<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>☑ Continue Driver Practice</p></li>
+<li><p>☑ Fixed Auton Turning.</p></li>
+</ul>
+<div class="section" id="id7">
+<h4>How:<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Jack fixed the turning problem by correcting the calcDir function. Before it would add 360 when the target or current heading was 0 but this did not work properly. Now when the inital turn is greater than 180 degrees it will reverse it and find the opposite angle.</p></li>
+<li><p>Derek continued practicing driving and is very close to being able to get 313 in one minute. His current best run is 1 minute 3 seconds.</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h4>Why:<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Jack fixed the calcDir function by inputting the turnError into the arctan function which will return the opposite angle if the turnError is greater than 180.</p></li>
+<li><p>Derek’s practice of the new route is going well and he is on pace to achieve 313 in under a minute.</p></li>
+</ul>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">Chassis::calcDir</span><span class="p">(){</span>
+    <span class="n">turnComplete</span> <span class="o">?</span> <span class="n">turnError</span> <span class="o">=</span> <span class="n">target</span><span class="p">.</span><span class="n">thetaTwo</span> <span class="o">-</span> <span class="o">*</span><span class="nl">theta</span> <span class="p">:</span> <span class="n">turnError</span> <span class="o">=</span> <span class="n">target</span><span class="p">.</span><span class="n">theta</span> <span class="o">-</span> <span class="o">*</span><span class="n">theta</span><span class="p">;</span>
+    
+    <span class="n">turnError</span> <span class="o">=</span> <span class="n">macro</span><span class="o">::</span><span class="n">toRad</span><span class="p">(</span><span class="n">turnError</span><span class="p">);</span>
+    <span class="n">turnError</span> <span class="o">=</span> <span class="n">atan2</span><span class="p">(</span> <span class="n">sin</span><span class="p">(</span> <span class="n">turnError</span> <span class="p">),</span> <span class="n">cos</span><span class="p">(</span> <span class="n">turnError</span> <span class="p">)</span> <span class="p">);</span>
+    <span class="n">turnError</span> <span class="o">=</span> <span class="n">macro</span><span class="o">::</span><span class="n">toDeg</span><span class="p">(</span><span class="n">turnError</span><span class="p">);</span>
+    
+    <span class="n">turn_output</span> <span class="o">=</span> <span class="n">turn_PID</span><span class="p">.</span><span class="n">calculate</span><span class="p">(</span><span class="n">turnError</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id9">
+<h3>Plans for next Practice:<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Continue Auton Skills.</p></li>
+<li><p>Continue Driver Practice.</p></li>
+</ul>
 </div>
 </div>
 </div>
