@@ -21,6 +21,7 @@
 ```{important}
 Last Edited on 11/9/21.
 ```
+
 ## 11/10/21
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
 ### Goals:
@@ -49,8 +50,10 @@ void Chassis::calcDir(){
 }
 ```
 ### Plans for next Practice:
-- Continue Auton Skills.
+- Continue Skills Auton.
 - Continue Driver Practice.
 
-
+```{important}
+Last Edited on 11/10/21.
+```
 
