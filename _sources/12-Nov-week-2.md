@@ -57,3 +57,30 @@ void Chassis::calcDir(){
 Last Edited on 11/10/21.
 ```
 
+## 11/11/21
+### Attendance: &#9745;  Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Continue Skills Auton.
+- Continue Driver Practice.
+### Accomplished;
+- &#9745; Continue Skills Auton.
+- &#9745; Continue Driver Practice.
+- &#9745; Ensure Match autons work.
+#### How:
+- Today Jack continued working on the autonoumous routine. After fixing the turning functions, he has changed the movement when approaching the platform to score the goals more consistently. 
+- Jack also practiced running the two match autons to make sure that none of the changes in the code have affected those autons. The match autons still work very well.
+- Derek continued driver practice and is able to do the 313 driver route. With more practice Derek will be more consistent and might be able to end with extra time left.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yze-xESAmXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### Why:
+- Jack tested the other autons today because those autons are still very important since they will determine how well we are able to do and without a consistent AWP auton will won't place first and could even lose the chance to get the excellence award.
+- Derek will continue to practice driving even though he can do the 313 driver route because currently Derek is able to do in 60 seconds but getting the routine in under 60 seconds will secure our skills spot a lot more.
+
+### Plans for next Practice:
+- Continue Skills Auton.
+- Continue Driver Practice.
+
+```{important}
+Last Edited on 11/11/21.
+```
