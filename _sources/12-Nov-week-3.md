@@ -23,3 +23,23 @@
 ```{important}
 Last Edited on 11/16/21.
 ```
+
+## 11/17/21
+### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Continue Skills Auton.
+### Accomplished:
+- &#9745; Continue Skills Auton.
+
+#### How:
+- Because of the lost time yesterday and given Derek's improvment we decided to just focus on programming today.
+- Jack continued programming the skills route and we can now score 120 points by scoring 3 goals on a platform. After scoring the third goal the robot will grab the closest alliance goal and score it on the other platform.
+#### Why:
+- Now that the third goal works in the skills auton tommorrow we will focus on scoring the fourth goal tomorrow to ensure that we stay on pace with our monthly schedule.
+### Plans for next Practice:
+- Continue Skills Auton.
+- Continue Driver Practice.
+
+```{important}
+Last Edited on 11/17/21.
+```
