@@ -38,8 +38,33 @@ Last Edited on 11/16/21.
 - Now that the third goal works in the skills auton tommorrow we will focus on scoring the fourth goal tomorrow to ensure that we stay on pace with our monthly schedule.
 ### Plans for next Practice:
 - Continue Skills Auton.
-- Continue Driver Practice.
+
 
 ```{important}
 Last Edited on 11/17/21.
+```
+
+## 11/18/21
+### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Continue Skills Auton.
+### Accomplished:
+- 120 point skills auton.
+- Update skills auton route.
+#### How:
+- Today Jack continued working on making sure the third goal's scoring is consistent. The robot now scores the first three goals on the platform consistently.
+- We also decided to change the auton route to score 290 instead of 280. This will make our total skills score equal 600 (310 Driver + 290 Auton). To score 290 we will elevate 5 goals on one platform while parking with one goal on the other platform. The 7th goal will be scored in a home zone. Currently as of 11/18/21 the highest skills score in the world is 592 so if we can achieve our maximum score of 600, we can get first place in the world.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D8Tr0_yuagw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### Why:
+- Jack focused on making sure the third goal's scoring was consistent because it is a difficult goal since elevating the tall middle goal requires the robot to drop it from a specific spot next to the platforms.
+- We chose to change the auton route because increasing it to 290 will allow us to get first place in the world, and we think that we can achieve it.
+
+### Plans for next Practice:
+- Continue Skills Auton.
+- Continue Driver Practice.
+
+```{important}
+Last Edited on 11/18/21.
 ```
