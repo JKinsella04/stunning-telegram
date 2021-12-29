@@ -1,4 +1,4 @@
-# November 2021 Schedule
+# December 2021 Schedule
 
 ```{figure} ././_images/dec_calendar.png
 ---
