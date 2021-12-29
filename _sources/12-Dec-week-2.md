@@ -64,7 +64,7 @@ Last Edited on 12/14/21.
 Last Edited on 12/15/21.
 ```
 
-## 12/15/21
+## 12/16/21
 ### Attendance: &#9744; Brody, &#9745; Derek, &#9745; Jack
 ### Goals:
 - Tune clamp on the back lift.
