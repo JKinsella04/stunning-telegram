@@ -79,7 +79,7 @@ A view of the intake.
 ```
 
 ### Plans for next Practice:
-- Finish up the robot. 
+- Design new license plates. 
 
 ```{important}
 Last Edited on 12/23/21.
