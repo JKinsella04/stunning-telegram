@@ -54,3 +54,27 @@ A view of the ring hood.
 ```{important}
 Last Edited on 12/29/21.
 ```
+
+
+## 12/30/21
+### Attendance: &#9744; Brody, &#9745; Derek, &#9744; Jack
+### Cancellation of JP2 Tournament:
+- The Tournament on January 8th has been cancelled and our next tournament is now on January 22nd. Since we now have more time we are going to spend more time perfecting the robot since we need to spend more time than expected to tune the ring hood.
+
+### Goals:
+- Continue tuning the ring hood.
+### Accomplished:
+- &#9745; Continue tuning the ring hood.
+
+#### How:
+- To help controlling the movement of the rings, Derek tried adding plastic and track to guide the rings downward onto the alliance goal. This design works pretty well but rings can get stuck between the track and the goal's post which will prevent any more rings to be scored.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L3wackASyGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### Why:
+- Derek chose to use track as the ring guider because using plastic was not feasible since there is no secure way to attach the plastic onto the standoffs. However we are using plastic to block off the top section of the hood to ensure that no rings fly upward. 
+- With the extra time we will now be able to continue working on the robot and finetune the ring hood  through next week to ensure that it works well. 
+
+### Plans for next Practice:
+- Ensure no rings can get stuck.
+- Continue tuning the ring hood.
