@@ -23,8 +23,57 @@
     - RIGHT - Back Lift Release + Untilt + Stop Conveyer
 
 ### Plans for next Practice:
+- Start new AWP routine.
+
+```{important}
+Last Edited on 1/4/22.
+```
+
+## 1/5/22 
+### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Start new AWP routine.
+
+### Accomplished:
+- Start new AWP routine.
+- Controller heartbeat timer.
+
+### How:
+- Today Jack began working on the new AWP routine. This new routine will score our preload rings on the left alliance goal then grab the two left neutral goals and then finish by grabbing the last goal and scoring match load rings we put down on the field.
+- Jack also added a new feature that rumbles the controller to tell Derek how much time has progressed in the match. The rumble start offs very slow and infrequent and as the time in the match approaches 30 seconds left it will speed up.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XsuCbc7SRWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### Why:
+- Since we have gone to two competitions now Jack believes it is important to improve our AWP routine autonomous since more teams will most likely have an autonomous that would be able to compete with our old routine.
+- Jack added the heartbeat feature because Derek wanted a system that would shake the controller based off how much time has
+
+### Plans for next Practice:
 - Build static ring hood.
 
 ```{important}
-Last Edited on 1/4/24.
+Last Edited on 1/5/22.
+```
+
+## 1/6/22 
+### Attendance: &#9744; Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Build static ring hood.
+
+### Accomplished:
+- &#9745; Build static ring hood.
+
+#### How:
+- Today Derek built the static ring hood to help guide the rings onto the alliance goal post. This new design is better than our previous one as it currently scored 50% of the rings onto the goal. To increase the consistency of the hood, we are going to make it longer so all orientations of the rings contact the hood. Below is a video that shows how the hood works as well as its current shortcomings. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o_8Co2Pghjk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### Why:
+- This current hood does not work perfectly because it is too short and certain orientations of rings will bypass the hood instead of hitting it. Elongating the hood will solve this problem while still allowing the rings that do get scored to continue to work properly.
+
+### Plans for next Practice:
+- Lengthen the ring hood.
+
+```{important}
+Last Edited on 1/6/22.
 ```
