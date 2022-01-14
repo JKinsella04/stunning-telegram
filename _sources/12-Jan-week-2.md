@@ -51,3 +51,54 @@ Last Edited on 1/11/22.
 ```{important}
 Last Edited on 1/12/22.
 ```
+
+## 1/13/22 
+### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Finish AWP routine.
+- Begin driver practice.
+
+### Accomplished:
+- &#9745; Begin driver practice.
+
+#### How:
+- Derek started practicing driving today. He is not focusing on skills runs yet, as he needs to get used to driving the new robot before running the routine. Since our new robot can score rings our goal for driver skills will be 337 points. These new points are from scoring 9 rings on a goal. Due to time we will stick with the same original route that Derek drove with the old robot but now he can drive through rings since we can now score them on goals.
+- Jack continued trying to optimize the AWP routine but was unable to finish it today. He will have to continue next week. The autonomous is nearly complete but needs just a little more finetuning. Below is the current AWP routine.
+
+```c++
+void awp(){
+  backLift.setState(BackLiftState::UP);
+  pros::delay(300);
+  // Score Preload rings
+  backLift.setState(BackLiftState::DOWN);
+  chassis.drive(1050,75,450).withGains(15, 0, 6.25).withAngle(90).withTurnGains(133, 0, 66).withTol(50, 5).waitUntilSettled();
+  chassis.turn(0).withTurnGains(133,0,66).withTol(0,5).waitUntilSettled();
+  chassis.drive(-5000, 900, 450, 12000).withGains(15, 0, 6.25).withAngle(358).withTurnGains(266, 1, 133).withTol(50, 10).waitUntilSettled();
+  backLift.setState(BackLiftState::UP);
+  frontLift.setState(FrontLiftState::UP);
+  chassis.drive(400).withGains(15, 0, 6.25).withTol(50).waitUntilSettled();  
+  chassis.turn(85).withTurnGains(133,0,33).withTol(0,5).waitUntilSettled();
+  chassis.drive(1500).withGains(15, 0, 6.25).withTol(50).waitUntilSettled();
+  frontLift.setState(FrontLiftState::DOWN);
+  chassis.drive(-1000).withGains(15, 0, 6.25).withTol(50).waitUntilSettled();
+  backLift.setState(BackLiftState::DOWN);
+  // Grab second alliance goal and score rings. AWP COMPLETE
+  chassis.turn(75).withTurnGains(266, 0, 66).withTol(0, 5).waitUntilSettled();
+  chassis.drive(1750).withGains(15, 0, 6.25).withTol(50).waitUntilSettled();
+  frontLift.setClamp(true).setState(FrontLiftState::MIDDLE).waitUntilSettled();
+  // Grab first yellow goal
+ }
+ ```
+#### Why:
+- Derek will only score rings on the goal that starts on the AWP line and as he drives over to the platform to park he will be able to drive through rings to fill the goal.
+- We are keeping the same driver routine because Derek really likes this routine and even though it is a new robot he should be able to easily complete the routine in under a minute just like before.
+
+### Plans for next Practice:
+- Finish AWP routine.
+- Continue driver practice.
+- Begin Elim auton.
+- Begin Skills auton
+
+```{important}
+Last Edited on 1/13/22.
+```

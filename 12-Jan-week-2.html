@@ -472,6 +472,45 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id10">
+   1/13/22
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Attendance: ☑ Brody, ☑ Derek, ☑ Jack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Goals:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+     Accomplished:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id14">
+       How:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id15">
+       Why:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id16">
+     Plans for next Practice:
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -572,6 +611,76 @@
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Last Edited on 1/12/22.</p>
+</div>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>1/13/22<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h3>Attendance: ☑ Brody, ☑ Derek, ☑ Jack<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id12">
+<h3>Goals:<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Finish AWP routine.</p></li>
+<li><p>Begin driver practice.</p></li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h3>Accomplished:<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>☑ Begin driver practice.</p></li>
+</ul>
+<div class="section" id="id14">
+<h4>How:<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Derek started practicing driving today. He is not focusing on skills runs yet, as he needs to get used to driving the new robot before running the routine. Since our new robot can score rings our goal for driver skills will be 337 points. These new points are from scoring 9 rings on a goal. Due to time we will stick with the same original route that Derek drove with the old robot but now he can drive through rings since we can now score them on goals.</p></li>
+<li><p>Jack continued trying to optimize the AWP routine but was unable to finish it today. He will have to continue next week. The autonomous is nearly complete but needs just a little more finetuning. Below is the current AWP routine.</p></li>
+</ul>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">awp</span><span class="p">(){</span>
+  <span class="n">backLift</span><span class="p">.</span><span class="n">setState</span><span class="p">(</span><span class="n">BackLiftState</span><span class="o">::</span><span class="n">UP</span><span class="p">);</span>
+  <span class="n">pros</span><span class="o">::</span><span class="n">delay</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span>
+  <span class="c1">// Score Preload rings</span>
+  <span class="n">backLift</span><span class="p">.</span><span class="n">setState</span><span class="p">(</span><span class="n">BackLiftState</span><span class="o">::</span><span class="n">DOWN</span><span class="p">);</span>
+  <span class="n">chassis</span><span class="p">.</span><span class="n">drive</span><span class="p">(</span><span class="mi">1050</span><span class="p">,</span><span class="mi">75</span><span class="p">,</span><span class="mi">450</span><span class="p">).</span><span class="n">withGains</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">6.25</span><span class="p">).</span><span class="n">withAngle</span><span class="p">(</span><span class="mi">90</span><span class="p">).</span><span class="n">withTurnGains</span><span class="p">(</span><span class="mi">133</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">66</span><span class="p">).</span><span class="n">withTol</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">5</span><span class="p">).</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">chassis</span><span class="p">.</span><span class="n">turn</span><span class="p">(</span><span class="mi">0</span><span class="p">).</span><span class="n">withTurnGains</span><span class="p">(</span><span class="mi">133</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">66</span><span class="p">).</span><span class="n">withTol</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">).</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">chassis</span><span class="p">.</span><span class="n">drive</span><span class="p">(</span><span class="mi">-5000</span><span class="p">,</span> <span class="mi">900</span><span class="p">,</span> <span class="mi">450</span><span class="p">,</span> <span class="mi">12000</span><span class="p">).</span><span class="n">withGains</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">6.25</span><span class="p">).</span><span class="n">withAngle</span><span class="p">(</span><span class="mi">358</span><span class="p">).</span><span class="n">withTurnGains</span><span class="p">(</span><span class="mi">266</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">133</span><span class="p">).</span><span class="n">withTol</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">10</span><span class="p">).</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">backLift</span><span class="p">.</span><span class="n">setState</span><span class="p">(</span><span class="n">BackLiftState</span><span class="o">::</span><span class="n">UP</span><span class="p">);</span>
+  <span class="n">frontLift</span><span class="p">.</span><span class="n">setState</span><span class="p">(</span><span class="n">FrontLiftState</span><span class="o">::</span><span class="n">UP</span><span class="p">);</span>
+  <span class="n">chassis</span><span class="p">.</span><span class="n">drive</span><span class="p">(</span><span class="mi">400</span><span class="p">).</span><span class="n">withGains</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">6.25</span><span class="p">).</span><span class="n">withTol</span><span class="p">(</span><span class="mi">50</span><span class="p">).</span><span class="n">waitUntilSettled</span><span class="p">();</span>  
+  <span class="n">chassis</span><span class="p">.</span><span class="n">turn</span><span class="p">(</span><span class="mi">85</span><span class="p">).</span><span class="n">withTurnGains</span><span class="p">(</span><span class="mi">133</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">33</span><span class="p">).</span><span class="n">withTol</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">).</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">chassis</span><span class="p">.</span><span class="n">drive</span><span class="p">(</span><span class="mi">1500</span><span class="p">).</span><span class="n">withGains</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">6.25</span><span class="p">).</span><span class="n">withTol</span><span class="p">(</span><span class="mi">50</span><span class="p">).</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">frontLift</span><span class="p">.</span><span class="n">setState</span><span class="p">(</span><span class="n">FrontLiftState</span><span class="o">::</span><span class="n">DOWN</span><span class="p">);</span>
+  <span class="n">chassis</span><span class="p">.</span><span class="n">drive</span><span class="p">(</span><span class="mi">-1000</span><span class="p">).</span><span class="n">withGains</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">6.25</span><span class="p">).</span><span class="n">withTol</span><span class="p">(</span><span class="mi">50</span><span class="p">).</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">backLift</span><span class="p">.</span><span class="n">setState</span><span class="p">(</span><span class="n">BackLiftState</span><span class="o">::</span><span class="n">DOWN</span><span class="p">);</span>
+  <span class="c1">// Grab second alliance goal and score rings. AWP COMPLETE</span>
+  <span class="n">chassis</span><span class="p">.</span><span class="n">turn</span><span class="p">(</span><span class="mi">75</span><span class="p">).</span><span class="n">withTurnGains</span><span class="p">(</span><span class="mi">266</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">66</span><span class="p">).</span><span class="n">withTol</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">).</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">chassis</span><span class="p">.</span><span class="n">drive</span><span class="p">(</span><span class="mi">1750</span><span class="p">).</span><span class="n">withGains</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">6.25</span><span class="p">).</span><span class="n">withTol</span><span class="p">(</span><span class="mi">50</span><span class="p">).</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">frontLift</span><span class="p">.</span><span class="n">setClamp</span><span class="p">(</span><span class="nb">true</span><span class="p">).</span><span class="n">setState</span><span class="p">(</span><span class="n">FrontLiftState</span><span class="o">::</span><span class="n">MIDDLE</span><span class="p">).</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="c1">// Grab first yellow goal</span>
+ <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id15">
+<h4>Why:<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Derek will only score rings on the goal that starts on the AWP line and as he drives over to the platform to park he will be able to drive through rings to fill the goal.</p></li>
+<li><p>We are keeping the same driver routine because Derek really likes this routine and even though it is a new robot he should be able to easily complete the routine in under a minute just like before.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id16">
+<h3>Plans for next Practice:<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Finish AWP routine.</p></li>
+<li><p>Continue driver practice.</p></li>
+<li><p>Begin Elim auton.</p></li>
+<li><p>Begin Skills auton</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Last Edited on 1/13/22.</p>
 </div>
 </div>
 </div>
