@@ -34,3 +34,33 @@ And the tournament on 1/22/22 was also rescheduled due to COVID for 2/12/22. So 
 ```{important}
 Last Edited on 1/25/22.
 ```
+
+## 1/26/22 
+### Attendance: &#9745;  Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Start Elim auton.
+- Continue Driver practice.
+
+### Accomplished:
+- Finish Elim auton.
+- Continue Driver practice.
+
+#### How:
+- Derek continued practicing driving and has changed the routine slightly. After elevating the first two goals Derek will grab the blue alliance goal and then grab the tall neutral goal. 
+ 
+- Today Jack made the elim auton. It is the same route that our old robot used just finetuned to our new robot. Since our robot is faster than before Jack was able to save 2 seconds on the autonomous bringing the run time down to 4 seconds. This is very good as it will help ensure that we get both goals before the opposing team gets either. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CXj9izmbvUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### Why:
+- Derek does this because grabbing a goal with the front lift shifts our center of gravity and can cause us to tip. If we grab a goal with the back lift our center of gravity stays at the center of the drive base allowing us to move quickly without tipping.
+
+- Jack finetuned our old autonomous routine because it is the quickest auton for grabbing two neutral goals. He was able to save time by tuning the auton to not overshoot the goals by having the drive base stop before the middle line. This makes the autonomous quicker since it is driving less distance and also will lower the chances of the opposing alliance being able to grab the goal.
+
+### Plans for next Practice:
+- Finish AWP routine.
+- Continue Driver practice.
+
+```{important}
+Last Edited on 1/26/22.
+```
