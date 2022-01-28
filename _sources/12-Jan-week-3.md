@@ -42,8 +42,8 @@ Last Edited on 1/25/22.
 - Continue Driver practice.
 
 ### Accomplished:
-- Finish Elim auton.
-- Continue Driver practice.
+- &#9745; Finish Elim auton.
+- &#9745; &#9745; Continue Driver practice.
 
 #### How:
 - Derek continued practicing driving and has changed the routine slightly. After elevating the first two goals Derek will grab the blue alliance goal and then grab the tall neutral goal. 
@@ -63,4 +63,75 @@ Last Edited on 1/25/22.
 
 ```{important}
 Last Edited on 1/26/22.
+```
+
+## 1/27/22 
+### Attendance: &#9744;  Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Finish AWP routine.
+- Continue Driver practice.
+
+### Accomplished:
+- &#9745; Finish AWP routine.
+- &#9745; Continue Driver practice.
+
+#### How:
+- Today Jack finished the AWP routine by finetuning the movements that grab the two neutral mobile goals. This auton now scores 3-7 rings between the two alliance goals and then grabs two yellow neutral goals for a maximum total of 61 points. This is a major improvement from the previous auton which could only score 23 points. The main point increase here is that we are now grabbing two neutral goals instead of just one.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1lpFz1eV82Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- Derek continued practicing driving today and is close to scoring a 310 driver score like before. With more practice Derek will get used to the new robot since it is very different from the last build. 
+#### Why:
+- Jack finetuned the autonomous by tweaking the turning angles as well as the PID + Slew values for each movement. With these constants properly tuned the autonomous is much more consistent than before.
+- Our primary goal is for Derek to get back to being able to score 310 points in skills since the scoring method in that routine is the most effective still. 
+
+### Plans for next Practice:
+- Begin skills auton
+- Continue driver practice.
+
+```{important}
+Last Edited on 1/27/22.
+```
+
+## Robot Release 2.0
+- Today is the last entry before the February 5th PSA competition so below here we will explain everything we are bringing to the tournament.
+> Since this is a turning point in our season with the new robot we are marking this as our 2.0 release.
+
+```{figure} ././_images/january/robotSide.PNG
+---
+width: 500
+name: robotSide.PNG
+---
+Side view of our current robot.
+```
+
+### Robot Features
+    1. 6 motor 280 RPM drive base.
+> Most teams in South Carolina either have 2 or 4 motor drive bases so ours being 6 motor will give us more speed as well as more strength so we will be able to fight for goals better than ever before.
+
+    2. 4 bar lift + Pneumatic clamp.
+> A fast lift with PID + Slew to make it move efficiently and accurately.
+
+    3. Pneumatic Tilt + Clamp.
+> We are able to tilt and clamp onto a goal holding it securely while also being able to score rings on it.
+
+    4. Ring Conveyer Belt.
+> With our 2.0 robot release we are now able to score rings on the alliance mobile goal posts. This will give us a major advantage since most teams in South Carolina currently can not score rings at all.
+
+    5. Ring Blockers.
+> Our robot has ring blockers to enure we do not get stuck on any rings while driving.
+
+### Code Features
+1. Absolute Position Trackign from Odom AND the GPS Sensor.
+2. PID and Slew control for all moving mechanisms.
+3. Threads and State machines to properly manage every mechanism independently.
+4. Pure Pursuit for absolute position based movement during the skills autonomous.
+
+### Auton Routines
+1. Full Auton Win Point routine that grabs 2 neutral mobile goals.
+2. Elim Auton that grabs 2 neutral mobile goals in 4 seconds.
+3. Skills auton.
+
+```{important}
+Last Edited on 1/27/22.
 ```
