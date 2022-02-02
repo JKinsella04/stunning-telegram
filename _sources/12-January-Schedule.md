@@ -1,4 +1,4 @@
-# January 2021 Schedule
+# January 2022 Schedule
 
 ```{figure} ././_images/jan_calendar.png
 ---
