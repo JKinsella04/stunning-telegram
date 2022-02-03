@@ -94,7 +94,7 @@ Last Edited on 1/27/22.
 ```
 
 ## Robot Release 2.0
-- Today is the last entry before the February 5th PSA competition so below here we will explain everything we are bringing to the tournament.
+- Today is the last entry before the February 5th PSA competition so below here we will explain everything we are bringing to the tournament. To get a full view of the code we are bringing to the tournament you can visit our github repo [here.](https://github.com/PSASchool/9447H-TippingPoint)
 > Since this is a turning point in our season with the new robot we are marking this as our 2.0 release.
 
 ```{figure} ././_images/january/robotSide.PNG
