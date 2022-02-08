@@ -1,8 +1,4 @@
 # 2/1/22-2/3/22
-```{Note}
-Due to COVID our school went virtual last week causing us to skip practice on 1/18/22-1/20/22.
-And the tournament on 1/22/22 was also rescheduled due to COVID for 2/12/22. So now our next tournament is 2/5/22.
-```
 
 ## 2/1/22 
 ### Attendance: &#9745;  Brody, &#9745; Derek, &#9745; Jack
@@ -29,9 +25,48 @@ And the tournament on 1/22/22 was also rescheduled due to COVID for 2/12/22. So 
 
 
 ### Plans for next Practice:
-- &#9745; Start skills routine.
-- &#9745; Continue driver pratice.
+- Start skills routine.
+- Continue driver pratice.
 
 ```{important}
 Last Edited on 2/1/22.
 ```
+
+## 2/2/22 
+### Attendance: &#9745;  Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Start skills routine.
+- Continue driver pratice.
+
+### Accomplished:
+- &#9745; 80 point skills routine.
+- &#9745; Continue driver pratice.
+#### How:
+- Today Jack made a 80 point skills run that grabs two goals and elevates them onto the platform. Since today is the last practice before we have to move our field to the gym for the tournament we decided to just make an 80 point and spend the rest of the day practicing driving.
+- Derek continued practicing driving the 310 driver route. He best run today was a 5 second stop time. 
+#### Why:
+- Jack made a 80 point skills auton because it is a simple auton to make that can also be expanded on next week before our next tournament. Before the tournament on 2/12 the skills auton will be increased to score at least 120 points.
+
+### Plans for next Practice:
+- Prepare and setup the tournament.
+
+```{important}
+Last Edited on 2/2/22.
+```
+
+## 2/2/22 
+### Attendance: &#9745;  Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Prepare and setup the tournament.
+
+### Accomplished:
+- &#9745; Prepare and setup the tournament.
+
+#### How:
+- Today all PSA teams in robotics worked on getting the tournament fields ready for this weekend.
+
+#### Why:
+- Since we had to deconstruct the field to move it to the gym of our school we were unable to practice auton or driver runs.
+
+### Plans for next Practice:
+- Make any changes based off tournament results.
