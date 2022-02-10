@@ -65,3 +65,42 @@ Last Edited on 2/8/22.
 ```{important}
 Last Edited on 2/9/22.
 ```
+
+## Robot Release 2.1
+- Today is the last entry before the February 12th Polaris Tech competition so below here we will explain everything we are bringing to the tournament. To get a full view of the code we are bringing to the tournament you can visit our github repo [here.](https://github.com/PSASchool/9447H-TippingPoint)
+> Since last week we released the 2.0 version of our robot and code we are marking this release as 2.1 since only minor changes have happened through this week.
+
+```{figure} ././_images/january/robotSide.PNG
+---
+width: 500
+name: robotSide.PNG
+---
+Side view of our current robot.
+```
+
+### Robot Features
+    1. 6 motor 280 RPM drive base.
+> Most teams in South Carolina either have 2 or 4 motor drive bases so ours being 6 motor will give us more speed as well as more strength so we will be able to fight for goals better than ever before.
+
+    2. 4 bar lift + Pneumatic clamp.
+> A fast lift with PID + Slew to make it move efficiently and accurately.
+
+    3. Pneumatic Tilt + Clamp.
+> We are able to tilt and clamp onto a goal holding it securely while also being able to score rings on it.
+
+    4. Ring Conveyer Belt.
+> With our 2.0 robot release we are now able to score rings on the alliance mobile goal posts. This will give us a major advantage since most teams in South Carolina currently can not score rings at all.
+
+    5. Ring Blockers.
+> Our robot has ring blockers to enure we do not get stuck on any rings while driving.
+
+### Code Features
+1. Absolute Position Tracking from Odom AND the GPS Sensor.
+2. PID and Slew control for all moving mechanisms.
+3. Threads and State machines to properly manage every mechanism independently.
+4. Pure Pursuit for absolute position based movement.
+
+### Auton Routines
+1. Full Auton Win Point routine that grabs 2 neutral mobile goals.
+2. Elim Auton that grabs 2 neutral mobile goals in 4 seconds.
+3. 200 point Skills auton.

@@ -504,6 +504,28 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#robot-release-2-1">
+   Robot Release 2.1
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#robot-features">
+     Robot Features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code-features">
+     Code Features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#auton-routines">
+     Auton Routines
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -613,6 +635,69 @@
 <p class="admonition-title">Important</p>
 <p>Last Edited on 2/9/22.</p>
 </div>
+</div>
+</div>
+<div class="section" id="robot-release-2-1">
+<h2>Robot Release 2.1<a class="headerlink" href="#robot-release-2-1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Today is the last entry before the February 12th Polaris Tech competition so below here we will explain everything we are bringing to the tournament. To get a full view of the code we are bringing to the tournament you can visit our github repo <a class="reference external" href="https://github.com/PSASchool/9447H-TippingPoint">here.</a></p></li>
+</ul>
+<blockquote>
+<div><p>Since last week we released the 2.0 version of our robot and code we are marking this release as 2.1 since only minor changes have happened through this week.</p>
+</div></blockquote>
+<div class="figure align-default" id="robotside-png">
+<a class="reference internal image-reference" href="_images/january/robotSide.PNG"><img alt="_images/january/robotSide.PNG" src="_images/january/robotSide.PNG" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 40 </span><span class="caption-text">Side view of our current robot.</span><a class="headerlink" href="#robotside-png" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="robot-features">
+<h3>Robot Features<a class="headerlink" href="#robot-features" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. 6 motor 280 RPM drive base.
+</pre></div>
+</div>
+<blockquote>
+<div><p>Most teams in South Carolina either have 2 or 4 motor drive bases so ours being 6 motor will give us more speed as well as more strength so we will be able to fight for goals better than ever before.</p>
+</div></blockquote>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>2. 4 bar lift + Pneumatic clamp.
+</pre></div>
+</div>
+<blockquote>
+<div><p>A fast lift with PID + Slew to make it move efficiently and accurately.</p>
+</div></blockquote>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>3. Pneumatic Tilt + Clamp.
+</pre></div>
+</div>
+<blockquote>
+<div><p>We are able to tilt and clamp onto a goal holding it securely while also being able to score rings on it.</p>
+</div></blockquote>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>4. Ring Conveyer Belt.
+</pre></div>
+</div>
+<blockquote>
+<div><p>With our 2.0 robot release we are now able to score rings on the alliance mobile goal posts. This will give us a major advantage since most teams in South Carolina currently can not score rings at all.</p>
+</div></blockquote>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>5. Ring Blockers.
+</pre></div>
+</div>
+<blockquote>
+<div><p>Our robot has ring blockers to enure we do not get stuck on any rings while driving.</p>
+</div></blockquote>
+</div>
+<div class="section" id="code-features">
+<h3>Code Features<a class="headerlink" href="#code-features" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Absolute Position Tracking from Odom AND the GPS Sensor.</p></li>
+<li><p>PID and Slew control for all moving mechanisms.</p></li>
+<li><p>Threads and State machines to properly manage every mechanism independently.</p></li>
+<li><p>Pure Pursuit for absolute position based movement.</p></li>
+</ol>
+</div>
+<div class="section" id="auton-routines">
+<h3>Auton Routines<a class="headerlink" href="#auton-routines" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Full Auton Win Point routine that grabs 2 neutral mobile goals.</p></li>
+<li><p>Elim Auton that grabs 2 neutral mobile goals in 4 seconds.</p></li>
+<li><p>200 point Skills auton.</p></li>
+</ol>
 </div>
 </div>
 </div>
