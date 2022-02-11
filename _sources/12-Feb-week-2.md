@@ -57,13 +57,44 @@ Last Edited on 2/8/22.
 - Derek is continuing to improve every practice and will be more than ready for the tournament this weekend.
 
 ### Plans for next Practice:
+- Continue driver practice.
+- Improve skills auton.
+
+```{important}
+Last Edited on 2/9/22.
+```
+
+## 2/10/22 
+### Attendance: &#9745;  Brody, &#9745; Derek, &#9745; Jack
+### Goals:
+- Continue driver practice.
+- Improve skills auton.
+
+### Accomplished:
+- &#9745; Improve skills auton.
+- &#9745; Continue driver practice.
+- &#9745; Automate Back lift.
+
+#### How:
+- Today Jack improved the autonomous by expanding it to grab the next two goals and elevate one. Before elevating the third goal, the robot will score match load rings that we introduce. After picking them up it will elevate the third goal and then move to elevate the fourth. Jack also spent time ensuring that the first two goals are elevated correctly.
+
+- Derek continued practicing driving and is getting more comfortable with getting the 310-336 driver run.
+
+- Jack also automated the back lift today by adding a limit switch to detect when a goal is in position to be grabbed by the back lift. Now in driving Derek can drive up to the goal and get it into position and once the limit switch detects the goal it will grab it automatically.
+#### Why:
+- Jack spent time tuning the first two goals because it is important that our robot scores the first two as consistently as possible so it does not effect the second half of the routine.
+
+- Derek is continuing the same driver route since he wants to make sure that he will be ready for this tournament.
+
+- Jack added this new feature because grabbing a goal with the back lift has proven to be tricky for Derek while driving in matches and allowing him to just focus on driving the robot will be very helpful for him.
+### Plans for next Practice:
 - Tune intake and intake hood.
 - Strengthen 4 bar.
 - Continue driver practice.
 - Improve skills auton.
 
 ```{important}
-Last Edited on 2/9/22.
+Last Edited on 2/10/22.
 ```
 
 ## Robot Release 2.1
@@ -104,3 +135,7 @@ Side view of our current robot.
 1. Full Auton Win Point routine that grabs 2 neutral mobile goals.
 2. Elim Auton that grabs 2 neutral mobile goals in 4 seconds.
 3. 200 point Skills auton.
+
+```{important}
+Last Edited on 2/10/22.
+```
