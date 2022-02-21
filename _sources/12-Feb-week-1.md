@@ -54,7 +54,7 @@ Last Edited on 2/1/22.
 Last Edited on 2/2/22.
 ```
 
-## 2/2/22 
+## 2/3/22 
 ### Attendance: &#9745;  Brody, &#9745; Derek, &#9745; Jack
 ### Goals:
 - Prepare and setup the tournament.
@@ -70,3 +70,7 @@ Last Edited on 2/2/22.
 
 ### Plans for next Practice:
 - Make any changes based off tournament results.
+
+```{important}
+Last Edited on 2/3/22.
+```

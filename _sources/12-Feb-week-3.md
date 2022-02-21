@@ -44,6 +44,8 @@ Last Edited on 2/15/22.
 
 - Today we tested and tuned our intake by analyzing slow motion footage of the rings being scored onto the goal and added a half-cut c-channel to help guide the rings even more so then consistently score on the post. This new addition in tandem with the new back clamp now allows us to better score rings onto the alliance goals as intended.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B_v57Ze4Ark" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 - Derek also reinforced the 4 bar today by replacing the standoffs with half-cuts. What this allows us to do is add tension between the bars on both sides to more efficiently lift up the goals.
 
 ```{code}c++
