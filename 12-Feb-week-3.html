@@ -645,14 +645,14 @@
 <ul class="simple">
 <li><p>Derek also reinforced the 4 bar today by replacing the standoffs with half-cuts. What this allows us to do is add tension between the bars on both sides to more efficiently lift up the goals.</p></li>
 </ul>
-<div class="highlight-{code}c++ notranslate"><div class="highlight"><pre><span></span>if( fabs( leftJoystick ) &lt; 1 &amp;&amp; fabs( rightJoystick ) &lt; 1 ){
-    lastRot = *rotation; 
-    braking = true;
-    // If no controller input get current position and set braking to true.
-}
-if( braking ){ 
-    leftJoystick = rightJoystick = drive_PID.set(30,0,0).calculate(lastRot, *rotation);
-} // PID from current position to last known position.
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span> <span class="n">fabs</span><span class="p">(</span> <span class="n">leftJoystick</span> <span class="p">)</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">fabs</span><span class="p">(</span> <span class="n">rightJoystick</span> <span class="p">)</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="p">){</span>
+    <span class="n">lastRot</span> <span class="o">=</span> <span class="o">*</span><span class="n">rotation</span><span class="p">;</span> 
+    <span class="n">braking</span> <span class="o">=</span> <span class="n">true</span><span class="p">;</span>
+    <span class="o">//</span> <span class="n">If</span> <span class="n">no</span> <span class="n">controller</span> <span class="nb">input</span> <span class="n">get</span> <span class="n">current</span> <span class="n">position</span> <span class="ow">and</span> <span class="nb">set</span> <span class="n">braking</span> <span class="n">to</span> <span class="n">true</span><span class="o">.</span>
+<span class="p">}</span>
+<span class="k">if</span><span class="p">(</span> <span class="n">braking</span> <span class="p">){</span> 
+    <span class="n">leftJoystick</span> <span class="o">=</span> <span class="n">rightJoystick</span> <span class="o">=</span> <span class="n">drive_PID</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">calculate</span><span class="p">(</span><span class="n">lastRot</span><span class="p">,</span> <span class="o">*</span><span class="n">rotation</span><span class="p">);</span>
+<span class="p">}</span> <span class="o">//</span> <span class="n">PID</span> <span class="kn">from</span> <span class="nn">current</span> <span class="n">position</span> <span class="n">to</span> <span class="n">last</span> <span class="n">known</span> <span class="n">position</span><span class="o">.</span>
 </pre></div>
 </div>
 </div>

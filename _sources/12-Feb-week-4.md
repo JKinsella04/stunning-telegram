@@ -90,3 +90,31 @@ Last Edited on 2/22/22.
 ```{important}
 Last Edited on 2/23/22.
 ```
+
+## 2/24/22 
+### Attendance: &#9744;  Brody, &#9745; Derek, &#9744; Jack
+### Goals:
+- Continue driver practice.
+
+### Accomplished:
+- &#9745; Continue driver practice.
+- &#9745; Smooth air release for back lift.
+
+#### How:
+- Unexpectedly Brody and Jack were unable to go to practice today so instead of working on the judge interview and the autonomous Derek spent the entire practice driving.
+
+- Derek also added speed controllers to the pneumatics that power our back lift so when we disengage the pistons the mobile goal will be dropped slowly so no rings get descored from it falling.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/645WDYbrap4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- Derek scrimmaged against our sister team 9447N. Practicing normal matches is also very important since the majority of his driving will be in the match format.
+#### Why:
+- Since Brody and Jack were unable to make it to practice Derek was able to focus on his driving today allowing him time to improve his driving skill. Because of this the initial goals for today will be rescheduled to next Tuesday.
+
+- Adding the speed controller to the penumatics is very important since before when we would drop alliance mobile goals with the backlift we would lose 1-3 rings depending on how many were scored on the post. Having the slower back lift will be very useful since we will no longer lose rings after scoring them.
+
+### Plans for next Practice:
+- Finetune Left + Right AWP autons.
+- Create Elim Bracket Autons (Old Elim + Middle Goal).
+- Continue driver practice.
+- Practice judges interview.

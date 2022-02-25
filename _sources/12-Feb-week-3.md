@@ -48,7 +48,7 @@ Last Edited on 2/15/22.
 
 - Derek also reinforced the 4 bar today by replacing the standoffs with half-cuts. What this allows us to do is add tension between the bars on both sides to more efficiently lift up the goals.
 
-```{code}c++
+```{code}
 if( fabs( leftJoystick ) < 1 && fabs( rightJoystick ) < 1 ){
     lastRot = *rotation; 
     braking = true;
