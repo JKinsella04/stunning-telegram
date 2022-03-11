@@ -546,6 +546,45 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id10">
+   3/9/22
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Attendance: ☑   Brody, ☑ Derek, ☑ Jack
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Goals:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+     Accomplished:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id14">
+       How:
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id15">
+       Why:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id16">
+     Plans for next Practice:
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -643,6 +682,86 @@
 <ul class="simple">
 <li><p>Retune autons to use okapi units.</p></li>
 <li><p>Test and tune ring hood.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>3/9/22<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h3>Attendance: ☑   Brody, ☑ Derek, ☑ Jack<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id12">
+<h3>Goals:<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Retune autons to use okapi units.</p></li>
+<li><p>Test and tune ring hood.</p></li>
+<li><p>CAD Worlds robot.</p></li>
+</ul>
+</div>
+<div class="section" id="id13">
+<h3>Accomplished:<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>☑ Retune Left + Right 1/2 AWP autons.</p></li>
+<li><p>☑ Fix air leaks.</p></li>
+<li><p>☑ Continue driver practice.</p></li>
+</ul>
+<div class="section" id="id14">
+<h4>How:<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Today Jack tuned the the two 1/2 AWP autons today to use the okapi units. The movements have a tolerance range of 0.5 inches - 2 inches and the turns have a tolerance of 1 degree. Jack tuned these two autonomous programs first since they are the simplest as well as the most important autonomous programs since we will most likely only run these at CREATE since most robots will be able to score half of the AWP bonus.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">void</span> <span class="n">leftAWP</span><span class="p">()</span> <span class="p">{</span> <span class="o">//</span> <span class="n">One</span> <span class="n">yellow</span> <span class="o">+</span> <span class="n">left</span> <span class="n">AWP</span>
+  <span class="n">frontLift</span><span class="o">.</span><span class="n">toggleClamp</span><span class="p">();</span>
+  <span class="n">chassis</span><span class="o">.</span><span class="n">setBrakeType</span><span class="p">(</span><span class="n">COAST</span><span class="p">);</span>
+  <span class="n">backLift</span><span class="o">.</span><span class="n">setState</span><span class="p">(</span><span class="n">BackLiftState</span><span class="p">::</span><span class="n">AUTON</span><span class="p">);</span>
+  <span class="n">frontLift</span><span class="o">.</span><span class="n">withTol</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">setState</span><span class="p">(</span><span class="n">FrontLiftState</span><span class="p">::</span><span class="n">DOWN</span><span class="p">);</span>
+  <span class="n">chassis</span><span class="o">.</span><span class="n">drive</span><span class="p">(</span><span class="mi">42</span><span class="n">_in</span><span class="p">,</span> <span class="mf">2.5</span><span class="n">_ftps2</span><span class="p">)</span><span class="o">.</span><span class="n">withAngle</span><span class="p">(</span><span class="mi">355</span><span class="n">_deg</span><span class="p">,</span> <span class="mi">28</span><span class="n">_radps2</span><span class="p">)</span><span class="o">.</span><span class="n">withGains</span><span class="p">(</span><span class="mf">3.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">.5</span><span class="p">)</span><span class="o">.</span><span class="n">withTurnGains</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span><span class="o">.</span><span class="n">withTol</span><span class="p">(</span><span class="mi">2</span><span class="n">_in</span><span class="p">)</span><span class="o">.</span><span class="n">withTurnTol</span><span class="p">(</span><span class="mi">10</span><span class="n">_deg</span><span class="p">)</span><span class="o">.</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">frontLift</span><span class="o">.</span><span class="n">toggleClamp</span><span class="p">()</span><span class="o">.</span><span class="n">setState</span><span class="p">(</span><span class="n">FrontLiftState</span><span class="p">::</span><span class="n">UP</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span><span class="o">.</span><span class="n">waitUntilClamped</span><span class="p">();</span>
+  <span class="n">chassis</span><span class="o">.</span><span class="n">drive</span><span class="p">(</span><span class="o">-</span><span class="mi">52</span><span class="n">_in</span><span class="p">)</span><span class="o">.</span><span class="n">withAngle</span><span class="p">(</span><span class="mi">15</span><span class="n">_deg</span><span class="p">)</span><span class="o">.</span><span class="n">withTol</span><span class="p">(</span><span class="mi">3</span><span class="n">_in</span><span class="p">)</span><span class="o">.</span><span class="n">withTurnTol</span><span class="p">(</span><span class="mi">5</span><span class="n">_deg</span><span class="p">)</span><span class="o">.</span><span class="n">withTurnGains</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span><span class="o">.</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">chassis</span><span class="o">.</span><span class="n">turn</span><span class="p">(</span><span class="mi">95</span><span class="n">_deg</span><span class="p">,</span> <span class="mf">1.1</span><span class="n">_radps2</span><span class="p">,</span> <span class="mi">14</span><span class="n">_radps</span><span class="p">)</span><span class="o">.</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">chassis</span><span class="o">.</span><span class="n">drive</span><span class="p">(</span><span class="o">-</span><span class="mi">30</span><span class="n">_in</span><span class="p">,</span> <span class="mf">.2</span><span class="n">_ftps2</span><span class="p">,</span> <span class="mf">.2</span><span class="n">_ftps2</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.75</span><span class="n">_ftps</span><span class="p">)</span><span class="o">.</span><span class="n">withAngle</span><span class="p">(</span><span class="mi">90</span><span class="n">_deg</span><span class="p">)</span><span class="o">.</span><span class="n">withTol</span><span class="p">(</span><span class="mi">1</span><span class="n">_in</span><span class="p">,</span> <span class="n">true</span><span class="p">)</span><span class="o">.</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">backLift</span><span class="o">.</span><span class="n">toggleClamp</span><span class="p">();</span>
+  <span class="n">chassis</span><span class="o">.</span><span class="n">drive</span><span class="p">(</span><span class="mi">27</span><span class="n">_in</span><span class="p">,</span> <span class="mf">0.05</span><span class="n">_ftps2</span><span class="p">,</span> <span class="mf">0.05</span><span class="n">_ftps2</span><span class="p">,</span> <span class="mf">1.5</span><span class="n">_ftps</span><span class="p">)</span><span class="o">.</span><span class="n">withGains</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">withAngle</span><span class="p">(</span><span class="mi">105</span><span class="n">_deg</span><span class="p">)</span><span class="o">.</span><span class="n">withTol</span><span class="p">(</span><span class="mi">2</span><span class="n">_in</span><span class="p">)</span><span class="o">.</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">chassis</span><span class="o">.</span><span class="n">drive</span><span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="n">_in</span><span class="p">,</span> <span class="mf">0.05</span><span class="n">_ftps2</span><span class="p">,</span> <span class="mf">0.05</span><span class="n">_ftps2</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="n">_ftps</span><span class="p">)</span><span class="o">.</span><span class="n">withGains</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">withAngle</span><span class="p">(</span><span class="mi">105</span><span class="n">_deg</span><span class="p">)</span><span class="o">.</span><span class="n">withTol</span><span class="p">(</span><span class="mi">2</span><span class="n">_in</span><span class="p">)</span><span class="o">.</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">chassis</span><span class="o">.</span><span class="n">drive</span><span class="p">(</span><span class="mi">19</span><span class="n">_in</span><span class="p">,</span> <span class="mf">0.05</span><span class="n">_ftps2</span><span class="p">,</span> <span class="mf">0.05</span><span class="n">_ftps2</span><span class="p">,</span> <span class="mf">1.5</span><span class="n">_ftps</span><span class="p">)</span><span class="o">.</span><span class="n">withGains</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">withAngle</span><span class="p">(</span><span class="mi">105</span><span class="n">_deg</span><span class="p">)</span><span class="o">.</span><span class="n">withTol</span><span class="p">(</span><span class="mi">2</span><span class="n">_in</span><span class="p">)</span><span class="o">.</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">chassis</span><span class="o">.</span><span class="n">drive</span><span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="n">_in</span><span class="p">,</span> <span class="mf">0.05</span><span class="n">_ftps2</span><span class="p">,</span> <span class="mf">0.05</span><span class="n">_ftps2</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="n">_ftps</span><span class="p">)</span><span class="o">.</span><span class="n">withGains</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">withAngle</span><span class="p">(</span><span class="mi">105</span><span class="n">_deg</span><span class="p">)</span><span class="o">.</span><span class="n">withTol</span><span class="p">(</span><span class="mi">2</span><span class="n">_in</span><span class="p">)</span><span class="o">.</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">chassis</span><span class="o">.</span><span class="n">drive</span><span class="p">(</span><span class="mi">19</span><span class="n">_in</span><span class="p">,</span> <span class="mf">0.05</span><span class="n">_ftps2</span><span class="p">,</span> <span class="mf">0.05</span><span class="n">_ftps2</span><span class="p">,</span> <span class="mf">1.5</span><span class="n">_ftps</span><span class="p">)</span><span class="o">.</span><span class="n">withGains</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">withAngle</span><span class="p">(</span><span class="mi">105</span><span class="n">_deg</span><span class="p">)</span><span class="o">.</span><span class="n">withTol</span><span class="p">(</span><span class="mi">2</span><span class="n">_in</span><span class="p">)</span><span class="o">.</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+  <span class="n">chassis</span><span class="o">.</span><span class="n">drive</span><span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="n">_in</span><span class="p">,</span> <span class="mf">0.05</span><span class="n">_ftps2</span><span class="p">,</span> <span class="mf">0.05</span><span class="n">_ftps2</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="n">_ftps</span><span class="p">)</span><span class="o">.</span><span class="n">withGains</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">withAngle</span><span class="p">(</span><span class="mi">105</span><span class="n">_deg</span><span class="p">)</span><span class="o">.</span><span class="n">withTol</span><span class="p">(</span><span class="mi">2</span><span class="n">_in</span><span class="p">)</span><span class="o">.</span><span class="n">waitUntilSettled</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Derek continued practicing driving by running through the skills route repeatedly. Derek also found a broken tubing connection on our solenoid which caused us to lose air quickly. Derek remedied this by replacing the faulty one and checked all the other connections to ensure no other parts were damaged.</p></li>
+<li><p>Derek began working on the design of our worlds robot. We want to build a new robot for worlds that will be faster and lighter while not losing any functionality. To do this we have to cut down and minimize the amount of metal we use.</p></li>
+</ul>
+<script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+<div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
+  data-link="https://photos.app.goo.gl/84dJ7ne9evvwg1kt6"
+  data-title="3/10/22"
+  data-description="4 new items added to shared album"
+  data-delay="2">
+  <object data="https://lh3.googleusercontent.com/7aggNwhQPQb8Ayk6R49aFX2qM2rHu1kgHIKqPTTJr2iOs05LyMexYc9JKNS8vrIyGTLsMJBcd7xU2h0_Nw51sMgk21B3YbTTDdJ6zxMMS3a20STmEFm5WdBph4YaOCEYo1MvEuJJBw=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/plo-G665i7Kk2_V5gZ3ffH-BM3k0uGK4geyDeWfTYVzmN0yVUDN5cWbv0_WWWGxIsK72ZZyHMBdOyIt5nazRJiYWD_Wu7COIJmchMN798xcUt1gz3qT5nS2icPO6CU8WEkVaCZEJ5w=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/u0ggK59Xy7Hb-zkNugX4ZqBQtOec7RTR_NzOVO-N3LYVfk_oYlhKM3q0t1vBe4SivoWl846Vg1y_44pzxKG52xNRDF64p5Tq89qfhu-8ewILAxbfG-Nj_il5-GYngxloPSZ87-sDGA=w1920-h1080"></object>
+  <object data="https://lh3.googleusercontent.com/VOqdiQ7yK8jb2wg7zFfiZXx7m22MOH9TA4BYefTYeTwTCtHTodWVNXmUBIdlPhlCF59h6QPA6kPTrXgqCUxqwAiS0O9sAOnK0dmzKdSdsk7eVSCOR0Q8aXqJCr5ZZ7AraU_zIr23uw=w1920-h1080"></object>
+</div>
+</div>
+<div class="section" id="id15">
+<h4>Why:<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Since most robots will likely be able to hold two goals and score rings on alliance goals at CREATE, we are expecting to be running our 1/2 AWP autons that grab a neutral goal first since ownership of the neutral goals will be highly contested. After changed the units our two autons work efficiently and are more accurate than before.</p></li>
+<li><p>Derek is continuing driver practice since he wants to be able to score over 330 points in driver skills at CREATE. We believe that if Derek continues practicing the driver route that he will be able to score over 330 at CREATE.</p></li>
+<li><p>Derek noticed that the robot was losing too much air after each run and after fixing the broken piece had stabilized our air loss. Since the pneumatics serve such an important role on our robot is is very important that they are optimized to use the least amount of air.</p></li>
+<li><p>Derek has begun working on the new design since we will only have a month after CREATE to build this new robot. We are doing this now so we will have enough time to build and test and practice before the world championship. Derek is planning on having the design finished by next wednesday. So we will be ready to build after returning from Iowa.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id16">
+<h3>Plans for next Practice:<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Convert middle goal auton + Full AWP auton to okapi units.</p></li>
+<li><p>Continue driver practice.</p></li>
+<li><p>Finish CAD.</p></li>
 </ul>
 </div>
 </div>
