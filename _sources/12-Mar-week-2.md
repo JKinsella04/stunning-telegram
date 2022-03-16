@@ -3,11 +3,11 @@
 ### Attendance: &#9745;  Brody, &#9745; Derek, &#9745; Jack
 ### Goals:
 - Fix back clamp.
-- Switch to okapi Units
+- Switch to okapi Units.
 
 ### Accomplished:
 - &#9745; Fix back clamp.
-- &#9745; Switch to okapi Units
+- &#9745; Switch to okapi Units.
 
 #### How:
 - Today Derek worked on fixing the back clamp because during states, there were many instances where when grabbing the second alliance goal we were unable to hold it properly and score rings effectively. Derek has fixed this issue by manipulating the connection points and the angle at which the pneumatics push the clamp to more efficiently tilt the goal. 
@@ -28,6 +28,9 @@ chassis.turn(90_deg, 2.2_radps2, 27.6_radps).withTurnTol(1_deg).waitUntilSettled
 ### Plans for next Practice:
 - Redesign ring hood.
 
+```{important}
+Last edited on 3/8/22.
+```
 
 ## 3/9/22 
 ### Attendance: &#9745;  Brody, &#9745; Derek, &#9745; Jack
@@ -54,7 +57,11 @@ A side view of the new ring hood.
 - Retune autons to use okapi units.
 - Test and tune ring hood.
 
-## 3/9/22 
+```{important}
+Last edited on 3/9/22.
+```
+
+## 3/10/22 
 ### Attendance: &#9745;   Brody, &#9745; Derek, &#9745; Jack
 ### Goals:
 - Retune autons to use okapi units.
@@ -119,3 +126,7 @@ void leftAWP() { // One yellow + left AWP
 - Convert middle goal auton + Full AWP auton to okapi units.
 - Continue driver practice.
 - Finish CAD.
+
+```{important}
+Last edited on 3/8/22.
+```
