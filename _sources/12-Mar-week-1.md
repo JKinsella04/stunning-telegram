@@ -24,6 +24,10 @@
 - Contine skills auton practice.
 - Continue driver practice.
 
+```{important}
+Last Edited on 3/1/22.
+```
+
 ## 3/2/22 
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
 ### Goals:
@@ -50,6 +54,10 @@
 - Design new driver route.
 - Continue driver practice.
 
+```{important}
+Last Edited on 3/2/22.
+```
+
 ## 3/3/22 
 ### Attendance: &#9745; Brody, &#9745; Derek, &#9745; Jack
 ### Goals:
@@ -74,6 +82,9 @@
 - Redesign intake hood.
 - Prepare for CREATE.
 
+```{important}
+Last Edited on 3/3/22.
+```
 
 
 

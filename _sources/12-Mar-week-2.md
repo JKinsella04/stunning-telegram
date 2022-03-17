@@ -29,7 +29,7 @@ chassis.turn(90_deg, 2.2_radps2, 27.6_radps).withTurnTol(1_deg).waitUntilSettled
 - Redesign ring hood.
 
 ```{important}
-Last edited on 3/8/22.
+Last Edited on 3/8/22.
 ```
 
 ## 3/9/22 
@@ -58,7 +58,7 @@ A side view of the new ring hood.
 - Test and tune ring hood.
 
 ```{important}
-Last edited on 3/9/22.
+Last Edited on 3/9/22.
 ```
 
 ## 3/10/22 
@@ -128,5 +128,5 @@ void leftAWP() { // One yellow + left AWP
 - Finish CAD.
 
 ```{important}
-Last edited on 3/8/22.
+Last Edited on 3/8/22.
 ```
